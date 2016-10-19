@@ -1,0 +1,40 @@
+﻿生成启动时间为 2016/10/18 9:02:49。
+     1>项目“E:\computer science\wechat\wechat\wechat.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt wechat.cpp
+         wechat.cpp
+     1>e:\computer science\wechat\wechat\wechat.cpp(50): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'TCHAR *'
+         e:\computer science\wechat\wechat\wechat.cpp(50): note: consider using '%ls' in the format string
+         e:\computer science\wechat\wechat\wechat.cpp(50): note: consider using '%lls' in the format string
+         e:\computer science\wechat\wechat\wechat.cpp(50): note: consider using '%Ls' in the format string
+         e:\computer science\wechat\wechat\wechat.cpp(50): note: consider using '%ws' in the format string
+     1>e:\computer science\wechat\wechat\wechat.cpp(170): warning C4101: “hwnd”: 未引用的局部变量
+     1>e:\computer science\wechat\wechat\wechat.cpp(306): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+     1>e:\computer science\wechat\wechat\wechat.cpp(314): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+     1>e:\computer science\wechat\wechat\wechat.cpp(323): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+     1>e:\computer science\wechat\wechat\wechat.cpp(343): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+     1>e:\computer science\wechat\wechat\wechat.cpp(345): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
+     1>e:\computer science\wechat\wechat\wechat.cpp(347): warning C4996: 'fwscanf': This function or variable may be unsafe. Consider using fwscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(851): note: 参见“fwscanf”的声明
+     1>e:\computer science\wechat\wechat\wechat.cpp(407): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>e:\computer science\wechat\wechat\wechat.cpp(412): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\computer science\wechat\wechat\wechat.cpp(376): warning C4477: 'printf' : format string '%x' requires an argument of type 'unsigned int', but variadic argument 1 has type 'HWND'
+     1>e:\computer science\wechat\wechat\wechat.cpp(388): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1270): note: 参见“scanf”的声明
+       Link:
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\computer science\wechat\Debug\wechat.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\computer science\wechat\Debug\wechat.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\computer science\wechat\Debug\wechat.lib" /MACHINE:X86 Debug\divide.obj
+         Debug\listen.obj
+         Debug\shell.obj
+         Debug\wechat.obj
+         Debug\tools.obj
+         wechat.vcxproj -> E:\computer science\wechat\Debug\wechat.exe
+     1>已完成生成项目“E:\computer science\wechat\wechat\wechat.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:02.54
