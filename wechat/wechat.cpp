@@ -18,13 +18,12 @@ const int OFFSET_SET_Y = 80;
 const int EDIT_HEIGHT = 145;
 const int INIT_HEIGHT = 35;
 const int STEP_HEIGHT = 30;
-const int MSG_SIZE = 2048;
 const bool SENDING = 0;
 const bool RECEIVING = 1;
 
 //const wchar_t DEFAULT_MSG[] = L"主人现在不在家，等他回来我会通知他的~ from 可愛いメイドさん";
 const wchar_t DEFAULT_MSG[] = L"现在有事不在，请稍等";
-const char* property_path = "E:\\computer science\\wechat\\wechat\\conf\\";
+const char* property_path = "E:\\Program Files (x86)\\RebeccaAIML\\conf\\";
 HWND lmshwnd = NULL;
 wchar_t LastSendMsg[MSG_SIZE + 1] = { 0 };//上次发出的消息
 bool state = RECEIVING;//初始状态为接收消息
@@ -292,7 +291,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 	memset(SendMsg, 0, MSG_SIZE + 1);
 	char GetMsg_ansi[MSG_SIZE+1] = { 0 };
 	char SendMsg_ansi[MSG_SIZE+1] = { 0 };
-	char query_property[MSG_SIZE+1] = { 0 };
+	wchar_t query_property[MSG_SIZE+1] = { 0 };
 	//printf("%ws\n", GetMsg);
 	//for (int i = 0; i < wcslen(GetMsg); i++)
 	//	printf("%wc-0x%x, ", GetMsg[i], GetMsg[i]);
@@ -303,7 +302,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 	{
 		case 0: printf("Input language: English\n"); 
 					UnicodeToANSI(GetMsg, GetMsg_ansi, MSG_SIZE);
-					sprintf(query_property, "-ppf \"%sproperties.xml\"", property_path);
+					wsprintf(query_property, L"-ppf \"%sproperties.xml\"", property_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
 		case 1: printf("入力言語:日本語\n"); 		
@@ -311,7 +310,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 					setMsg(SendMsg);
 					memset(SendMsg, 0, MSG_SIZE + 1);
 					unicode2char(GetMsg, GetMsg_ansi, MSG_SIZE);
-					sprintf(query_property, "-ppf \"%sproperties_jp.xml\"", property_path);
+					wsprintf(query_property, L"-ppf \"%sproperties_jp.xml\"", property_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
 		case 2: printf("输入语言：中文\n");
@@ -320,7 +319,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 					memset(SendMsg, 0, MSG_SIZE + 1);
 					unicode2char(GetMsg, GetMsg_ansi, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
 					GetMsg_ansi[strlen(GetMsg_ansi)] = '#';//末尾加上结束符‘#’便于匹配AIML中的‘*’
-					sprintf(query_property, "-ppf \"%sproperties_zh.xml\"", property_path);
+					wsprintf(query_property, L"-ppf \"%sproperties_zh.xml\"", property_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
 		default:
@@ -328,7 +327,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 	}
 	printf("GetMsg_ansi:%s\n", GetMsg_ansi);
 	if (GetMsg_ansi != NULL)
-		if (!query(GetMsg_ansi, SendMsg_ansi, MSG_SIZE, first))
+		if (!query(GetMsg_ansi, SendMsg_ansi, MSG_SIZE))
 			return FALSE;
 	if (lang == 0)
 		ANSIToUnicode(SendMsg_ansi, SendMsg, MSG_SIZE);
@@ -353,6 +352,7 @@ void readFile()
 int _tmain(int argc, _TCHAR* argv[])
 {
 	//readFile();
+	readProperty();
 	bool first_flag = true;
 	// 得到进程ID的列表
 	DWORD aProcesses[1024], cbNeeded, cProcesses;

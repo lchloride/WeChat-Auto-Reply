@@ -1,6 +1,9 @@
 #include "tools.h"
 
 using namespace std;
+wchar_t Rebecca_exec_path[MAX_PATH]=L"";
+int zh_jp_ratio =6;
+wchar_t ini_name[] = L"\\property.ini";
 
 void ANSIToUnicode(const char* str, wchar_t* result, int MaxSize)
 {
@@ -93,7 +96,7 @@ int checkLang(wchar_t *str)
 	}
 	if (count_char[0] >= count_char[1] + count_char[2])
 		lang = 0;//English
-	else if (count_char[1] / ((double)count_char[2]) >= 0.6)
+	else if (count_char[1] / ((double)count_char[2]) >= zh_jp_ratio/10.0)
 		lang = 1;//Japanese
 	else
 		lang = 2;//Chinese
@@ -149,3 +152,44 @@ bool char2Unicode(char* str, wchar_t *result, int MaxSize)
 	return true;
 }
 
+void refinePathEnd(wchar_t* src)
+{
+	int i = wcslen(src)-1;
+	while (i >= 0 && src[i] == '\\')
+	{
+		src[i] = '\0';
+		i--;
+	}
+}
+
+void readProperty()
+{
+	wchar_t exe_full_path[MAX_PATH] = L"";
+	int ini_len = wcslen(ini_name);
+	int len = GetModuleFileNameW(NULL,
+		exe_full_path, //应用程序的全路径存放地址
+		MAX_PATH);
+	for (int i = len - 1; i >= 0; i--)
+		if (exe_full_path[i] != '\\')
+			exe_full_path[i] = '\0';
+		else
+			break;
+	refinePathEnd(exe_full_path);
+	wcscat_s(exe_full_path, wcslen(exe_full_path) + ini_len + 1, ini_name);
+	GetPrivateProfileStringW(
+		L"Rebecca", // 指向包含 Section 名称的字符串地址 
+		L"Rebecca_exec_path", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		Rebecca_exec_path, // 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path // ini 文件的文件名 
+		);
+	refinePathEnd(Rebecca_exec_path);
+	zh_jp_ratio = GetPrivateProfileIntW(
+		L"language", // 指向包含 Section 名称的字符串地址 
+		L"zh_jp_ratio", // 指向包含 Key 名称的字符串地址 
+		6, // 如果 Key 值没有找到，则返回缺省的值是多少 
+		exe_full_path // ini 文件的文件名 
+		);
+	wprintf(L"%ls %d\n", Rebecca_exec_path, zh_jp_ratio);
+}
