@@ -112,9 +112,9 @@ void trim(char *str, char* result, int MaxSize)
 	result[idx] = '\0';
 }
 
-bool unicode2char(wchar_t * str, char* result, int MaxSize)
+bool unicode2wchar(wchar_t * str, wchar_t* result, int MaxSize)
 {
-	char buff[6] = { 0 };
+	wchar_t buff[6] = { 0 };
 	if (wcslen(str) >= MaxSize / 5)
 		return false;
 	//int idx = 0;
@@ -122,7 +122,7 @@ bool unicode2char(wchar_t * str, char* result, int MaxSize)
 	{
 		//if (str[i] >= 0x2E80 && str[i] <= 0xFE4F)//For non-English Characters, change to unicode format
 		//{
-			sprintf(buff, "%4x ", str[i]);
+			wsprintf(buff, L"%4x ", str[i]);
 			for (int j = 0; j < 6; j++)
 				//result[idx++] = buff[j];
 				result[i * 5 + j] = buff[j];

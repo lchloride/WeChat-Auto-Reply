@@ -21,9 +21,8 @@ const int STEP_HEIGHT = 30;
 const bool SENDING = 0;
 const bool RECEIVING = 1;
 
-//const wchar_t DEFAULT_MSG[] = L"主人现在不在家，等他回来我会通知他的~ from 可愛いメイドさん";
-const wchar_t DEFAULT_MSG[] = L"现在有事不在，请稍等";
-const char* property_path = "E:\\Program Files (x86)\\RebeccaAIML\\conf\\";
+//const char* property_path = "E:\\Program Files (x86)\\RebeccaAIML\\conf\\";
+extern wchar_t Rebecca_exec_path[];
 HWND lmshwnd = NULL;
 wchar_t LastSendMsg[MSG_SIZE + 1] = { 0 };//上次发出的消息
 bool state = RECEIVING;//初始状态为接收消息
@@ -289,7 +288,7 @@ BOOL setMsg(const wchar_t* msg)
 BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 {
 	memset(SendMsg, 0, MSG_SIZE + 1);
-	char GetMsg_ansi[MSG_SIZE+1] = { 0 };
+	wchar_t GetMsg_unicode[MSG_SIZE+1] = { 0 };
 	char SendMsg_ansi[MSG_SIZE+1] = { 0 };
 	wchar_t query_property[MSG_SIZE+1] = { 0 };
 	//printf("%ws\n", GetMsg);
@@ -301,33 +300,34 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 	switch (lang)
 	{
 		case 0: printf("Input language: English\n"); 
-					UnicodeToANSI(GetMsg, GetMsg_ansi, MSG_SIZE);
-					wsprintf(query_property, L"-ppf \"%sproperties.xml\"", property_path);
+					//UnicodeToANSI(GetMsg, GetMsg_ansi, MSG_SIZE);
+					wcscpy_s(GetMsg_unicode,wcslen(GetMsg), GetMsg);
+					wsprintf(query_property, L"-ppf \"%s\\..\\..\\conf\\properties.xml\"", Rebecca_exec_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
 		case 1: printf("入力言語:日本語\n"); 		
 					wcscpy_s(SendMsg, 68, L"Sorry, I can only understand English. Talk with me in English. THX~");
 					setMsg(SendMsg);
 					memset(SendMsg, 0, MSG_SIZE + 1);
-					unicode2char(GetMsg, GetMsg_ansi, MSG_SIZE);
-					wsprintf(query_property, L"-ppf \"%sproperties_jp.xml\"", property_path);
+					unicode2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
+					wsprintf(query_property, L"-ppf \"%s\\..\\..\\conf\\properties.xml\"", Rebecca_exec_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
 		case 2: printf("输入语言：中文\n");
 					wcscpy_s(SendMsg, 68, L"Sorry, I can only understand English. Talk with me in English. THX~");
 					setMsg(SendMsg);
 					memset(SendMsg, 0, MSG_SIZE + 1);
-					unicode2char(GetMsg, GetMsg_ansi, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
-					GetMsg_ansi[strlen(GetMsg_ansi)] = '#';//末尾加上结束符‘#’便于匹配AIML中的‘*’
-					wsprintf(query_property, L"-ppf \"%sproperties_zh.xml\"", property_path);
+					unicode2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
+					GetMsg_unicode[wcslen(GetMsg_unicode)] = L'#';//末尾加上结束符‘#’便于匹配AIML中的‘*’
+					wsprintf(query_property, L"-ppf \"%s\\..\\..\\conf\\properties.xml\"", Rebecca_exec_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
 		default:
 			printf("The language cannot be analyzed\n"); break;
 	}
-	printf("GetMsg_ansi:%s\n", GetMsg_ansi);
-	if (GetMsg_ansi != NULL)
-		if (!query(GetMsg_ansi, SendMsg_ansi, MSG_SIZE))
+	//printf("GetMsg_ansi:%s\n", GetMsg_ansi);
+	//if (GetMsg_ansi != NULL)
+		if (!query(GetMsg_unicode, SendMsg_ansi, MSG_SIZE))
 			return FALSE;
 	if (lang == 0)
 		ANSIToUnicode(SendMsg_ansi, SendMsg, MSG_SIZE);

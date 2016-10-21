@@ -24,8 +24,8 @@ bool createBat(char* path, wchar_t* cmd)
 		printf("Cannot find Rebecca AIML execuating path.\n");
 		return false;
 	}
-	fprintf(fp, "@echo off\n%c%c\ncd %s\n", Rebecca_exec_path[1], Rebecca_exec_path[2], Rebecca_exec_path);
-	fprintf(fp, "rs-admin %s\n", cmd);
+	fprintf(fp, "@echo off\n%C%C\ncd \"%ls\"\n", Rebecca_exec_path[0], Rebecca_exec_path[1], Rebecca_exec_path);
+	fprintf(fp, "rs-admin %ls\n", cmd);
 	fprintf(fp, "@echo on\n");
 	fclose(fp);
 	return true;
@@ -90,8 +90,8 @@ bool shell(wchar_t* cmd, char* response, int MaxSize)
 	return true;
 }
 
-bool query(char* query_word, char* response, int MaxSize) {
+bool query(wchar_t* query_word, char* response, int MaxSize) {
 	wchar_t cmd[MSG_SIZE] = L"";
-	wsprintf(cmd, L"-gr \"%s\"", query_word);
+	wsprintf(cmd, L"-gr \"%ls\"", query_word);
 	return shell(cmd, response, MaxSize);
 }
