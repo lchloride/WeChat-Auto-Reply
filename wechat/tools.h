@@ -13,3 +13,4 @@ int checkLang(wchar_t *str);
 bool char2Unicode(char* str, wchar_t *result, int MaxSize);
 bool unicode2wchar(wchar_t * str, wchar_t* result, int MaxSize);
 void readProperty();
+bool loadRebecca();

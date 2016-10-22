@@ -1,4 +1,5 @@
 #include "tools.h"
+#include "shell.h"
 
 using namespace std;
 wchar_t Rebecca_exec_path[MAX_PATH]=L"";
@@ -192,4 +193,29 @@ void readProperty()
 		exe_full_path // ini 文件的文件名 
 		);
 	wprintf(L"%ls %d\n", Rebecca_exec_path, zh_jp_ratio);
+}
+
+bool loadRebecca()
+{
+	wchar_t cmd[MSG_SIZE] = L"";
+	char response[MSG_SIZE] = "";
+	wsprintf(cmd, L"-rd \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
+	shell(cmd, response, MSG_SIZE);
+
+	wsprintf(cmd, L"-rg");
+	shell(cmd, response, MSG_SIZE);
+
+	wsprintf(cmd, L"-aduaa \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
+	shell(cmd, response, MSG_SIZE);
+	wsprintf(cmd, L"-cg");
+	shell(cmd, response, MSG_SIZE);
+
+	wsprintf(cmd, L"-gafls");
+	shell(cmd, response, MSG_SIZE);
+	if (strcmp(response, "0") == 0)
+	{
+		printf("Cannot load Rebecca AIML files\n");
+		return false;
+	}
+	return true;
 }

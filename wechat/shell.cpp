@@ -4,7 +4,7 @@
 #include <direct.h>
 #include "tools.h"
 
-const unsigned int Max = 1024;
+//const unsigned int Max = 1024;
 extern  wchar_t Rebecca_exec_path[];
 //Create content in query.bat, notice that path is surrounded by ""
 //And paragram cmd does not with the prefix word "rs-admin "
@@ -81,6 +81,8 @@ bool shell(wchar_t* cmd, char* response, int MaxSize)
 	if (1 == execmd(path, result, MaxSize)) {
 		printf("Query Result:%s\n",result);
 		result[min(strlen(result), (unsigned)MaxSize)] = '\0';
+		if (result[strlen(result) - 1] == '\n')
+			result[strlen(result) - 1] = '\0';
 		strcpy_s(response, strlen(result)+1, result);
 		return true;
 	}

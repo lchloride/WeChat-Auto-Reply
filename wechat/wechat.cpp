@@ -112,56 +112,34 @@ void KeyAction(int vKey, int Orientation)
 
 	assert(1 == ret77);
 }
-BOOL GetTextFromClipboard(wchar_t text[], int& text_len)//得到剪贴板的内容，用于获取对方发送的内容
+
+bool getClipboard(wchar_t text[], int& text_len)
 {
-	if (::OpenClipboard(NULL))
+	if (OpenClipboard(NULL))
 	{
-		text_len = 0;
-		//获得剪贴板数据
-		HGLOBAL hMem = GetClipboardData(CF_UNICODETEXT);
-		if (NULL != hMem)
+		HANDLE hClipboardData = GetClipboardData(CF_UNICODETEXT);
+		if (hClipboardData)
 		{
-			wchar_t* wGlobal = (wchar_t*)GlobalLock(hMem);
-
-			// Allocate memory from the clipboard
-			text_len = GlobalSize(hMem);
-			wchar_t* wstr = new wchar_t[text_len + 1];
-			lstrcpy(wstr, wGlobal);
-			if (text_len > MSG_SIZE)
+			WCHAR *pchData = (WCHAR*)GlobalLock(hClipboardData);
+			if (pchData)
 			{
-				text_len = MSG_SIZE;
-				wstr[MSG_SIZE] = L'\0';//截尾
-			}
-			//ZeroMemory(text, text_len);
-			cout << "length:" << text_len << endl;
-			// Make a copy of the text in the clipboard
-			lstrcpy(text, wstr);
-			delete[] wstr;
-
-			//char* lpStr = (char*)::GlobalLock(hMem);
-			if (NULL != text)
-			{
-				cout << "text:"<<text << endl;
-				//MessageBox(NULL, text, NULL, 0);
-				::GlobalUnlock(hMem);
+				text_len = wcslen(pchData);
+				wcscpy_s(text, text_len + 1, pchData);
+				wprintf(L"Get clipboard: %ls\n", text);
+				GlobalUnlock(hClipboardData);
+				CloseClipboard();
+				return true;
 			}
 			else
-				cout << "text=NULL" << endl;
+				wprintf(L"Clipboard text is null.\n");
 		}
-		else
-		{
-			cout << "cannot get anything" << endl;
-			::CloseClipboard();
-			return FALSE;
-		}
-		::CloseClipboard();
-		return TRUE;
+		CloseClipboard();
 	}
 	else
-		cout << "cannot open Clipboard" << endl;
-	return FALSE;
-}
+			wprintf(L"Cannot open clipboard.\n");
+	return false;
 
+}
 BOOL openWnd(const wchar_t* path)
 {
 	HINSTANCE hRet = 0;
@@ -223,7 +201,7 @@ BOOL getMsg(wchar_t msg[], int& len)
 		KeyAction(0x43, 0);
 		KeyAction(0x11, 0);
 		Sleep(50);
-		flag = GetTextFromClipboard(msg, len);
+		flag = getClipboard(msg, len);
 		//setlocale(LC_ALL, "chs");
 		//wprintf(msg,"msg: %s\n");
 		//cout << wstr << " " << len << endl; 
@@ -301,7 +279,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 	{
 		case 0: printf("Input language: English\n"); 
 					//UnicodeToANSI(GetMsg, GetMsg_ansi, MSG_SIZE);
-					wcscpy_s(GetMsg_unicode,wcslen(GetMsg), GetMsg);
+					wcscpy_s(GetMsg_unicode,wcslen(GetMsg)+1, GetMsg);
 					wsprintf(query_property, L"-ppf \"%s\\..\\..\\conf\\properties.xml\"", Rebecca_exec_path);
 					shell(query_property, temp, MAXCHARSIZE);
 					break;
@@ -353,6 +331,9 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	//readFile();
 	readProperty();
+	//printf("Loading Rebecca AIML files......\n");
+	//if (!loadRebecca())
+	//	return 1;
 	bool first_flag = true;
 	// 得到进程ID的列表
 	DWORD aProcesses[1024], cbNeeded, cProcesses;
@@ -395,7 +376,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		flag = GetTextFromClipboard(LastSendMsg, len);*/
 		getMsg(GetMsg, GetMsgLen);
 		if (GetMsgLen > 0)
-			wcscpy_s(LastSendMsg, GetMsgLen, GetMsg);
+			wcscpy_s(LastSendMsg, GetMsgLen+1, GetMsg);
 	}
 	wprintf(L"lastmsg:%ls\n", LastSendMsg);
 	bool send_flag = false;
