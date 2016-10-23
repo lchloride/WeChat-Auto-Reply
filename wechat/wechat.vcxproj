@@ -78,6 +78,7 @@
   <ItemGroup>
     <ClCompile Include="divide.cpp" />
     <ClCompile Include="listen.cpp" />
+    <ClCompile Include="log.cpp" />
     <ClCompile Include="shell.cpp" />
     <ClCompile Include="wechat.cpp" />
     <ClCompile Include="tools.cpp" />
@@ -85,6 +86,7 @@
   <ItemGroup>
     <ClInclude Include="divide.h" />
     <ClInclude Include="listen.h" />
+    <ClInclude Include="log.h" />
     <ClInclude Include="shell.h" />
     <ClInclude Include="tools.h" />
   </ItemGroup>

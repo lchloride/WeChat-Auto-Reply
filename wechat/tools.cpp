@@ -4,6 +4,8 @@
 using namespace std;
 wchar_t Rebecca_exec_path[MAX_PATH]=L"";
 int zh_jp_ratio =6;
+wchar_t log_path[MAX_PATH] = L"";
+bool date_diff = true;
 wchar_t ini_name[] = L"\\property.ini";
 
 void ANSIToUnicode(const char* str, wchar_t* result, int MaxSize)
@@ -177,6 +179,7 @@ void readProperty()
 			break;
 	refinePathEnd(exe_full_path);
 	wcscat_s(exe_full_path, wcslen(exe_full_path) + ini_len + 1, ini_name);
+	
 	GetPrivateProfileStringW(
 		L"Rebecca", // 指向包含 Section 名称的字符串地址 
 		L"Rebecca_exec_path", // 指向包含 Key 名称的字符串地址 
@@ -186,13 +189,31 @@ void readProperty()
 		exe_full_path // ini 文件的文件名 
 		);
 	refinePathEnd(Rebecca_exec_path);
+
 	zh_jp_ratio = GetPrivateProfileIntW(
 		L"language", // 指向包含 Section 名称的字符串地址 
 		L"zh_jp_ratio", // 指向包含 Key 名称的字符串地址 
 		6, // 如果 Key 值没有找到，则返回缺省的值是多少 
 		exe_full_path // ini 文件的文件名 
 		);
-	wprintf(L"%ls %d\n", Rebecca_exec_path, zh_jp_ratio);
+
+	GetPrivateProfileStringW(
+		L"log", // 指向包含 Section 名称的字符串地址 
+		L"path", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		log_path, // 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path // ini 文件的文件名 
+		);
+	refinePathEnd(Rebecca_exec_path);
+
+	date_diff = (bool)GetPrivateProfileIntW(
+		L"log", // 指向包含 Section 名称的字符串地址 
+		L"date_diff", // 指向包含 Key 名称的字符串地址 
+		1, // 如果 Key 值没有找到，则返回缺省的值是多少 
+		exe_full_path // ini 文件的文件名 
+		);
+	//wprintf(L"%ls %d\n", Rebecca_exec_path, zh_jp_ratio);
 }
 
 bool loadRebecca()

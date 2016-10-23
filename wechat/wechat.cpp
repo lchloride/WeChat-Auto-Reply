@@ -10,6 +10,7 @@
 #include "shell.h"
 #include "tools.h"
 #include "divide.h"
+#include "log.h"
 #pragma comment ( lib, "Psapi.lib" )
 
 using namespace std;
@@ -215,7 +216,10 @@ BOOL getMsg(wchar_t msg[], int& len)
 	if (wcscmp(msg, LastSendMsg) == 0)//最后一条是上一次我发送的，也即没有接收到新消息
 		return FALSE;
 	else
+	{
+		writeLog(msg, "wechar-getMSG()", RECVMSG);
 		return TRUE;
+	}
 }
 
 BOOL setMsg(const wchar_t* msg)
@@ -261,6 +265,7 @@ BOOL setMsg(const wchar_t* msg)
 	PostMessageW(lmshwnd, WM_CHAR, 0xD, 0x1C0001);
 	PostMessageW(lmshwnd, WM_KEYUP, 0xD, 0x1C0001);
 	wcscpy_s(LastSendMsg, wcslen(msg) + 1, msg);
+	writeLog((wchar_t*)msg, "wechat-sendMSG()", SENDMSG);
 	return TRUE;
 }
 BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
@@ -282,6 +287,7 @@ BOOL getResponse(wchar_t GetMsg[], wchar_t SendMsg[], bool first)
 					wcscpy_s(GetMsg_unicode,wcslen(GetMsg)+1, GetMsg);
 					wsprintf(query_property, L"-ppf \"%s\\..\\..\\conf\\properties.xml\"", Rebecca_exec_path);
 					shell(query_property, temp, MAXCHARSIZE);
+
 					break;
 		case 1: printf("入力言語:日本語\n"); 		
 					wcscpy_s(SendMsg, 68, L"Sorry, I can only understand English. Talk with me in English. THX~");
@@ -329,11 +335,14 @@ void readFile()
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	//wcout.imbue(locale("chs"));
+	setlocale(LC_ALL, "chs");
 	//readFile();
 	readProperty();
 	//printf("Loading Rebecca AIML files......\n");
 	//if (!loadRebecca())
 	//	return 1;
+	writeLog(L"Program Start.", "wechat-_tmain()", START);
 	bool first_flag = true;
 	// 得到进程ID的列表
 	DWORD aProcesses[1024], cbNeeded, cProcesses;
@@ -359,8 +368,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	wchar_t GetMsg[MSG_SIZE + 1] = { 0 };
 	wchar_t SendMsg[MSG_SIZE + 1] = { 0 };
 	int GetMsgLen = 0;
-	//wcout.imbue(locale("chs"));
-	setlocale(LC_ALL, "chs");
+
 
 	//char readLastMsgFlag[MSG_SIZE+1];
 	bool readLastMsgFlag = false;
