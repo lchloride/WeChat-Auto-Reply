@@ -29,29 +29,43 @@ bool writeLog(wchar_t * content, char* source, int label)
 	switch (label)
 	{
 	case START:
-		strftime(date_time, MSG_SIZE, "%F, %Z:%T", timeinfo);
-		fprintf(log_file, "=====START=====\n%s, Start Auto Reply, %ls, %s\n", date_time, content, source);
+		strftime(date_time, MSG_SIZE, "%F,%Z:%T", timeinfo);
+		fprintf(log_file, "=====START=====\n%s,Start Auto Reply,\"%ls\",\"%s\"\n", date_time, content, source);
 		break;
 	case RECVMSG:
-		strftime(date_time, MSG_SIZE, "%F, %Z:%T", timeinfo);
-		fprintf(log_file, "%s, Receive Message, %ls, %s\n", date_time, content, source); 
+		strftime(date_time, MSG_SIZE, "%F,%Z:%T", timeinfo);
+		if (fprintf(log_file, "%s,Receive Message,\"%ls\",\"%s\"\n", date_time, content, source) < 0)
+		{
+			fprintf(log_file, "Unreadable Character Cannot be Printed.");
+			wchar_t* tmp = new wchar_t[5 * wcslen(content) + 1];
+			unicode2wchar(content, tmp, MSG_SIZE);
+			fprintf(log_file, "UNICODE:%ls\", \"%s\"\n", tmp, source);
+			delete[] tmp;
+		}
 		break;
 	case SENDMSG:
-		strftime(date_time, MSG_SIZE, "%F, %Z:%T", timeinfo);
-		fprintf(log_file, "%s, Send Message, %ls, %s\n", date_time, content, source);
+		strftime(date_time, MSG_SIZE, "%F,%Z:%T", timeinfo);
+		if (fprintf(log_file, "%s,Send Message,\"%ls\",\"%s\"\n", date_time, content, source) < 0)
+		{
+			fprintf(log_file, "Unreadable Character Cannot be Printed.");
+			wchar_t* tmp = new wchar_t[5*wcslen(content) + 1];
+			unicode2wchar(content, tmp, MSG_SIZE);
+			fprintf(log_file, "UNICODE:%ls\", \"%s\"\n",tmp, source);
+			delete[] tmp;
+		}
 		break;
 
 	case OPERATION: 		
-		strftime(date_time, MSG_SIZE, "%F, %Z:%T", timeinfo);
-		fprintf(log_file, "%s, Operation Result, %ls, %s\n", date_time, content, source);
+		strftime(date_time, MSG_SIZE, "%F,%Z:%T", timeinfo);
+		fprintf(log_file, "%s,Operation Result,%ls,%s\n", date_time, content, source);
 		break;
 	case ERR: 
-		strftime(date_time, MSG_SIZE, "%F, %Z:%T", timeinfo);
-		fprintf(log_file, "%s, Error Message, %ls, %s\n", date_time, content, source);
+		strftime(date_time, MSG_SIZE, "%F,%Z:%T", timeinfo);
+		fprintf(log_file, "%s,Error Message,%ls,%s\n", date_time, content, source);
 		break;
 	default:
-		strftime(date_time, MSG_SIZE, "%F, %Z:%T", timeinfo);
-		fprintf(log_file, "%s, No Matched Label, %ls, %s\n", date_time, content, source);
+		strftime(date_time, MSG_SIZE, "%F,%Z:%T", timeinfo);
+		fprintf(log_file, "%s,No Matched Label,%ls,%s\n", date_time, content, source);
 		break;
 	}
 	fclose(log_file);

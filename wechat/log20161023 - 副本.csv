@@ -1,24 +1,25 @@
-2016-10-23, 中国标准时间:23:37:41, Start Auto Reply, Program Start., wechat-_tmain()
-2016-10-23, 中国标准时间:23:37:55, Receive Message, 2016-10-23, 中国标准时间:23:39:24, Receive Message, Sorry, I can only understand English. Talk with me in English. THX~, wechar-getMSG()
-2016-10-23, 中国标准时间:23:39:27, Send Message, "Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.", wechat-sendMSG()
-2016-10-23, 中国标准时间:23:39:29, Send Message, There is no need to apologize. Good then you can explain it to me. Talking is my primary function. We were talking about 4f60 7684 4e3b 4efb 662f 8c01 #. But I did not get that., wechat-sendMSG()
-2016-10-23, 中国标准时间:23:40:27, Receive Message, 你好, wechar-getMSG()
-2016-10-23, 中国标准时间:23:40:29, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:40:32, Send Message, 你好呀, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:40:58, Receive Message, 谢谢, wechar-getMSG()
-2016-10-23, 中国标准时间:23:41:00, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:41:03, Send Message, 不客气~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:41:16, Receive Message, 好厉害, wechar-getMSG()
-2016-10-23, 中国标准时间:23:41:18, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:41:21, Send Message, 嗯我也是这么觉得, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:41:47, Receive Message, 你叫什么名字, wechar-getMSG()
-2016-10-23, 中国标准时间:23:41:49, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:41:52, Send Message, 2016-10-23, 中国标准时间:23:42:08, Receive Message, 你喜欢什么游戏, wechar-getMSG()
-2016-10-23, 中国标准时间:23:42:10, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:42:13, Send Message, 我最喜欢秽翼的尤斯蒂娅, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:42:29, Receive Message, 再见, wechar-getMSG()
-2016-10-23, 中国标准时间:23:42:31, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:42:34, Send Message, 拜拜, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:43:00, Receive Message, 拜拜~, wechar-getMSG()
-2016-10-23, 中国标准时间:23:43:03, Send Message, Sorry, I can only understand English. Talk with me in English. THX~, wechat-sendMSG()
-2016-10-23, 中国标准时间:23:43:06, Send Message, 
+2016-10-24,中国标准时间:23:56:48,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-24,中国标准时间:23:56:57,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:abed efae acee 996d ", "wechar-getMSG()"
+2016-10-24,中国标准时间:23:57:09,Receive Message,"t","wechar-getMSG()"
+2016-10-24,中国标准时间:23:57:12,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:57:14,Send Message,"Are we still talking about 7d27 # ?","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:57:30,Receive Message,"no","wechar-getMSG()"
+2016-10-24,中国标准时间:23:57:32,Send Message,"What is the subject?","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:57:38,Receive Message,"你好","wechar-getMSG()"
+2016-10-24,中国标准时间:23:57:41,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:57:43,Send Message,"你好呀Unreadable Character Cannot be Printed.UNICODE:4f60 597d 5440 ea9d ", "wechat-sendMSG()"
+2016-10-24,中国标准时间:23:57:59,Receive Message,"截","wechar-getMSG()"
+2016-10-24,中国标准时间:23:58:01,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:04,Send Message,"仾祭","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:17,Receive Message,"发","wechar-getMSG()"
+2016-10-24,中国标准时间:23:58:19,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:21,Send Message,"業","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:28,Receive Message,"和和","wechar-getMSG()"
+2016-10-24,中国标准时间:23:58:30,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:32,Send Message,"Unreadable Character Cannot be Printed.UNICODE:1eea ab53 cd9d ", "wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:45,Receive Message,"我想","wechar-getMSG()"
+2016-10-24,中国标准时间:23:58:47,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:50,Send Message,"Unreadable Character Cannot be Printed.UNICODE:ab9d ", "wechat-sendMSG()"
+2016-10-24,中国标准时间:23:58:56,Receive Message,"你喜欢什么游戏","wechar-getMSG()"
+2016-10-24,中国标准时间:23:58:58,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-24,中国标准时间:23:59:01,Send Message,"我最喜欢秽翼的尤斯蒂娅","wechat-sendMSG()"
