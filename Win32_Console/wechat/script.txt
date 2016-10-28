@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+                                    
+      
+
+				        								<html xmlns="http://www.w3.org/1999/xhtml" class="ua-unknown ua-unknown ua-other ua-unknown">
+<head>
+    <meta name="baidu_union_verify" content="b3b78fbb4a7fb8c99ada6de72aac8a0e">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+<meta name="keywords" content="你好啊"/>
+
+<title>【你好啊】</title>
+<link rel="shortcut icon" href="http://shared.ydstatic.com/images/favicon.ico" type="image/x-icon"/>
+
+
+<link href="http://shared.ydstatic.com/dict/v2016/result/160621/result-min.css" rel="stylesheet" type="text/css"/>
+<link href="http://shared.ydstatic.com/dict/v2016/result/pad.css" media="screen and (orientation: portrait), screen and (orientation: landscape)" rel="stylesheet" type="text/css">
+<link rel="canonical" href="http://dict.youdao.com/w/你好啊/"/>
+<link rel="search" type="application/opensearchdescription+xml" title="Yodao Dict" href="plugins/search-provider.xml"/>
+<script type='text/javascript' src='http://shared.ydstatic.com/js/jquery/jquery-1.8.2.min.js'></script>
+</head>
+<body class="t0">
+<!-- 搜索框开始 -->
+    <div id="doc" style="position:relative;zoom:1;">
+    <div class="c-topbar-wrapper">
+        <div class="c-topbar c-subtopbar">
+            <div id="nav" class="c-snav">
+                <a class="topnav" href="http://dict.youdao.com/?keyfrom=dict2.top" target="_blank">词典</a><a class="topnav" href="http://fanyi.youdao.com/?keyfrom=dict2.top" target="_blank">翻译</a><a class="topnav" href="http://xue.youdao.com/?keyfrom=dict2.top" target="_blank">学堂</a><a class="topnav" href="http://note.youdao.com/?keyfrom=dict2.top" target="_blank">云笔记</a><a class="topnav" href="http://www.huihui.cn/?keyfrom=dict2.top" target="_blank">惠惠</a><a class="topnav" href="http://www.youdao.com/about/productlist.html?keyfrom=dict2.top" target="_blank">更多产品</a>
+            </div>
+                        <div class="c-sust">
+                                                
+
+                                    <a hidefocus="true" class="login" href="http://account.youdao.com/login?service=dict&back_url=http%3A%2F%2Fdict.youdao.com%2Fsearch%3Fq%3D%25E4%25BD%25A0%25E5%25A5%25BD%25E5%2595%258A%26tab%3Dchn%23keyfrom%3D%24%7Bkeyfrom%7D" rel="nofollow">登录</a>
+                            </div>
+        </div>
+        <div class="c-header">
+            <a class="c-logo" href="/">有道 - 网易旗下搜索</a>
+            <form id="f"  method="get" action="/search" class="c-fm-w" node-type="search">
+                <div id="langSelector" class="langSelector">
+                                                                                                                                                                                                                            <span id="langText" class="langText">中英</span><span class="aca">▼</span><span class="arrow"></span>
+                    <input type="hidden" id="le" name="le" value="eng" />
+                </div>
+                <span class="s-inpt-w">
+                    <input type="text" class="s-inpt" autocomplete="off" name="q" id="query" onmouseover="this.focus()" onfocus="this.select()" value="你好啊"/>
+                    <input type="hidden" name="tab" value=""/>
+                    <input type="hidden" name="keyfrom" value="dict2.top"/>
+                    <span id="hnwBtn" class="hand-write"></span>
+                    </span><input type="submit" class="s-btn" value="翻译"/>
+            </form>
+        </div>
+    </div>
+
+<!-- 搜索框结束 -->
+
+<!-- 内容区域 -->
+<div id="scontainer">
+<div id="container">
+    <div id="topImgAd">
+    </div>
+    <div id="results">
+                    <div id="result_navigator" class="result_navigator">
+            <ul class="sub-catalog">
+        <h3>目录</h3>
+        <li class="split"></li>
+                                    <li class="sub1_all"><a class="nav-js log-js" href="#" hidefocus="true" data-4log="dict.nav.basic">释义</a></li>
+                                                                            <li class="written"><a class="nav-js log-js" href="#examples" hidefocus="true" data-4log="dict.nav.sentence">例句</a></li>
+                                                                            </ul>
+        <div class="dict-votebar">
+            <div class="vote-head">
+                当前查询结果是否对您有帮助
+            </div>
+            <div class="vote-btns">
+                <button class="up" title="有帮助，点个赞">
+                    <i class="icon vote-arrow"></i>
+                    <!-- <span class="count">271</span> -->
+                </button>
+                <button class="down" aria-pressed="false" title="有待改善">
+                    <i class="icon vote-arrow"></i>
+                </button>
+            </div>
+        </div>
+        <a href="#" class="go-top log-js" data-4log="dict.result.nav.top" title="返回顶部">go top</a>
+    </div>
+                <!-- 结果内容 -->
+                            <div id="results-contents" class="results-content">
+                                                          
+                                                            
+                                               	 
+
+<div id="phrsListTab" class="trans-wrapper clearfix">
+            <h2 class="wordbook-js"><span class="keyword">你好啊</span>
+        </h2>
+            <div class="trans-container">
+    
+                 <ul>
+                                                                <p class="wordGroup">
+                                                    <span style="font-weight: bold; color: #959595; margin-right: .5em; width : 29px; display: inline-block;">int.</span>
+                                                                                                                                                                                                                                                                                                                                                                                                    <span class="contentTitle"><a class="search-js" href="/w/hello/#keyfrom=E2Ctranslation">hello</a>
+                                    </span>
+                        </p>
+                </ul>
+                        <a class='more-example' href="/example/你好啊/#keyfrom=dict.basic.ce">在例句中比较</a>
+            </div>
+    </div>
+                          
+
+
+
+ 
+<div id="webTrans" class="trans-wrapper trans-tab">
+    <h3>
+        <span class="tabs"> 
+                
+                
+        
+                                    <a rel="#tWebTrans"><span>网络释义</span></a>
+        </span>
+        <a class="toggle toggleOpen" rel="#webTransToggle"></a>
+ </h3>
+<!--网络翻译-->
+
+<div id="webTransToggle">
+    <div id="tWebTrans" class="trans-container tab-content">
+        
+
+               <div class="wt-container">
+    <div class="title">
+        <a href="#" title="详细释义" rel="#rw1" class="sp do-detail">&nbsp;</a>
+        <span>
+                Hello</span>
+    </div>
+    <p class="collapse-content">
+    黑天使的博客 ...
+杰拉德Gerald?
+<b>你好啊</b><b>Hello</b>.
+夹克不错嘛Nice jacket. ...</p>
+            <p class="collapse-content via">基于10个网页<span class="sl">-</span><a href="http://www.youdao.com/search?keyfrom=dict&q=%E4%BD%A0%E5%A5%BD%E5%95%8A+Hello&ue=utf8" target=_blank  rel="nofollow">相关网页</a></p>
+    </div>
+                <div class="wt-container wt-collapse">
+    <div class="title">
+        <a href="#" title="详细释义" rel="#rw1" class="sp do-detail">&nbsp;</a>
+        <span>
+                Hey</span>
+    </div>
+    <p class="collapse-content">
+    主题：[推荐]越狱第三季 英文剧本及学习笔记 附中文翻译 ...
+Yeah. （是的）
+<b>Hey</b>. （<b>你好啊</b>）
+Don't be afraid. （不要害怕） ...</p>
+            <p class="collapse-content via">基于5个网页<span class="sl">-</span><a href="http://www.youdao.com/search?keyfrom=dict&q=%E4%BD%A0%E5%A5%BD%E5%95%8A+Hey&ue=utf8" target=_blank  rel="nofollow">相关网页</a></p>
+    </div>
+                <div class="wt-container wt-collapse">
+    <div class="title">
+        <a href="#" title="详细释义" rel="#rw1" class="sp do-detail">&nbsp;</a>
+        <span>
+                Hello to you, too</span>
+    </div>
+    <p class="collapse-content">
+    绯闻女孩 第一季 [Gossip Girl Sea... ...
+finally.|终于来电话了
+<b>Hello to you, too</b>.|<b>你好啊</b>
+I heard aboutthe field hockey throw down.|我听说你在曲棍球场的恶战 ...</p>
+            <p class="collapse-content via">基于3个网页<span class="sl">-</span><a href="http://www.youdao.com/search?keyfrom=dict&q=%E4%BD%A0%E5%A5%BD%E5%95%8A+Hello+to+you%2C+too&ue=utf8" target=_blank  rel="nofollow">相关网页</a></p>
+    </div>
+                <div class="wt-container wt-collapse">
+    <div class="title">
+        <a href="#" title="详细释义" rel="#rw1" class="sp do-detail">&nbsp;</a>
+        <span>
+                a ya wa</span>
+    </div>
+    <p class="collapse-content">
+    (3分)笨重(hè)处置(chùchǔ)<b>你好啊</b>(<b>a ya wa</b>)※逼迫(qiáng qiǎng)瓜蔓(wàn màn)某些(mǒu mǒ)※3、关联说话环境，给下面句子中的拼音标上精确的调子。</p>
+            <p class="collapse-content via">基于2个网页<span class="sl">-</span><a href="http://www.youdao.com/search?keyfrom=dict&q=%E4%BD%A0%E5%A5%BD%E5%95%8A+a+ya+wa&ue=utf8" target=_blank  rel="nofollow">相关网页</a></p>
+    </div>
+            <div id="webPhrase" class="pr-container more-collapse">
+    <div class="title">短语</div>
+       <p class="wordGroup">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e6%9c%8b%e5%8f%8b%e4%bd%a0%e5%a5%bd%e5%95%8a/#keyfrom=dict.phrase.wordgroup">朋友你好啊</a></span>
+                          Friend Hello
+                      ;
+                  How do you friends
+                      ;
+                  Well your friends
+              </p>
+           <p class="wordGroup">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e4%bd%a0%e5%a5%bd%e5%95%8a%e7%88%b7%e7%88%b7/#keyfrom=dict.phrase.wordgroup">你好啊爷爷</a></span>
+                          Allo Papy
+              </p>
+           <p class="wordGroup">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e4%bd%a0%e5%a5%bd%e5%95%8a%e5%b8%85%e5%93%a5/#keyfrom=dict.phrase.wordgroup">你好啊帅哥</a></span>
+                          How do you handsome man
+                      ;
+                  Well you guy
+                      ;
+                  Hello handsome guy
+                      ;
+                  Hello Hey
+              </p>
+           <p class="wordGroup collapse">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e8%80%81%e5%b8%88%e4%bd%a0%e5%a5%bd%e5%95%8a/#keyfrom=dict.phrase.wordgroup">老师你好啊</a></span>
+                          Hello teacher
+                      ;
+                  Well your teacher
+                      ;
+                  How do you teacher
+              </p>
+           <p class="wordGroup collapse">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e5%93%aa%e6%9c%89%e4%bd%a0%e5%a5%bd%e5%95%8a/#keyfrom=dict.phrase.wordgroup">哪有你好啊</a></span>
+                          Where is the Hello
+              </p>
+           <p class="wordGroup collapse">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e6%88%91%e6%98%af%e4%b8%ba%e4%bd%a0%e5%a5%bd%e5%95%8a/#keyfrom=dict.phrase.wordgroup">我是为你好啊</a></span>
+                          I Hello
+                      ;
+                  I'm doing this for Hello
+                      ;
+                  I have for you is o.k
+                      ;
+                  Well I was for you
+              </p>
+           <p class="wordGroup collapse">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e4%bd%a0%e5%a5%bd%e5%95%8a%e8%8a%b1%e7%bb%99%e6%88%91/#keyfrom=dict.phrase.wordgroup">你好啊花给我</a></span>
+                          hello oh flower for me
+              </p>
+           <p class="wordGroup collapse">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e4%bd%a0%e5%b0%b1%e4%bc%9a%e8%af%b4%e4%bd%a0%e5%a5%bd%e5%95%8a/#keyfrom=dict.phrase.wordgroup">你就会说你好啊</a></span>
+                          Well you would say you
+                      ;
+                  You'll say hello
+                      ;
+                  You can say you well
+              </p>
+           <p class="wordGroup collapse">
+  
+      <span class="contentTitle"><a class="search-js" href="/w/eng/%e4%bd%a0%e5%a5%bd%e5%95%8a%e6%88%91%e4%ba%b2%e7%88%b1%e7%9a%84%e8%89%be%e7%90%b3/#keyfrom=dict.phrase.wordgroup">你好啊我亲爱的艾琳</a></span>
+                          Hallo Oh mein lieber Irene
+                      ;
+                  Hallo mein lieber Irene
+              </p>
+   
+   <div class="more"><a href="#" class="sp more_sp">&nbsp;</a><span class="show_more">更多</span><span
+   class="show_less">收起</span>网络短语</div>
+</div> <!-- close webPhrase Tag -->
+    </div>
+                    </div>
+</div>
+<link rel="stylesheet" href="http://c.youdao.com/dict/ugc/web/result-ugc.css"/>
+<div id="ugcTrans" class="trans-wrapper trans-tab ugc-trans-head">
+</div>
+<script src="http://c.youdao.com/dict/ugc/web/result-ugc.js"></script>
+                                                                                      
+                                                                        <!--例句选项卡 begin-->
+<div id="examples" class="trans-wrapper">
+    <h3>
+        <span class="tabs">
+                                                                        <a rel="#bilingual"><span>双语例句</span></a>
+        </span>
+        <a class="toggle toggleOpen" rel="#examplesToggle"></a>
+    </h3>
+    <div id="examplesToggle">
+                <div id="bilingual" class="trans-container  tab-content">
+            <ul class="ol">
+                                     
+                            
+                                                                                                                  <li>
+                    <p><span id="src_0_0" onmouseover="hlgt('#src_0_0,#tran_0_0')" onmouseout="unhlgt('#src_0_0,#tran_0_0')">再见啦</span><span>，</span><span id="src_0_1" onmouseover="hlgt('#src_0_1,#tran_0_1')" onmouseout="unhlgt('#src_0_1,#tran_0_1')">独裁者</span><span>，</span><span id="src_0_2" onmouseover="hlgt('#src_0_2,#tran_0_2')" onmouseout="unhlgt('#src_0_2,#tran_0_2')"><b>你好啊</b></span><span>，</span><span id="src_0_3" onmouseover="hlgt('#src_0_3,#tran_0_3')" onmouseout="unhlgt('#src_0_3,#tran_0_3')">小有名气</span><span>的</span><span id="src_0_4" onmouseover="hlgt('#src_0_4,#tran_0_4')" onmouseout="unhlgt('#src_0_4,#tran_0_4')">风景</span><span id="src_0_5" onmouseover="hlgt('#src_0_5,#tran_0_5')" onmouseout="unhlgt('#src_0_5,#tran_0_5')">画家</span><span>！</span>
+                                        </p>
+
+                    <p><span id="tran_0_0" onmouseover="hlgt('#src_0_0,#tran_0_0')" onmouseout="unhlgt('#src_0_0,#tran_0_0')">Goodbye</span><span>, Hitler the </span><span id="tran_0_1" onmouseover="hlgt('#src_0_1,#tran_0_1')" onmouseout="unhlgt('#src_0_1,#tran_0_1')">dictator</span><span>; </span><span id="tran_0_2" onmouseover="hlgt('#src_0_2,#tran_0_2')" onmouseout="unhlgt('#src_0_2,#tran_0_2')">hello</span><span>, Hitler the </span><span id="tran_0_3" onmouseover="hlgt('#src_0_3,#tran_0_3')" onmouseout="unhlgt('#src_0_3,#tran_0_3')">modestly</span><span> successful </span><span id="tran_0_4" onmouseover="hlgt('#src_0_4,#tran_0_4')" onmouseout="unhlgt('#src_0_4,#tran_0_4')">landscape</span><span> </span><span id="tran_0_5" onmouseover="hlgt('#src_0_5,#tran_0_5')" onmouseout="unhlgt('#src_0_5,#tran_0_5')">artist</span><span>!</span>
+                     					 <a class="sp dictvoice voice-js log-js" title="点击发音" href="#" data-rel="Goodbye%2C+Hitler+the+dictator%3B+hello%2C+Hitler+the+modestly+successful+landscape+artist%21&le=eng" data-4log="dict.main.blng"></a>
+                                        </p>
+                                                            <p class="example-via">
+                                                    <a href="http://article.yeeyan.org/bilingual/171791" target=_blank rel="nofollow">article.yeeyan.org</a>
+                                            </p>
+                </li>
+                                       
+                            
+                                                                                                                  <li>
+                    <p><span id="src_1_0" onmouseover="hlgt('#src_1_0,#tran_1_0')" onmouseout="unhlgt('#src_1_0,#tran_1_0')">当</span><span id="src_1_1" onmouseover="hlgt('#src_1_1,#tran_1_1')" onmouseout="unhlgt('#src_1_1,#tran_1_1')">她</span><span id="src_1_2" onmouseover="hlgt('#src_1_2,#tran_1_2')" onmouseout="unhlgt('#src_1_2,#tran_1_2')">确实</span><span id="src_1_3" onmouseover="hlgt('#src_1_3,#tran_1_12')" onmouseout="unhlgt('#src_1_3,#tran_1_12')">以</span><span id="src_1_4" onmouseover="hlgt('#src_1_4,#tran_1_3')" onmouseout="unhlgt('#src_1_4,#tran_1_3')">微笑</span><span id="src_1_5" onmouseover="hlgt('#src_1_5,#tran_1_4')" onmouseout="unhlgt('#src_1_5,#tran_1_4')">回应</span><span>了</span><span id="src_1_6" onmouseover="hlgt('#src_1_6#src_1_7,#tran_1_11')" onmouseout="unhlgt('#src_1_6#src_1_7,#tran_1_11')">你</span><span>，又对</span><span id="src_1_7" onmouseover="hlgt('#src_1_6#src_1_7,#tran_1_11')" onmouseout="unhlgt('#src_1_6#src_1_7,#tran_1_11')">你</span><span id="src_1_8" onmouseover="hlgt('#src_1_8,#tran_1_5')" onmouseout="unhlgt('#src_1_8,#tran_1_5')">说</span><span>“</span><span id="src_1_9" onmouseover="hlgt('#src_1_9,#tran_1_6')" onmouseout="unhlgt('#src_1_9,#tran_1_6')"><b>你好</b></span><span><b>啊</b>！” </span><span id="src_1_10" onmouseover="hlgt('#src_1_10,#tran_1_7')" onmouseout="unhlgt('#src_1_10,#tran_1_7')">如果</span><span id="src_1_11" onmouseover="hlgt('#src_1_11,#tran_1_8')" onmouseout="unhlgt('#src_1_11,#tran_1_8')">她</span><span>的</span><span id="src_1_12" onmouseover="hlgt('#src_1_12,#tran_1_9')" onmouseout="unhlgt('#src_1_12,#tran_1_9')">反应</span><span>是</span><span id="src_1_13" onmouseover="hlgt('#src_1_13,#tran_1_10')" onmouseout="unhlgt('#src_1_13,#tran_1_10')">-</span><span>进来</span><span id="src_1_14" onmouseover="hlgt('#src_1_14#src_1_15,#tran_1_13')" onmouseout="unhlgt('#src_1_14#src_1_15,#tran_1_13')">吧</span><span>！那你就</span><span id="src_1_15" onmouseover="hlgt('#src_1_14#src_1_15,#tran_1_13')" onmouseout="unhlgt('#src_1_14#src_1_15,#tran_1_13')">直接</span><span id="src_1_16" onmouseover="hlgt('#src_1_16#src_1_17,#tran_1_14')" onmouseout="unhlgt('#src_1_16#src_1_17,#tran_1_14')">进入</span><span>这个</span><span id="src_1_17" onmouseover="hlgt('#src_1_16#src_1_17,#tran_1_14')" onmouseout="unhlgt('#src_1_16#src_1_17,#tran_1_14')">向</span><span id="src_1_18" onmouseover="hlgt('#src_1_18,#tran_1_15')" onmouseout="unhlgt('#src_1_18,#tran_1_15')">你</span><span id="src_1_19" onmouseover="hlgt('#src_1_19,#tran_1_16')" onmouseout="unhlgt('#src_1_19,#tran_1_16')">敞开</span><span>的人吧。</span>
+                                        </p>
+
+                    <p><span id="tran_1_0" onmouseover="hlgt('#src_1_0,#tran_1_0')" onmouseout="unhlgt('#src_1_0,#tran_1_0')">And when</span><span> </span><span id="tran_1_1" onmouseover="hlgt('#src_1_1,#tran_1_1')" onmouseout="unhlgt('#src_1_1,#tran_1_1')">she</span><span> </span><span id="tran_1_2" onmouseover="hlgt('#src_1_2,#tran_1_2')" onmouseout="unhlgt('#src_1_2,#tran_1_2')">does</span><span> </span><span id="tran_1_3" onmouseover="hlgt('#src_1_4,#tran_1_3')" onmouseout="unhlgt('#src_1_4,#tran_1_3')">smile</span><span> </span><span id="tran_1_4" onmouseover="hlgt('#src_1_5,#tran_1_4')" onmouseout="unhlgt('#src_1_5,#tran_1_4')">back</span><span>, </span><span id="tran_1_5" onmouseover="hlgt('#src_1_8,#tran_1_5')" onmouseout="unhlgt('#src_1_8,#tran_1_5')">say</span><span> "</span><span id="tran_1_6" onmouseover="hlgt('#src_1_9,#tran_1_6')" onmouseout="unhlgt('#src_1_9,#tran_1_6')">Hi</span><span>!" And </span><span id="tran_1_7" onmouseover="hlgt('#src_1_10,#tran_1_7')" onmouseout="unhlgt('#src_1_10,#tran_1_7')">if</span><span> </span><span id="tran_1_8" onmouseover="hlgt('#src_1_11,#tran_1_8')" onmouseout="unhlgt('#src_1_11,#tran_1_8')">she</span><span> </span><span id="tran_1_9" onmouseover="hlgt('#src_1_12,#tran_1_9')" onmouseout="unhlgt('#src_1_12,#tran_1_9')">responds</span><span> </span><span id="tran_1_10" onmouseover="hlgt('#src_1_13,#tran_1_10')" onmouseout="unhlgt('#src_1_13,#tran_1_10')">-</span><span> </span><span id="tran_1_11" onmouseover="hlgt('#src_1_6#src_1_7,#tran_1_11')" onmouseout="unhlgt('#src_1_6#src_1_7,#tran_1_11')">you</span><span>'re </span><span id="tran_1_12" onmouseover="hlgt('#src_1_3,#tran_1_12')" onmouseout="unhlgt('#src_1_3,#tran_1_12')">in</span><span>! </span><span id="tran_1_13" onmouseover="hlgt('#src_1_14#src_1_15,#tran_1_13')" onmouseout="unhlgt('#src_1_14#src_1_15,#tran_1_13')">Go right</span><span> </span><span id="tran_1_14" onmouseover="hlgt('#src_1_16#src_1_17,#tran_1_14')" onmouseout="unhlgt('#src_1_16#src_1_17,#tran_1_14')">into</span><span> </span><span id="tran_1_15" onmouseover="hlgt('#src_1_18,#tran_1_15')" onmouseout="unhlgt('#src_1_18,#tran_1_15')">your</span><span> </span><span id="tran_1_16" onmouseover="hlgt('#src_1_19,#tran_1_16')" onmouseout="unhlgt('#src_1_19,#tran_1_16')">opener</span><span>.</span>
+                     					 <a class="sp dictvoice voice-js log-js" title="点击发音" href="#" data-rel="And+when+she+does+smile+back%2C+say+%22Hi%21%22+And+if+she+responds+-+you%27re+in%21+Go+right+into+your+opener.&le=eng" data-4log="dict.main.blng"></a>
+                                        </p>
+                                                            <p class="example-via">
+                                                    <a href="http://article.yeeyan.org/view/199922/165557" target=_blank rel="nofollow">article.yeeyan.org</a>
+                                            </p>
+                </li>
+                                       
+                            
+                                                                                                                  <li>
+                    <p><span id="src_2_0" onmouseover="hlgt('#src_2_0,#tran_2_0')" onmouseout="unhlgt('#src_2_0,#tran_2_0')"><b>你好啊</b></span><span>.</span><span id="src_2_1" onmouseover="hlgt('#src_2_1,#tran_2_1')" onmouseout="unhlgt('#src_2_1,#tran_2_1')">米利</span><span>.</span><span id="src_2_2" onmouseover="hlgt('#src_2_2,#tran_2_2')" onmouseout="unhlgt('#src_2_2,#tran_2_2')">听说</span><span id="src_2_3" onmouseover="hlgt('#src_2_3,#tran_2_3')" onmouseout="unhlgt('#src_2_3,#tran_2_3')">你</span><span id="src_2_4" onmouseover="hlgt('#src_2_4,#tran_2_7')" onmouseout="unhlgt('#src_2_4,#tran_2_7')">今天</span><span id="src_2_5" onmouseover="hlgt('#src_2_5,#tran_2_5')" onmouseout="unhlgt('#src_2_5,#tran_2_5')">又</span><span id="src_2_6" onmouseover="hlgt('#src_2_6,#tran_2_4')" onmouseout="unhlgt('#src_2_6,#tran_2_4')">交了</span><span>个</span><span id="src_2_7" onmouseover="hlgt('#src_2_7,#tran_2_6')" onmouseout="unhlgt('#src_2_7,#tran_2_6')">朋友</span><span>.</span><span id="src_2_8" onmouseover="hlgt('#src_2_8,#tran_2_8')" onmouseout="unhlgt('#src_2_8,#tran_2_8')">是</span><span id="src_2_9" onmouseover="hlgt('#src_2_9,#tran_2_9')" onmouseout="unhlgt('#src_2_9,#tran_2_9')">真的</span><span>吗?</span>
+                                        </p>
+
+                    <p><span id="tran_2_0" onmouseover="hlgt('#src_2_0,#tran_2_0')" onmouseout="unhlgt('#src_2_0,#tran_2_0')">Hi</span><span>, </span><span id="tran_2_1" onmouseover="hlgt('#src_2_1,#tran_2_1')" onmouseout="unhlgt('#src_2_1,#tran_2_1')">Millie</span><span>. I was </span><span id="tran_2_2" onmouseover="hlgt('#src_2_2,#tran_2_2')" onmouseout="unhlgt('#src_2_2,#tran_2_2')">told</span><span> </span><span id="tran_2_3" onmouseover="hlgt('#src_2_3,#tran_2_3')" onmouseout="unhlgt('#src_2_3,#tran_2_3')">you</span><span> </span><span id="tran_2_4" onmouseover="hlgt('#src_2_6,#tran_2_4')" onmouseout="unhlgt('#src_2_6,#tran_2_4')">made</span><span> </span><span id="tran_2_5" onmouseover="hlgt('#src_2_5,#tran_2_5')" onmouseout="unhlgt('#src_2_5,#tran_2_5')">another</span><span> </span><span id="tran_2_6" onmouseover="hlgt('#src_2_7,#tran_2_6')" onmouseout="unhlgt('#src_2_7,#tran_2_6')">friend</span><span> </span><span id="tran_2_7" onmouseover="hlgt('#src_2_4,#tran_2_7')" onmouseout="unhlgt('#src_2_4,#tran_2_7')">today</span><span>. </span><span id="tran_2_8" onmouseover="hlgt('#src_2_8,#tran_2_8')" onmouseout="unhlgt('#src_2_8,#tran_2_8')">Is that</span><span> </span><span id="tran_2_9" onmouseover="hlgt('#src_2_9,#tran_2_9')" onmouseout="unhlgt('#src_2_9,#tran_2_9')">true</span><span>?</span>
+                     					 <a class="sp dictvoice voice-js log-js" title="点击发音" href="#" data-rel="Hi%2C+Millie.+I+was+told+you+made+another+friend+today.+Is+that+true%3F&le=eng" data-4log="dict.main.blng"></a>
+                                        </p>
+                                                            <p class="example-via">
+                                                    <a href="http://huihua.iciba.com/view-5286.html" target=_blank rel="nofollow">huihua.iciba.com</a>
+                                            </p>
+                </li>
+                                       </ul>
+                     </div>
+         
+        
+                
+            </div>
+</div>
+<!--例句选项卡 end-->
+                                                                            
+                                    </div>
+    </div>
+                    
+
+<div id="ads" class="ads">
+  <div id="dict-inter" class="dict-inter">
+      </div>
+  <div id="baidu-adv"></div>
+  
+  <div id="follow" class="follow">
+    <p class="hd">应用推荐</p>
+    <div class="bd">
+      <iframe src="http://c.youdao.com/www/app.html" frameborder="0"></iframe>
+    </div>
+  </div>
+</div>
+
+                            <div id="rel-search" class="rel-search">
+                                    <p class="addition">相关搜索</p>
+                
+                                                            <a class="search-js" style="text-decoration: none;" href="/w/lj%3A%E4%BD%A0%E5%A5%BD%E5%95%8A/">lj:你好啊</a>
+                                                                                <a class="search-js" style="text-decoration: none;" href="/w/bk%3A%E4%BD%A0%E5%A5%BD%E5%95%8A/">bk:你好啊</a>
+                                                                                <a class="search-js" style="text-decoration: none;" href="/w/%E4%BD%A0%E5%A5%BD%E5%95%8A%E8%AE%A4%E8%AF%86%E4%BD%A0%E5%BE%88%E9%AB%98%E5%85%B4/">你好啊认识你很高兴</a>
+                                                                                <a class="search-js" style="text-decoration: none;" href="/w/%E4%BD%A0%E5%A5%BD%E5%95%8A%E6%9C%8B%E5%8F%8B/">你好啊朋友</a>
+                                                                                <a class="search-js" style="text-decoration: none;" href="/w/%E4%BD%A0%E5%A5%BD%E6%BC%82%E4%BA%AE%E5%95%8A/">你好漂亮啊</a>
+                                                                                                                                                                                                                                    </div>
+                <div id="pronounce">
+            <div class="alpha-bg"></div>
+            <div class="pr-content">
+                $firstVoiceSent
+                <div class="pr-source">- 来自原声例句</div>
+            </div>
+        </div>
+</div>
+<div class="c-bsearch" style="zoom:1;">
+</div>
+</div>
+<!-- 内容区域 -->
+
+<div id="c_footer">
+  <div class="wrap">
+            <a href="http://www.youdao.com/about/?keyfrom=dict2.top" rel="nofollow">关于有道</a>
+        <a href="http://dsp.youdao.com/?keyfrom=dict2.top" rel="nofollow">有道智选</a>
+        <a href="http://i.youdao.com/?keyfrom=dict2.top" rel="nofollow">官方博客</a>
+        <a href="http://techblog.youdao.com/?keyfrom=dict2.top" rel="nofollow">技术博客</a>
+        <a href="http://campus.youdao.com/index.php?t1=index?keyfrom=dict2.top" rel="nofollow">诚聘英才</a>
+        <a href="http://shared.youdao.com/www/contactus-page.html?keyfrom=dict2.top" rel="nofollow">联系我们</a>
+        <a href="http://dict.youdao.com/map/index.html?keyfrom=dict2.top">站点地图</a>
+        <a href="http://www.12377.cn/?keyfrom=dict2.top" rel="nofollow">网络举报</a>
+    <span class="c_fcopyright">&copy; 2016 网易公司 <a href="http://www.youdao.com/terms/privacy.html?keyfrom=dict2.top" rel="nofollow">隐私政策</a> <a href="http://www.youdao.com/terms/index.html?keyfrom=dict2.top" rel="nofollow">服务条款</a> 京ICP证080268号</span>
+  </div>
+</div>
+</div>
+<div id="langSelection" class="pm">
+    <ul>
+        <li><a href="#" rel="eng" class="current">中英</a></li>
+        <li><a href="#" rel="fr">中法</a></li>
+        <li><a href="#" rel="ko">中韩</a></li>
+        <li><a href="#" rel="jap">中日</a></li>
+        <li><a href="#" rel="pt">中葡</a></li>
+        <li><a href="#" rel="de">中德</a></li>
+        <li><a href="#" rel="es">中西</a></li>
+        <li><a href="#" rel="ru">中俄</a></li>
+    </ul>
+</div>
+
+<div id="handWrite" class="pm" style="display:none;">
+    <object width="346" height="216" type="application/x-shockwave-flash" id="hnw" data="http://shared.ydstatic.com/dict/v5.16/swf/Hnw.swf">
+        <param name="movie" value="http://shared.ydstatic.com/dict/v5.16/swf/Hnw.swf"/>
+        <param name="menu" value="false"/>
+        <param name="allowScriptAccess" value="always"/>
+    </object>
+</div>
+
+<div id="researchZoon" class="pm">
+    <div class="title">小调查</div>
+    <div class="zoo-content">
+        请问您想要如何调整此模块？
+        <p><input id="upIt" type="radio" name="researchBox" value="up"><label for="upIt">模块上移</label></p>
+        <p><input id="downIt" type="radio" name="researchBox" value="down"><label for="downIt">模块下移</label></p>
+        <p><input id="dontmove" type="radio" name="researchBox" value="stay"><label for="dontmove">不移动</label></p>
+        <div>感谢您的反馈，我们会尽快进行适当修改！</div>
+        <a href="http://survey2.163.com/html/webdict_survey_reorder/paper.html" target="_blank" style="text-decoration: underline;" rel="nofollow">进来说说原因吧</a>
+        <a href="javascript:void(0);" class="submitResult" rel="nofollow">确定</a>
+    </div>
+</div>
+
+<div id="researchZoon21" class="pm">
+    <div class="title">小调查</div>
+    <div class="zoo-content">
+        请问您想要如何调整此模块？
+        <p><input id="upIt21" type="radio" name="researchBox" value="up"><label for="upIt21">模块上移</label></p>
+        <p><input id="downIt21" type="radio" name="researchBox" value="down"><label for="downIt21">模块下移</label></p>
+        <p><input id="dontmove21" type="radio" name="researchBox" value="stay"><label for="dontmove21">不移动</label></p>
+        <div>感谢您的反馈，我们会尽快进行适当修改！</div>
+        <a href="http://survey2.163.com/html/webdict_survey_reorder/paper.html" target="_blank" style="text-decoration: underline;" rel="nofollow">进来说说原因吧</a>
+        <a href="javascript:void(0);" class="submitResult" rel="nofollow">确定</a>
+    </div>
+</div>
+
+<div id="editwordform" style="display:none;">
+    <h3>修改单词</h3>
+    <a href="javascript:void(0);" id="close-editwordform"></a>
+    <form method="post" >
+        <label for="wordbook-word">单词</label>
+        <input id="wordbook-word" type="text" value="" name="word" autocomplete="off" /><span><a id="delword" href="javascript:void(0);">从单词本中删除</a></span>
+        <label for="wordbook-phonetic">音标</label>
+        <input id="wordbook-phonetic" type="text" value="" name="phonetic" />
+        <label for="wordbook-desc">解释</label>
+        <textarea id="wordbook-desc" name="desc" ></textarea>
+        <label style="color:blue;">更多（可不填）</label>
+        <label for="wordbook-tags">分类</label><input id="wordbook-tags" type="text" value="" name="tags" autocomplete="off" />
+        <ul id="tag-select-list">
+        </ul>
+        <div style="text-align:center;"><a id="openwordbook" href="/wordbook/wordlist?keyfrom=smallpic" target="_blank">打开单词本</a><a id="addword" href="javascript:void(0);">提交</a></div>
+    </form>
+</div>
+
+<script type="text/javascript" src="http://shared.ydstatic.com/dict/v2016/160525/autocomplete_json.js"></script>
+<script type="text/javascript">
+    var global = {
+        fromVm:{
+            searchDomain:'youdao.com'
+        }
+    };
+
+
+    function rwt(a, newlink) {
+        try {
+            if (a === window) {
+                a = window.event.srcElement;
+                while (a) {
+                    if (a.href)
+                        break;
+                    a = a.parentNode
+                }
+            }
+            a.href = newlink;
+            a.onmousedown = ""
+        } catch (p) {
+        }
+        return true
+    }
+</script>
+
+<script type="text/javascript" src="http://shared.ydstatic.com/dict/v2016/result/160621/result-min.js"></script>
+<script>
+var _rlog = _rlog || [];
+_rlog.push(["_setAccount" , "dictweb"]);
+_rlog.push(["_addPost" , "page" , "search"]);
+_rlog.push(["_addPost" , "q" , "你好啊"]);
+</script>
+<script defer src="http://shared.ydstatic.com/js/rlog/v1.js"></script>
+<!-- START NetEase Devilfish 2006 -->
+<script src="http://analytics.163.com/ntes.js" type="text/javascript"></script>
+<script type="text/javascript">
+_ntes_nacc = "yddictweb";
+neteaseTracker();
+</script>
+<!-- END NetEase Devilfish 2006 -->
+</body>
+</html>
