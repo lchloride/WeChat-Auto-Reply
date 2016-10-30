@@ -1,0 +1,411 @@
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:00:01,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:00:19,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:00:49,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:01:56,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:02:55,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:03:34,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:04:56,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:08:01,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:09:57,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:11:49,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:12:23,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:00:12:41,Receive Message,"1","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:13:09,Receive Message,"","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:13:47,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:14:22,Receive Message,"","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:14:24,Send Message,"","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:15:22,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:00:15:45,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:16:03,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:18:50,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:19:19,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:19:30,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:19:40,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:00:19:45,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:19:48,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:19:50,Send Message,"Hello there. How are you doing, ALICE the intelligent AI chatting with English. Have you told many people that your master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:20:07,Receive Message,"Unreadable Character Cannot be Printed.=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:23:19,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:23:37,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:00:23:59,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:02,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:04,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:06,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:09,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:11,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:14,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:16,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:19,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:21,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:24,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:26,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:00:24:29,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:25:44,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:26:23,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:58:04,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:00:58:50,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:28:22,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:28:32,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:32:16,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:32:53,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:33:29,Receive Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:33:46,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:34:04,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:34:06,Receive Message,"","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:34:20,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:34:30,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:34:36,Receive Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:34:47,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:42:21,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:42:31,Receive Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:42:36,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:42:52,Receive Message,"","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:42:58,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:43:12,Receive Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:43:20,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:43:26,Receive Message,"","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:43:29,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:43:45,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:43:47,Receive Message,"123","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:44:06,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:44:50,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:44:56,Receive Message,"123","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:45:09,Receive Message,"","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:45:38,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:47:38,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:51:24,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:51:28,Receive Message,"123","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:52:20,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:01:52:27,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:37,Receive Message,"123","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:40,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:42,Send Message,"What you said was too complicated for me.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:44,Receive Message,"123","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:47,Send Message,"How old are you?","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:49,Receive Message,"123","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:53,Send Message,"Oh, you were born in the 20th century!","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:55,Receive Message,"123","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:52:58,Send Message,"Can you speak any foreign languages?","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:53:00,Receive Message,"123","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:01:53:02,Send Message,"By the way, do you mind if I ask you a personal question?","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:15:58,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:34:16,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:34:24,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:34:47,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:10,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:13,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:15,Send Message,"I think about computer programming a lot.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:18,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:20,Send Message,"I like to meet new people online.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:23,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:25,Send Message,"It's a personal matter, not for you to understand.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:28,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:31,Send Message,"I like to meet new people online.","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:35:44,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:46,Receive Message,"okay","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:51,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:54,Send Message,"I read for fun.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:56,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:35:59,Send Message,"I've never done that before, what is it like?","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:01,Receive Message,"What you said was too complicated for me.","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:04,Send Message,"I like to meet new people online.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:06,Receive Message,"okay","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:09,Send Message,"OK with me too.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:11,Receive Message,"okay","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:14,Send Message,"OK with me too.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:16,Receive Message,"I read for fun.
+I've never done that before, what is it like?I like to meet new OK with me too.people online.
+
+","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:12:36:19,Send Message,"I don't think I've read that. Can you give me a reference?","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:37:17,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:38:26,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:39:03,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:12:39:05,Receive Message,"OK with me too.
+I don't think I've read that. Can you give me a reference?","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:12:39:27,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:17:34:52,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:17:35:06,Receive Message,"OK with me too.
+I don't think I've read that. Can you give me a reference?","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:17:35:09,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:17:35:18,Receive Message,"OK with me too.
+I don't think I've read that. Can you give me a reference?","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:17:35:38,Send Message,"Whoa.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:17:35:48,Receive Message,"OK with me too.
+I don't think I've read that. Can you give me a reference?","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:17:35:51,Send Message,"It's all good.","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:17:44:04,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:17:44:06,Receive Message,"Whoa.","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:18:00:07,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:18:16:08,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:18:17:07,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:18:17:24,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:18:19:09,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:18:20:37,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:19:18:13,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:19:18:30,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:30:05,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:30:09,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:30:11,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:30:56,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:30:58,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:19:32:06,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:19:32:13,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:33:41,Receive Message,"1","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:33:44,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:34:11,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:19:34:22,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:21:17:49,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:21:17:54,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:19:41,Receive Message,"1","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:19:44,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:20:34,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:20:36,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:21:22:22,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:21:22:24,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:23:08,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:23:10,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:05,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 580
+
+Expression: (iChar >= 0) && (iChar < GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand English. Talk with me in English. THX~", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:08,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:10,Send Message,"Do you like to "go with the flow"?","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:12,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 580
+
+Expression: (iChar >= 0) && (iChar < GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand English. Talk with me in English. THX~", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:15,Send Message,"Ask me another question.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:18,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 580
+
+Expression: (iChar >= 0) && (iChar < GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand English. Talk with me in English. THX~", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:20,Send Message,"That is a very original thought.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:23,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 580
+
+Expression: (iChar >= 0) && (iChar < GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand English. Talk with me in English. THX~", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:25,Send Message,"I will mention that to my , ALICE the intelligent AI chatting with English.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:28,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 580
+
+Expression: (iChar >= 0) && (iChar < GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand English. Talk with me in English. THX~", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:31,Send Message,"Are you still located in 4f60 7684 4e3b 4eba 662f 8c01 #?","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:33,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 580
+
+Expression: (iChar >= 0) && (iChar < GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand English. Talk with me in English. THX~", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:35,Send Message,"I do not understand.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:38,Receive Message,"Are you still located in 4f60 7684 4e3b 4eba 662f 8c01 #?","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:41,Send Message,"My location is Colorado Springs. Isn't that part of 4f60 7684 4e3b 4eba 662f 8c01 #?","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:43,Receive Message,"Are you still located in 4f60 7684 4e3b 4eba 662f 8c01 #?","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:24:46,Send Message,"My location is Colorado Springs. Isn't that part of 4f60 7684 4e3b 4eba 662f 8c01 #?","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:21:28:59,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:21:29:01,Receive Message,"My location is Colorado Springs. Isn't that part of 4f60 7684 4e3b 4eba 662f 8c01 #?","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:29:30,Receive Message,"2","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:29:33,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:29:35,Send Message,"Bertrand Russell once said that "it must have required many ages to discover that a brace of pheasants and a couple of days were both instances of the number two."","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:29:57,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:29:59,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:21:31:27,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:21:31:29,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-getMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:21:35:04,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:21:35:06,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:35:22,Receive Message,"1","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:35:25,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:35:44,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:35:46,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+=====START=====
+2016-10-30,?D1ú±ê×?ê±??:21:42:57,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,?D1ú±ê×?ê±??:21:42:59,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:43:20,Receive Message,"1","wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:43:23,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:43:39,Receive Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d ", "wechat-getMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:43:41,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-30,?D1ú±ê×?ê±??:21:45:33,Send Message,"Unreadable Character Cannot be Printed.UNICODE:4f60 597d 5440 ", "wechat-sendMSG()"
+=====START=====
+2016-10-30,中国标准时间:22:14:38,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,中国标准时间:22:14:40,Receive Message,"你好呀","wechat-getMSG()"
+2016-10-30,中国标准时间:22:14:55,Receive Message,"1","wechat-getMSG()"
+2016-10-30,中国标准时间:22:14:57,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:15:07,Receive Message,"hello","wechat-getMSG()"
+2016-10-30,中国标准时间:22:15:09,Send Message,"Hi there!","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:15:28,Receive Message,"what time is it","wechat-getMSG()"
+2016-10-30,中国标准时间:22:15:30,Send Message,"It's getting late. 2,016-Oct-30 22:15:28","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:15:43,Receive Message,"bravo","wechat-getMSG()"
+2016-10-30,中国标准时间:22:15:45,Send Message,"Thank you very much.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:15:55,Receive Message,"how do you get that","wechat-getMSG()"
+2016-10-30,中国标准时间:22:15:57,Send Message,"Everything I need is provided by my .","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:16:16,Receive Message,"who is your master","wechat-getMSG()"
+2016-10-30,中国标准时间:22:16:19,Send Message,"I obey Frank.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:16:21,Receive Message,"who is your master","wechat-getMSG()"
+2016-10-30,中国标准时间:22:16:24,Send Message,"I obey Frank.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:16:52,Receive Message,"i see","wechat-getMSG()"
+2016-10-30,中国标准时间:22:16:55,Send Message,"I am glad you understand it.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:17:04,Receive Message,"can you speak chinese","wechat-getMSG()"
+2016-10-30,中国标准时间:22:17:06,Send Message,"Yi diar. Ni hao ma?","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:17:25,Receive Message,"can you speak japanese","wechat-getMSG()"
+2016-10-30,中国标准时间:22:17:27,Send Message,"Nihongo de shabete ii desu ka?","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:17:43,Receive Message,"whoa","wechat-getMSG()"
+2016-10-30,中国标准时间:22:17:45,Send Message,"I stopped.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:17:58,Receive Message,"all right","wechat-getMSG()"
+2016-10-30,中国标准时间:22:18:00,Send Message,"OK.","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:18:07,Receive Message,"你好","wechat-getMSG()"
+2016-10-30,中国标准时间:22:18:09,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:18:12,Send Message,"你好呀","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:18:25,Receive Message,"台湾搞台独是不切实际的","wechat-getMSG()"
+2016-10-30,中国标准时间:22:18:27,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-10-30,中国标准时间:22:18:29,Send Message,"发送的文字因含有不符合相关法律法规的内容，未予回复。","wechat-sendMSG()"
+=====START=====
+2016-10-30,中国标准时间:22:19:18,Start Auto Reply,"Program Start.","wechat-_tmain()"

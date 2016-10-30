@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "log.h"
 #include "tools.h"
+#include <locale.h>
 
 //using namespace std;
 
@@ -12,6 +13,7 @@ bool writeLog(CString content, char* source, int label)
 	time_t tt;
 	tm timeinfo;
 	FILE *log_file=NULL;
+	setlocale(LC_ALL, "chs");
 	time(&tt);
 	localtime_s(&timeinfo, &tt);
 	char filename[MAX_PATH] = "";

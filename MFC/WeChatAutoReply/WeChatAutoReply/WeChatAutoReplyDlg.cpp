@@ -61,7 +61,7 @@ END_MESSAGE_MAP()
 
 CWeChatDlg::CWeChatDlg(CWnd* pParent /*=NULL*/)
 	: CDialogEx(IDD_WECHATAUTOREPLY_DIALOG, pParent)
-	, m_replyStateRadioGroup(0)
+	, m_replyStateRadioGroup(1)
 	, GetMsg(_T(""))
 	, SendMsg(_T(""))
 	, first_flag(true)
@@ -77,6 +77,7 @@ void CWeChatDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Radio(pDX, IDC_REPLYTRUE, m_replyStateRadioGroup);
+	DDX_Control(pDX, IDC_LOG_DISPLAY, m_logDisplay);
 }
 
 BEGIN_MESSAGE_MAP(CWeChatDlg, CDialogEx)
@@ -88,6 +89,8 @@ BEGIN_MESSAGE_MAP(CWeChatDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_REPLYTRUE, &CWeChatDlg::OnClickedReplyStateRadioGroup)
 	ON_WM_TIMER()
 	ON_WM_DESTROY()
+//	ON_WM_ACTIVATE()
+//	ON_WM_SHOWWINDOW()
 	ON_WM_ACTIVATE()
 END_MESSAGE_MAP()
 
@@ -212,9 +215,21 @@ void CWeChatDlg::OnBnClickedStart()
 	//CString str=L"";
 	int len = 0;
 	UpdateData(TRUE);
+	CString tmp = L"";
 	if (m_replyStateRadioGroup == 1)
-		getMsg(LastSendMsg, len); 
-	SetTimer(RECVMSG, 1000, NULL);
+		if (!getMsg(tmp, len) && tmp.CompareNoCase(LastSendMsg) != 0)
+		{
+			MessageBoxW(L"无法获取最后一条消息", L"WeChat Auto Reply", MB_ICONSTOP | MB_OK);
+			return;
+		}
+		else
+			lstrcpyW((LPWSTR)(LPCTSTR)LastSendMsg, tmp);
+			//LastSendMsg.Format(L"%ls",tmp);
+	else
+		if (!findWeChatWnd())
+			return;
+	
+	SetTimer(RECVMSG, 3000, NULL);
 }
 
 
@@ -245,8 +260,7 @@ void CWeChatDlg::OnTimer(UINT_PTR nIDEvent)
 						count++;
 				if (count >= 3 && send_flag)
 					sendMsg(SendMsg);
-			}
-			else if (send_flag)
+			}			else if (send_flag)
 				sendMsg(SendMsg);
 
 			first_flag = false;
@@ -319,23 +333,8 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 
 BOOL CWeChatDlg::getMsg(CString& msg, int& len)
 {
-	openWnd(L"E:\\Program Files (x86)\\Tencent\\WeChat\\WeChat.exe");
-
-	for (int k = 0; k < 60 && lmshwnd == NULL; k++)
-	{
-		//if (k>0) Sleep(1000);
-		lmshwnd = FindWindowW(L"WeChatMainWndForPC", NULL);
-		if (lmshwnd != NULL)
-			printf("Get WeChat window\n");
-		else
-			//printf("Not get WeChat window\n");
-			MessageBox(L"没有获得微信程序的窗口");
-	}
-	if (lmshwnd == NULL)
-	{
-		MessageBox(L"没有获得微信程序的窗口");
+	if (!findWeChatWnd())
 		return FALSE;
-	}
 
 	RECT rect;
 	lmshwnd->GetClientRect(&rect);
@@ -345,11 +344,11 @@ BOOL CWeChatDlg::getMsg(CString& msg, int& len)
 	BOOL flag = true;
 	do
 	{
-		if (OpenClipboard())
-		{
+		//if (OpenClipboard())
+		//{
 			EmptyClipboard();                            //将剪贴板内容清空
-			CloseClipboard();
-		}
+			//CloseClipboard();
+		//}
 		lmshwnd->PostMessageW(WM_LBUTTONDBLCLK, 0x1, MAKELPARAM(point.x, point.y));
 		lmshwnd->PostMessageW(WM_LBUTTONUP, 0x0, MAKELPARAM(point.x, point.y));
 
@@ -375,19 +374,7 @@ BOOL CWeChatDlg::getMsg(CString& msg, int& len)
 // 向微信当前会话发送消息
 BOOL CWeChatDlg::sendMsg(CString msg)
 {
-	openWnd(L"E:\\Program Files (x86)\\Tencent\\WeChat\\WeChat.exe");
-
-	//CWnd* pWnd = NULL;
-	//可能程序启动较慢，需要尝试多次才能找到目标窗口。最多尝试60次，每隔一秒尝试一次，尝试失败则退出
-	for (int k = 0; k < 60 && lmshwnd == NULL; k++)
-	{
-		if (k>0) Sleep(1000);
-		lmshwnd = FindWindowW(L"WeChatMainWndForPC", NULL);
-		if (lmshwnd != NULL)
-			printf("Get WeChat window\n");
-		else
-			printf("Not get WeChat window\n");
-	}
+	findWeChatWnd();
 
 	//PostMessageW(lmshwnd, WM_KEYDOWN, 0x30, 0xB0001);
 	//确定输入框的相对位置
@@ -481,12 +468,12 @@ bool CWeChatDlg::getClipboard(CString& text, int& text_len)
 				return true;
 			}
 			else
-				wprintf(L"Clipboard text is null.\n");
+				GlobalUnlock(hClipboardData); //wprintf(L"Clipboard text is null.\n");
 		}
 		CloseClipboard();
 	}
 	else
-		wprintf(L"Cannot open clipboard.\n");
+		CloseClipboard();//	wprintf(L"Cannot open clipboard.\n");
 	return false;
 
 }
@@ -507,8 +494,50 @@ void CWeChatDlg::OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized)
 	CDialogEx::OnActivate(nState, pWndOther, bMinimized);
 
 	// TODO: 在此处添加消息处理程序代码
-	if (nState == WA_INACTIVE)
+	if (nState == WA_INACTIVE||nState == WA_ACTIVE)
 		;// process_flag = true;
 	else
 		process_flag = false;
 }
+
+
+// 获得微信桌面版的窗口
+bool CWeChatDlg::findWeChatWnd()
+{
+	openWnd(L"E:\\Program Files (x86)\\Tencent\\WeChat\\WeChat.exe");
+
+	for (int k = 0; k < 60 && lmshwnd == NULL; k++)
+	{
+		lmshwnd = FindWindowW(L"WeChatMainWndForPC", NULL);
+		if (lmshwnd != NULL)
+			break;// printf("Get WeChat window\n");
+		else
+			if (MessageBox(L"没有获得微信程序的窗口", L"WeChat Auto Reply", MB_ICONSTOP | MB_RETRYCANCEL) == IDRETRY)
+				continue;
+			else
+			{
+				process_flag = false;
+				return false;
+			}
+	}
+	if (lmshwnd == NULL)
+	{
+		MessageBox(L"没有获得微信程序的窗口", L"Wechat Auto Reply", MB_ICONSTOP | MB_OK);
+		process_flag = false;
+		return false;
+	}
+	else
+		return true;
+}
+
+
+//void CWeChatDlg::OnShowWindow(BOOL bShow, UINT nStatus)
+//{
+//	CDialogEx::OnShowWindow(bShow, nStatus);
+//
+//	// TODO: 在此处添加消息处理程序代码
+//	if (bShow)
+//		process_flag = false;
+//	
+//}
+

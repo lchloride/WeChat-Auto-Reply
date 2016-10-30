@@ -3,6 +3,7 @@
 //
 
 #pragma once
+#include "afxcmn.h"
 
 
 // CWeChatDlg 对话框
@@ -73,5 +74,13 @@ private:
 	// 控制是否进行自动回复的标志
 	bool process_flag;
 public:
+//	afx_msg void OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized);
+	// 显示日志内容的控件
+	CListCtrl m_logDisplay;
+private:
+	// 获得微信桌面版的窗口
+	bool findWeChatWnd();
+public:
+//	afx_msg void OnShowWindow(BOOL bShow, UINT nStatus);
 	afx_msg void OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized);
 };

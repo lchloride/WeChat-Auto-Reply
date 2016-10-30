@@ -120,7 +120,7 @@ void trim(char *str, char* result, int MaxSize)
 
 bool UnicodeStr2wchar(CString str, CString& result, int MaxSize)
 {
-	result = L"";
+	result.Empty();
 	CString buff = L"";
 	if (str.GetLength() >= MaxSize / 5)
 		return false;
@@ -129,7 +129,7 @@ bool UnicodeStr2wchar(CString str, CString& result, int MaxSize)
 		buff.Format(L"%4x ", str[i]);
 		result += buff;
 	}
-	MessageBoxW(NULL, result, L"", 0);
+	//MessageBoxW(NULL, result, L"", 0);
 	return true;
 }
 
@@ -138,15 +138,17 @@ bool char2Unicode(char* str, CString& result, int MaxSize)
 {
 	char* temp = new char[MaxSize];
 	trim(str, temp,  MaxSize);
+	result.Empty();
+	wchar_t ch = L'\0';
 	for (int i = 0; i < strlen(temp); i += 4)
 	{
-		result.SetAt(i / 4, (temp[i] >= 'a' ? temp[i] - 'a' + 10 : temp[i] - '0') * 4096 +
+		 ch =  (temp[i] >= 'a' ? temp[i] - 'a' + 10 : temp[i] - '0') * 4096 +
 			(temp[i + 1] >= 'a' ? temp[i + 1] - 'a' + 10 : temp[i + 1] - '0') * 256 +
 			(temp[i + 2] >= 'a' ? temp[i + 2] - 'a' + 10 : temp[i + 2] - '0') * 16 +
-			(temp[i + 3] >= 'a' ? temp[i + 3] - 'a' + 10 : temp[i + 3] - '0'));
-
+			(temp[i + 3] >= 'a' ? temp[i + 3] - 'a' + 10 : temp[i + 3] - '0');
+			result += ch;
 	}
-	printf("UnicodeChar: %ws\n", result);
+	//printf("UnicodeChar: %ws\n", result);
 	delete[] temp;
 	return true;
 }
