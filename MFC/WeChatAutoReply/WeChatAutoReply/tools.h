@@ -7,7 +7,8 @@
 const int MSG_SIZE = 2048;//It defines the maxium of message length
 
 void ANSIToUnicode(const char* str, CString& result, int MaxSize);
-int execmd(char* cmd, char* result, int MaxSize);
+//int execmd(char* cmd, char* result, int MaxSize);
+BOOL execmd(wchar_t* CommandLine, char* result, int MaxSize);
 void UnicodeToANSI(const wchar_t* str, char* result, int MaxSize);
 int checkLang(CString str);
 bool char2Unicode(char* str, CString& result, int MaxSize);

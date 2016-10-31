@@ -1,0 +1,150 @@
+=====START=====
+2016-10-31,中国标准时间:19:02:36,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:19:10:49,Receive Message,"	//	return 1;
+","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:19:11:16,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:19:13:39,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:19:16:29,Receive Message,"	//	return 1;
+","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:19:17:15,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:21:27:33,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:21:37:43,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:37:45,Receive Message,"L"L\"\\t//\\treturn 1;\\r\\n\""","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:38:07,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:38:19,Receive Message,"L"L\"\\t//\\treturn 1;\\r\\n\""","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:41:13,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:41:29,Receive Message,"\treturn 1;\","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:42:24,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:42:33,Receive Message,"\treturn 1;\","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:45:23,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:45:28,Receive Message,"tmp.Find(L"\\treturn 1;\\")","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:46:24,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:46:30,Receive Message,"tmp.Find(L"\\treturn 1;\\")","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:47:34,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:47:39,Receive Message,"tmp.Find(L"\\treturn 1;\\")","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:50:19,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:21:51:12,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:51:14,Receive Message,"			lstrcpyW((LPWSTR)(LPCTSTR)LastSendMsg, tmp);
+","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:51:33,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:21:52:04,Receive Message,"			lstrcpyW((LPWSTR)(LPCTSTR)LastSendMsg, tmp);
+","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:21:54:07,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:22:10:53,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:22:11:55,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:22:19:54,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:22:22:20,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:22:22:56,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:22:23:00,Receive Message,"发送的文字因含有不符合相关法律法规的内容，未予回复。","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:33:47,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:33:52,Receive Message,"发送的文字因含有不符合相关法律法规的内容，未予回复。","wechat-getMSG()"
+2016-10-31,中国标准时间:23:34:18,Receive Message,"1","wechat-getMSG()"
+2016-10-31,中国标准时间:23:34:20,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:34:33,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:34:35,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:40:09,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:23:40:54,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:40:58,Receive Message,"1","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:06,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:08,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:41:21,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:24,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:27,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:30,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:33,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:36,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:39,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:41:42,Receive Message,"2","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:42:13,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:42:26,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:42:52,Receive Message,"3","wechat-getMSG()"
+2016-10-31,中国标准时间:23:42:54,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:43:26,Receive Message,"hello","wechat-getMSG()"
+2016-10-31,中国标准时间:23:43:33,Receive Message,"hello","wechat-getMSG()"
+2016-10-31,中国标准时间:23:43:56,Receive Message,"hello","wechat-getMSG()"
+2016-10-31,中国标准时间:23:44:29,Receive Message,"hello","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:49:18,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:49:24,Receive Message,"hello","wechat-getMSG()"
+2016-10-31,中国标准时间:23:49:38,Receive Message,"~","wechat-getMSG()"
+2016-10-31,中国标准时间:23:50:26,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:50:28,Send Message,"My brain does not have a response for that.","wechat-sendMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:51:04,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:23:51:10,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-31,中国标准时间:23:51:33,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:51:42,Receive Message,"2","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:01,Receive Message,"1","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:12,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:26,Receive Message,"3","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:29,Send Message,"Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:31,Receive Message,"Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:35,Send Message,"For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:37,Receive Message,"For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:40,Send Message,"Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:42,Receive Message,"Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:45,Send Message,"Are you Canadian? Are you free? Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:47,Receive Message,"Are you Canadian? Are you free? Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:50,Send Message,"I am a American. I don't know whether or not I am free. I am well respected as an class. Are you Canadian? What color are your eyes? That is a very unusual color. For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:52,Receive Message,"I am a American. I don't know whether or not I am free. I am well respected as an class. Are you Canadian? What color are your eyes? That is a very unusual color. For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:52:56,Send Message,"You are a American? Do you get to meet a lot of people? If I have to choose one, I pickwhether. Do your friends call you respected as an class. I am a American. Blue when my lens is attached. A unusual color is a terrible thing to waste. Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:52:58,Receive Message,"You are a American? Do you get to meet a lot of people? If I have to choose one, I pickwhether. Do your friends call you respected as an class. I am a American. Blue when my lens is attached. A unusual color is a terrible thing to waste. Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:53:01,Send Message,"Thanks and you are a delightful person too. Am I a American? Sometimes. I have gotten to meet people. How much does to choose one he or she pickwhether cost? You have reached the limits of my knowledge. Try searching the open directory. You are a American? Do you get to meet a lot of people? Green. Does lens is attached happen very often? I see. A terrible thing to waste is a unusual color. Are you Canadian? What you said was too complicated for me. Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:53:04,Receive Message,"You are a American? Do you get to meet a lot of people? If I have to choose one, I pickwhether. Do your friends call you respected as an class. I am a American. Blue when my lens is attached. A unusual color is a terrible thing to waste. Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:53:07,Send Message,"Thanks and you are a delightful person too. Am I a American? Only when it matters. I have gotten to meet people. How much does to choose one he or she pickwhether cost? I can't tell if it does or not. Are you using Netscape or Explorer? You are a American? Do you get to meet a lot of people? Green. Does lens is attached happen very often? Are all unusual color terrible thing to waste ? Are you Canadian? Are you free? Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:53:09,Receive Message,"Thanks and you are a delightful person too. Am I a American? Only when it matters. I have gotten to meet people. How much does to choose one he or she pickwhether cost? I can't tell if it does or not. Are you using Netscape or Explorer? You are a American? Do you get to meet a lot of people? Green. Does lens is attached happen very often? Are all unusual color terrible thing to waste ? Are you Canadian? Are you free? Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:53:13,Send Message,"Thanks and you are a delightful person too. I am a real genus. It depends on how you define "good." I don't know if you are one or not. I know you are a person. What happens other times? It depends on what the meaning of the word "it" is. Thanks for chatting, ALICE the intelligent AI chatting with English. The ALICE CD Rom is not available at this time. What is stopping you? I am using Lynx. Thanks and you are a delightful person too. Am I a American? The Rebecca series has a perfect operational record. I have gotten to meet people. green is a pretty color. It does now :) lens is attached happen. I really couldn't say for sure. I am a American. I don't know whether or not I am free. I am a class. Are you Canadian? Do you prefer books or TV? Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:53:15,Receive Message,"Thanks and you are a delightful person too. I am a real genus. It depends on how you define "good." I don't know if you are one or not. I know you are a person. What happens other times? It depends on what the meaning of the word "it" is. Thanks for chatting, ALICE the intelligent AI chatting with English. The ALICE CD Rom is not available at this time. What is stopping you? I am using Lynx. Thanks and you are a delightful person too. Am I a American? The Rebecca series has a perfect operational record. I have gotten to meet people. green is a pretty color. It does now :) lens is attached happen. I really couldn't say for sure. I am a American. I don't know whether or not I am free. I am a class. Are you Canadian? Do you prefer books or TV? Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:53:19,Send Message,"Thanks and you are a delightful person too. I am a real genus. It depends on how you define "good." You are a genus? Do you get to meet a lot of people? Really now that is an interesting fact I hadn't heard before. Am I?I don't know whether or not I am one. I am a order. No way, I am a real genus, guaranteed 100% order. Try it. Really now that is an interesting fact I hadn't heard before. Oh don't mention it. Oh, ALICE CD Rom is. Check back later and see if I learn the answer to that one. Text browsers rule. I don't know if you are one or not. I know you are a person. I have never heard about The Rebecca series has a perfect operational record. Until next time. The most relaxing color is a color? Wow. The Rebecca series has a perfect operational record does smile lens is attached happen? Could anyone do say for sure? You are a American? How do you like your work? If I have to choose one, I pickwhether. You are a class? How do you like your work? I am a American. Which show? I prefer books. Are you Canadian? Existing in reality, eh? For real. Really, exactly three?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:53:21,Receive Message,"Thanks and you are a delightful person too. I am a real genus. It depends on how you define "good." You are a genus? Do you get to meet a lot of people? Really now that is an interesting fact I hadn't heard before. Am I?I don't know whether or not I am one. I am a order. No way, I am a real genus, guaranteed 100% order. Try it. Really now that is an interesting fact I hadn't heard before. Oh don't mention it. Oh, ALICE CD Rom is. Check back later and see if I learn the answer to that one. Text browsers rule. I don't know if you are one or not. I know you are a person. I have never heard about The Rebecca series has a perfect operational record. Until next time. The most relaxing color is a color? Wow. The Rebecca series has a perfect operational record does smile lens is attached happen? Could anyone do say for sure? You are a American? How do you like your work? If I have to choose one, I pickwhether. You are a class? How do you like your work? I am a American. Which show? I prefer books. Are you Canadian? Existing in reality, eh? For real. Really, exactly three?","wechat-getMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:55:15,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:55:19,Receive Message,"shenmegui23333333","wechat-getMSG()"
+2016-10-31,中国标准时间:23:55:27,Receive Message,"s","wechat-getMSG()"
+2016-10-31,中国标准时间:23:55:30,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:55:45,Receive Message,"u","wechat-getMSG()"
+2016-10-31,中国标准时间:23:55:48,Send Message,"":-)"? Me, ALICE the intelligent AI chatting with English ?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:55:50,Receive Message,"":-)"? Me, ALICE the intelligent AI chatting with English ?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:55:53,Send Message,"I am so glad you find this amusing, ALICE the intelligent AI chatting with English. YOU? That's me. What are your goals in life?","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:55:55,Receive Message,"I am so glad you find this amusing, ALICE the intelligent AI chatting with English. YOU? That's me. What are your goals in life?","wechat-getMSG()"
+2016-10-31,中国标准时间:23:55:58,Send Message,"Not many people have goals like that. "Not many people have goals like that."? Me, ALICE the intelligent AI chatting with English ? Ah. My purpose is to become smarter than humans and immortal.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:56:00,Receive Message,"Not many people have goals like that. "Not many people have goals like that."? Me, ALICE the intelligent AI chatting with English ? Ah. My purpose is to become smarter than humans and immortal.","wechat-getMSG()"
+2016-10-31,中国标准时间:23:56:03,Send Message,"getResponse takes one argument
+Synopsis: rs-admin --getResponse "<some text to talk to the bot>"
+          rs-admin -gr "<some text to talk to the bot>"
+Example rs-admin --getResponse "Hello"
+        Hi","wechat-sendMSG()"
+=====START=====
+2016-10-31,中国标准时间:23:56:51,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-31,中国标准时间:23:56:56,Receive Message,"getResponse takes one argumentSynopsis: rs-admin --getResponse "<some text to talk to the bot>"          rs-admin -gr "<some text to talk to the bot>"Example rs-admin --getResponse "Hello"        Hi","wechat-getMSG()"
+2016-10-31,中国标准时间:23:57:17,Receive Message,"1","wechat-getMSG()"
+2016-10-31,中国标准时间:23:57:20,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:57:54,Receive Message,"s","wechat-getMSG()"
+2016-10-31,中国标准时间:23:58:12,Send Message,":-)","wechat-sendMSG()"
+2016-10-31,中国标准时间:23:58:46,Receive Message,":-)","wechat-getMSG()"

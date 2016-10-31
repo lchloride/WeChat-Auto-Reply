@@ -1,27 +1,18 @@
-﻿生成启动时间为 2016/10/30 22:14:29。
-     1>项目“E:\computer science\WeChatAutoReply\WeChatAutoReply\WeChatAutoReply.vcxproj”在节点 2 上(Build 个目标)。
-     1>ClCompile:
-         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\WeChatAutoReply.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt log.cpp
-         log.cpp
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(37): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(41): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(46): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(51): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(56): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(62): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(66): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'CString'
-     1>e:\computer science\wechatautoreply\wechatautoreply\log.cpp(70): warning C4477: 'fprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 2 has type 'CString'
+﻿生成启动时间为 2016/11/1 0:15:32。
+     1>项目“E:\computer science\wechat\MFC\WeChatAutoReply\WeChatAutoReply\WeChatAutoReply.vcxproj”在节点 2 上(Build 个目标)。
+     1>ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\WeChatAutoReply.res" WeChatAutoReply.rc 
        Link:
-         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\computer science\WeChatAutoReply\Debug\WeChatAutoReply.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"E:\computer science\WeChatAutoReply\Debug\WeChatAutoReply.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\computer science\WeChatAutoReply\Debug\WeChatAutoReply.lib" /MACHINE:X86 Debug\WeChatAutoReply.res
+         E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.lib" /MACHINE:X86 Debug\WeChatAutoReply.res
          Debug\log.obj
          Debug\shell.obj
          Debug\stdafx.obj
          Debug\tools.obj
          Debug\WeChatAutoReply.obj
          Debug\WeChatAutoReplyDlg.obj
-         WeChatAutoReply.vcxproj -> E:\computer science\WeChatAutoReply\Debug\WeChatAutoReply.exe
-     1>已完成生成项目“E:\computer science\WeChatAutoReply\WeChatAutoReply\WeChatAutoReply.vcxproj”(Build 个目标)的操作。
+         WeChatAutoReply.vcxproj -> E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.exe
+     1>已完成生成项目“E:\computer science\wechat\MFC\WeChatAutoReply\WeChatAutoReply\WeChatAutoReply.vcxproj”(Build 个目标)的操作。
 
 已成功生成。
 
-已用时间 00:00:01.81
+已用时间 00:00:01.09

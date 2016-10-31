@@ -37,7 +37,7 @@ bool createBat(char* path, CString cmd)
 bool shell(CString cmd, char* response, int MaxSize)
 {
 	char result[1024 * 4] = "";                   //定义存放结果的字符串数组 
-	char path[1024] = "";
+	char path[MAX_PATH] = "";
 	char *path_1 = &path[1];
 	if (cmd.IsEmpty())//Not to response invalid query words
 		return false;
@@ -47,13 +47,16 @@ bool shell(CString cmd, char* response, int MaxSize)
 	strcat_s(path_1, strlen(path_1) + 12, "\\query.bat\"");
 	path[0] = '\"';
 	createBat(path, cmd);
-
+	CString path_wchar = L"";
+	ANSIToUnicode(path, path_wchar, MAX_PATH);
 	//Execuate query.bat using cmd and get feedback with pipe
-	if (1 == execmd(path, result, MaxSize)) {
-		printf("Query Result:%s\n",result);
+	if (1 == execmd((LPWSTR)(LPCTSTR)path_wchar, result, MaxSize)) {
+		//printf("Query Result:%s\n",result);
 		result[min(strlen(result), (unsigned)MaxSize)] = '\0';
-		if (result[strlen(result) - 1] == '\n')
+		while(strlen(result) > 0 && (result[strlen(result) - 1] < 32 ||  result[strlen(result) - 1] >126))
 			result[strlen(result) - 1] = '\0';
+		//if (result[strlen(result) - 1] == '\n')
+		//	result[strlen(result) - 1] = '\0';
 		strcpy_s(response, strlen(result)+1, result);
 		return true;
 	}

@@ -194,14 +194,9 @@ void CWeChatDlg::OnBnClickedOk()
 void CWeChatDlg::OnBnClickedStart()
 {
 	// TODO: 在此添加控件通知处理程序代码
-	//wcout.imbue(locale("chs"));
 	//setlocale(LC_ALL, "chs");
-	//readFile();
 	process_flag = true;
 	readProperty();
-	//printf("Loading Rebecca AIML files......\n");
-	//if (!loadRebecca())
-	//	return 1;
 	writeLog(L"Program Start.", "wechat-_tmain()", START);
 	bool first_flag = true;
 	// 得到进程ID的列表
@@ -216,19 +211,27 @@ void CWeChatDlg::OnBnClickedStart()
 	int len = 0;
 	UpdateData(TRUE);
 	CString tmp = L"";
+	LastSendMsg.Empty();
+	OpenClipboard();
+	EmptyClipboard();
+	CloseClipboard();
+	if (!findWeChatWnd())
+	{
+			process_flag = false;
+			return;
+	}
 	if (m_replyStateRadioGroup == 1)
-		if (!getMsg(tmp, len) && tmp.CompareNoCase(LastSendMsg) != 0)
+		if (!getMsg(tmp, len))
 		{
+			lmshwnd->ShowWindow(SW_FORCEMINIMIZE);//Force WeChat window to minimize
 			MessageBoxW(L"无法获取最后一条消息", L"WeChat Auto Reply", MB_ICONSTOP | MB_OK);
+			process_flag = false;
 			return;
 		}
 		else
 			lstrcpyW((LPWSTR)(LPCTSTR)LastSendMsg, tmp);
 			//LastSendMsg.Format(L"%ls",tmp);
-	else
-		if (!findWeChatWnd())
-			return;
-	
+
 	SetTimer(RECVMSG, 3000, NULL);
 }
 

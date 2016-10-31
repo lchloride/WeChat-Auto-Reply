@@ -409,3 +409,6 @@ Unreadable Character Cannot be Printed.UNICODE:Sorry, I can only understand Engl
 2016-10-30,中国标准时间:22:18:29,Send Message,"发送的文字因含有不符合相关法律法规的内容，未予回复。","wechat-sendMSG()"
 =====START=====
 2016-10-30,中国标准时间:22:19:18,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-10-30,中国标准时间:23:19:52,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-10-30,中国标准时间:23:19:54,Receive Message,"发送的文字因含有不符合相关法律法规的内容，未予回复。","wechat-getMSG()"

@@ -41,22 +41,64 @@ void ANSIToUnicode(const char* str, CString& result, int MaxSize)
 // 参数:cmd表示要执行的命令
 // result是执行的结果存储的字符串数组
 // 函数执行成功返回1，失败返回0  
-int execmd(char* cmd, char* result, int MaxSize) {
-	char buffer[128];                         //定义缓冲区   
-	int count = 0;
-	FILE* pipe = _popen(cmd, "r");            //打开管道，并执行命令 
-	if (!pipe)
-		return 0;                      //返回0表示运行失败 
+//int execmd(char* cmd, char* result, int MaxSize) {
+//	char buffer[128];                         //定义缓冲区   
+//	int count = 0;
+//	FILE* pipe = _popen(cmd, "r");            //打开管道，并执行命令 
+//	if (!pipe)
+//		return 0;                      //返回0表示运行失败 
+//
+//	while (!feof(pipe)&&count*128<MaxSize) {
+//		if (fgets(buffer, 128, pipe)) {             //将管道输出到result中 
+//			strcat_s(result, strlen(result) + strlen(buffer) + 1, buffer);
+//		}
+//	}
+//	_pclose(pipe);                            //关闭管道 
+//	return 1;                                 //返回1表示运行成功 
+//}
 
-	while (!feof(pipe)&&count*128<MaxSize) {
-		if (fgets(buffer, 128, pipe)) {             //将管道输出到result中 
-			strcat_s(result, strlen(result) + strlen(buffer) + 1, buffer);
-		}
+//调用命令行命令而不显示命令行窗口  
+BOOL execmd(wchar_t* CommandLine, char* result, int MaxSize)
+{
+	SECURITY_ATTRIBUTES   sa;
+	HANDLE   hRead, hWrite;
+
+	sa.nLength = sizeof(SECURITY_ATTRIBUTES);
+	sa.lpSecurityDescriptor = NULL;
+	sa.bInheritHandle = TRUE;
+	if (!CreatePipe(&hRead, &hWrite, &sa, 0))
+	{
+		return   FALSE;
 	}
-	_pclose(pipe);                            //关闭管道 
-	return 1;                                 //返回1表示运行成功 
-}
 
+	STARTUPINFO   si;
+	PROCESS_INFORMATION   pi;
+	si.cb = sizeof(STARTUPINFO);
+	GetStartupInfo(&si);
+	si.hStdError = hWrite;
+	si.hStdOutput = hWrite;
+	si.wShowWindow = SW_HIDE;
+	si.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
+	//关键步骤，CreateProcess函数参数意义请查阅MSDN     
+	if (!CreateProcess(NULL, CommandLine, NULL, NULL, TRUE, NULL, NULL, NULL, &si, &pi))
+	{
+		return   FALSE;
+	}
+	CloseHandle(hWrite);
+
+	char   buffer[128] = { 0 };
+	DWORD   bytesRead;
+	while (true)
+	{
+		memset(buffer, 0, strlen(buffer));
+		if (ReadFile(hRead, buffer, 127, &bytesRead, NULL) == NULL)
+			break;
+		if (strlen(result) + strlen(buffer) + 1 <= MaxSize)
+			strcat_s(result, strlen(result) + strlen(buffer) + 1, buffer);
+		//Sleep(100);
+	}
+	return   TRUE;
+}
 
 void UnicodeToANSI(const wchar_t* str, char* result, int MaxSize)
 {
