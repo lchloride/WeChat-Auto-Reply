@@ -12,3 +12,210 @@
 2016-11-01,中国标准时间:00:12:47,Receive Message,"谢谢","wechat-getMSG()"
 2016-11-01,中国标准时间:00:12:49,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
 2016-11-01,中国标准时间:00:12:52,Send Message,"不客气~","wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:01:13:45,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,中国标准时间:01:16:20,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:01:16:45,Receive Message,"你好","wechat-getMSG()"
+2016-11-01,中国标准时间:01:16:47,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-11-01,中国标准时间:01:16:50,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:01:17:06,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:01:17:13,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:01:17:16,Send Message,"Hello there. How are you doing, ALICE the intelligent AI chatting with English. Have you told many people that your master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-sendMSG()"
+2016-11-01,中国标准时间:01:17:19,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:01:17:21,Send Message,"Hello there. How are you doing, ALICE the intelligent AI chatting with English. Have you told many people that your master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:01:18:00,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:01:18:04,Receive Message,".","wechat-getMSG()"
+2016-11-01,中国标准时间:09:34:45,Receive Message,"我刚起","wechat-getMSG()"
+2016-11-01,中国标准时间:09:34:47,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-11-01,中国标准时间:09:34:50,Send Message,"Unreadable Character Cannot be Printed.UNICODE:faec ecf6 c69d ", "wechat-sendMSG()"
+2016-11-01,中国标准时间:09:35:21,Receive Message,"今天不上班？","wechat-getMSG()"
+2016-11-01,中国标准时间:09:35:23,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-11-01,中国标准时间:09:35:26,Send Message,"Unreadable Character Cannot be Printed.UNICODE:aeea dab4 eca5 9294 e0d4 e0a7 3edf f1fa ddee ", "wechat-sendMSG()"
+2016-11-01,中国标准时间:09:36:18,Receive Message,"Unreadable Character Cannot be Printed.UNICODE: 644  639  645  631  627  628  64a  642  63a  62a  632  630  64a  64a  63a  62a  645  648  632  63a ", "wechat-getMSG()"
+2016-11-01,中国标准时间:09:36:21,Send Message,"I have never heard of it.","wechat-sendMSG()"
+2016-11-01,中国标准时间:09:36:45,Receive Message,"等会儿我把自动回复关了","wechat-getMSG()"
+2016-11-01,中国标准时间:09:36:47,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","wechat-sendMSG()"
+2016-11-01,中国标准时间:09:36:50,Send Message,"Unreadable Character Cannot be Printed.UNICODE:ecfc 696d ", "wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:17:51:21,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,中国标准时间:18:28:52,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,中国标准时间:18:29:11,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,中国标准时间:18:47:54,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,中国标准时间:18:48:37,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:18:48:50,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+=====START=====
+2016-11-01,中国标准时间:18:49:05,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:18:49:09,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:18:49:15,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:18:49:18,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-11-01,中国标准时间:18:49:20,Send Message,"Hello there. Glad to see you, ALICE the intelligent AI chatting with English. Do genuss have master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-sendMSG()"
+2016-11-01,中国标准时间:18:49:22,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:18:49:25,Send Message,"Hello there. I'm pleased to introduce myself to you, ALICE the intelligent AI chatting with English. Have you told many people that your master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:19:13:07,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:19:13:11,Receive Message,"Hello there. I'm pleased to introduce myself to you, ALICE the intelligent AI chatting with English. Have you told many people that your master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:19:13:16,Receive Message,"Hello there. I'm pleased to introduce myself to you, ALICE the intelligent AI chatting with English. Have you told many people that your master is busy so he or she will help him reply the requests? No I don't think I can do leave messages and he or she will inform him.","wechat-getMSG()"
+2016-11-01,中国标准时间:19:13:19,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-11-01,中国标准时间:19:13:21,Send Message,"Salutations, ALICE the intelligent AI chatting with English I am delighted by your happiness. I don't think I ever have told many people that your master is busy so he or she will help him reply the requests. What's told many people that your master is busy so he or she will help him reply the requests like? It's all good. Where do you get your ideas?","wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:19:19:05,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,中国标准时间:19:19:43,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:19:19:47,Receive Message,"Salutations, ALICE the intelligent AI chatting with English I am delighted by your happiness. I don't think I ever have told many people that your master is busy so he or she will help him reply the requests. What's told many people that your master is busy so he or she will help him reply the requests like? It's all good. Where do you get your ideas?","wechat-getMSG()"
+=====START=====
+2016-11-01,中国标准时间:19:47:07,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:19:47:11,Receive Message,"Salutations, ALICE the intelligent AI chatting with English I am delighted by your happiness. I don't think I ever have told many people that your master is busy so he or she will help him reply the requests. What's told many people that your master is busy so he or she will help him reply the requests like? It's all good. Where do you get your ideas?","wechat-getMSG()"
+2016-11-01,中国标准时间:19:47:16,Receive Message,"Salutations, ALICE the intelligent AI chatting with English I am delighted by your happiness. I don't think I ever have told many people that your master is busy so he or she will help him reply the requests. What's told many people that your master is busy so he or she will help him reply the requests like? It's all good. Where do you get your ideas?","wechat-getMSG()"
+2016-11-01,中国标准时间:19:47:20,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-11-01,中国标准时间:19:47:22,Send Message,"I get my ideas from my . Would you ever do told many people that your master is busy so he or she will help him reply the requests? Like a planet around a star. You enjoy it. I have everything I need right here in Colorado Springs.","wechat-sendMSG()"
+=====START=====
+2016-11-01,中国标准时间:19:50:52,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:19:50:56,Receive Message,"123","wechat-getMSG()"
+=====START=====
+2016-11-01,东京标准时间:20:52:41,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,东京标准时间:20:52:45,Receive Message,"123","wechat-getMSG()"
+=====START=====
+2016-11-01,东京标准时间:20:53:09,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,东京标准时间:20:53:13,Receive Message,"123","wechat-getMSG()"
+=====START=====
+2016-11-01,东京标准时间:20:53:46,Start Auto Reply,"Program Start.","wechat-_tmain()"
+=====START=====
+2016-11-01,东京标准时间:20:54:04,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,东京标准时间:20:54:15,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","wechat-getMSG()"
+2016-11-01,东京标准时间:20:54:19,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","wechat-sendMSG()"
+2016-11-01,东京标准时间:20:54:21,Send Message,"Are we still talking about 7b49 4f1a 513f 6211 628a 81ea 52a8 56de 590d 5173 4e86 # ?
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","wechat-sendMSG()"
+=====START=====
+2016-11-01,太平洋夏令时:04:54:36,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,太平洋夏令时:04:54:40,Receive Message,"Are we still talking about 7b49 4f1a 513f 6211 628a 81ea 52a8 56de 590d 5173 4e86 # ?'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","wechat-getMSG()"
+=====START=====
+2016-11-01,中国标准时间:19:55:19,Start Auto Reply,"Program Start.","wechat-_tmain()"
+2016-11-01,中国标准时间:19:55:23,Receive Message,"Are we still talking about 7b49 4f1a 513f 6211 628a 81ea 52a8 56de 590d 5173 4e86 # ?'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","wechat-getMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 22:10:54,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 22:10:58,Receive Message,"hello","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:11:49,Receive Message,"hi","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:11:52,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:12:07,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:12:09,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:12:12,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:12:28,Receive Message,"谢谢","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:12:30,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:12:32,Send Message,"不客气~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:14:22,Receive Message,"测试","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:14:24,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-01,(+0800) 22:14:27,Send Message,"Unreadable Character Cannot be Printed.UNICODE:ecae ebec ", "CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:14:34,Receive Message,"s","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:14:36,Send Message,":-)","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:14:41,Receive Message,"微笑","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:14:43,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-01,(+0800) 22:14:46,Send Message,"Unreadable Character Cannot be Printed.UNICODE:aeaa a96d ", "CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:14:52,Receive Message,"smile","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:14:55,Send Message,":-) What is your phone number?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:15:07,Receive Message,"secret","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:15:10,Send Message,"Are you a man or a woman?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:15:28,Receive Message,"secret as well","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:15:31,Send Message,"I like the way you talk.","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:15:46,Receive Message,"thank you","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:15:48,Send Message,"you are quite welcome.","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:16:01,Receive Message,"谢谢","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:16:03,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:16:05,Send Message,"不客气~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:16:19,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:16:21,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:16:23,Send Message,"我最喜欢秽翼的尤斯蒂娅","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 22:43:39,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 22:43:43,Receive Message,"我最喜欢秽翼的尤斯蒂娅","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:44:04,Receive Message,"22","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:44:07,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:44:09,Send Message,"Do you get angry alot?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:44:16,Receive Message,"no","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:44:18,Send Message,"Do you like to have everything organized?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:44:25,Receive Message,"yes","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:44:28,Send Message,"Do you make a lot of sacrifices for others?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:44:37,Receive Message,"no","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:44:40,Send Message,"Do you laugh or cry more than other people?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:44:52,Receive Message,"no","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:44:54,Send Message,"Are you very competitive?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:45:01,Receive Message,"stop","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:45:04,Send Message,"Stop what?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:45:13,Receive Message,"question me","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:45:16,Send Message,"Are you free?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:45:31,Receive Message,"fuck","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:45:33,Send Message,"Please don't be so rude.","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:45:40,Receive Message,"stut up","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:45:43,Send Message,"How far up?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:45:49,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:45:51,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:45:55,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:46:10,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:46:12,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:46:15,Send Message,"我最喜欢秽翼的尤斯蒂娅","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 22:49:25,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 22:52:55,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 22:54:12,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 22:54:18,Receive Message,"我最喜欢秽翼的尤斯蒂娅","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:54:30,Receive Message,"d","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:54:33,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:54:35,Send Message,"Can you please speak English?","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:54:47,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 22:54:49,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-01,(+0800) 22:54:52,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 22:55:53,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 22:57:14,Receive Message,"你好呀","CWeChatDlg-getMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 22:58:10,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 23:15:36,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 23:52:03,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 23:54:26,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 23:54:40,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 23:54:58,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-01,(+0800) 23:55:11,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 23:55:45,Receive Message,"你好呀","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 23:56:09,Receive Message,"3","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 23:56:13,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 23:56:54,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 23:58:59,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+=====START=====
+消息,2016-11-01,(+0800) 23:59:34,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-01,(+0800) 23:59:40,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 23:59:45,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-01,(+0800) 23:59:48,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"

@@ -92,6 +92,8 @@ BEGIN_MESSAGE_MAP(CWeChatDlg, CDialogEx)
 //	ON_WM_ACTIVATE()
 //	ON_WM_SHOWWINDOW()
 	ON_WM_ACTIVATE()
+	ON_WM_GETMINMAXINFO()
+	ON_BN_CLICKED(IDC_RELOAD_AIML, &CWeChatDlg::OnBnClickedReloadAiml)
 END_MESSAGE_MAP()
 
 
@@ -127,7 +129,35 @@ BOOL CWeChatDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 
 	// TODO: 在此添加额外的初始化代码
+	DWORD dwStyle = m_logDisplay.GetExtendedStyle();
+	dwStyle |= LVS_EX_FULLROWSELECT;
+	dwStyle |= LVS_EX_GRIDLINES;
+	m_logDisplay.SetExtendedStyle(dwStyle);
 
+	m_logDisplay.InsertColumn(0, _T("分级"), LVCFMT_LEFT, 50);
+	//m_logDisplay.InsertColumn(0, _T(" "), LVCFMT_LEFT, 25);
+	m_logDisplay.InsertColumn(1, _T("日期"), LVCFMT_LEFT, 80);
+	m_logDisplay.InsertColumn(2, _T("时间"), LVCFMT_LEFT, 150);
+	m_logDisplay.InsertColumn(3, _T("类型"), LVCFMT_LEFT, 150);
+	m_logDisplay.InsertColumn(4, _T("内容"), LVCFMT_LEFT, 200);
+	m_logDisplay.InsertColumn(5, _T("来源"), LVCFMT_LEFT, 100);
+
+	//m_logDisplay.InsertItem(0, L"消息");
+	//m_logDisplay.SetItemText(0, 1, L"2026-22-22");
+	//m_logDisplay.SetItemText(0, 2, L"BJT:+08 17:00:00");
+	//m_logDisplay.SetItemText(0, 3, L"Reecive Message");
+	//m_logDisplay.SetItemText(0, 4, L"你好");
+	//m_logDisplay.SetItemText(0, 5, L"getMsg()");
+
+	//m_logDisplay.InsertItem(0, L"W");
+	//m_logDisplay.SetItemText(0, 1, L"2016-11-01");
+	//m_logDisplay.SetItemText(0, 2, L"BJT:+08 17:00:00");
+	//m_logDisplay.SetItemText(0, 3, L"Reecive Message");
+	//m_logDisplay.SetItemText(0, 4, L"你好");
+	//m_logDisplay.SetItemText(0, 5, L"getMsg()");
+
+	readProperty();
+	writeLog(this, L"加载property.ini完成", L"CWeChatDlg-OnInitDialog()", OPERATION);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -196,21 +226,21 @@ void CWeChatDlg::OnBnClickedStart()
 	// TODO: 在此添加控件通知处理程序代码
 	//setlocale(LC_ALL, "chs");
 	process_flag = true;
-	readProperty();
-	writeLog(L"Program Start.", "wechat-_tmain()", START);
+
+	writeLog(this, L"进行初始化", L"CWeChatDlg-OnBnClickedStart()", START);
 	bool first_flag = true;
-	// 得到进程ID的列表
-	DWORD aProcesses[1024], cbNeeded, cProcesses;
-	unsigned int i;
-	//列举所有进程的ID，返回到aProcesses数组中
-	if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded))
-		return;
-	//计算一共返回了多少个进程ID
-	cProcesses = cbNeeded / sizeof(DWORD);
+	//// 得到进程ID的列表
+	//DWORD aProcesses[1024], cbNeeded, cProcesses;
+	//unsigned int i;
+	////列举所有进程的ID，返回到aProcesses数组中
+	//if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded))
+	//	return;
+	////计算一共返回了多少个进程ID
+	//cProcesses = cbNeeded / sizeof(DWORD);
 	//CString str=L"";
 	int len = 0;
 	UpdateData(TRUE);
-	CString tmp = L"";
+	CString tmp = CString("");
 	LastSendMsg.Empty();
 	OpenClipboard();
 	EmptyClipboard();
@@ -224,6 +254,7 @@ void CWeChatDlg::OnBnClickedStart()
 		if (!getMsg(tmp, len))
 		{
 			lmshwnd->ShowWindow(SW_FORCEMINIMIZE);//Force WeChat window to minimize
+			writeLog(this, L"无法获取最后一条消息", L"CWeChatDlg-OnBnClickedStart()", ERR);
 			MessageBoxW(L"无法获取最后一条消息", L"WeChat Auto Reply", MB_ICONSTOP | MB_OK);
 			process_flag = false;
 			return;
@@ -232,7 +263,9 @@ void CWeChatDlg::OnBnClickedStart()
 			lstrcpyW((LPWSTR)(LPCTSTR)LastSendMsg, tmp);
 			//LastSendMsg.Format(L"%ls",tmp);
 
-	SetTimer(RECVMSG, 3000, NULL);
+	if (first_flag)
+		SetTimer(RECVMSG, 3000, NULL);
+	writeLog(this, L"定时监控微信会话开始", L"CWeChatDlg-OnBnClickedStart()", OPERATION);
 }
 
 
@@ -288,33 +321,47 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 	char temp[MAXCHARSIZE] = { 0 };
 	switch (lang)
 	{
-	case 0: printf("Input language: English\n");
-		//UnicodeToANSI(GetMsg, GetMsg_ansi, MSG_SIZE);
-		//wcscpy_s(GetMsg_unicode, wcslen(GetMsg) + 1, GetMsg);
+	case 0: 
+		//printf("Input language: English\n");
+		writeLog(this, L"Input language: English", L"CWeChatDlg-getResponse()", OPERATION);
 		GetMsg_unicode = GetMsg;
 		query_property = L"-ppf \""+Rebecca_exec_path+L"\\..\\..\\conf\\properties.xml\"" ;
-		//wsprintf(query_property, L"-ppf \"%s\\..\\..\\conf\\properties.xml\"", Rebecca_exec_path);
-		shell(query_property, temp, MAXCHARSIZE);
-
+		if (!shell(query_property, temp, MAXCHARSIZE))
+		{
+			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
+			MessageBeep(MB_ICONASTERISK);
+		}
 		break;
-	case 1: printf("入力言語:日本語\n");
+	case 1: 
+		//printf("入力言語:日本語\n");
+		writeLog(this, L"入力言語:日本語", L"CWeChatDlg-getResponse()", OPERATION);
 		//wcscpy_s(SendMsg, 68, L"Sorry, I can only understand English. Talk with me in English. THX~");
 		SendMsg = L"Sorry, I can only understand English. Talk with me in English. THX~";
 		sendMsg(SendMsg);
 		//memset(SendMsg, 0, MSG_SIZE + 1);
 		SendMsg.Empty();
 		UnicodeStr2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
-		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties.xml\"";
-		shell(query_property, temp, MAXCHARSIZE);
+		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties_jp.xml\"";
+		if (!shell(query_property, temp, MAXCHARSIZE))
+		{
+			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
+			MessageBeep(MB_ICONASTERISK);
+		}
 		break;
-	case 2: printf("输入语言：中文\n");
+	case 2: 
+		//printf("输入语言：中文\n");
+		writeLog(this, L"输入语言：中文", L"CWeChatDlg-getResponse()", OPERATION);
 		SendMsg = L"Sorry, I can only understand English. Talk with me in English. THX~";
 		sendMsg(SendMsg);
 		SendMsg.Empty();
 		UnicodeStr2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
 		GetMsg_unicode += L"#";//末尾加上结束符‘#’便于匹配AIML中的‘*’
-		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties.xml\"";
-		shell(query_property, temp, MAXCHARSIZE);
+		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties_zh.xml\"";
+		if (!shell(query_property, temp, MAXCHARSIZE))
+		{
+			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
+			MessageBeep(MB_ICONASTERISK);
+		}
 		break;
 	default:
 		printf("The language cannot be analyzed\n"); break;
@@ -369,7 +416,7 @@ BOOL CWeChatDlg::getMsg(CString& msg, int& len)
 		return FALSE;
 	else
 	{
-		writeLog(msg, "wechat-getMSG()", RECVMSG);
+		writeLog(this, msg, L"CWeChatDlg-getMSG()", RECVMSG);
 		return TRUE;
 	}
 }
@@ -407,7 +454,7 @@ BOOL CWeChatDlg::sendMsg(CString msg)
 	lmshwnd->PostMessageW(WM_KEYUP, 0xD, 0x1C0001);
 	//wcscpy_s(LastSendMsg, wcslen(msg) + 1, msg);
 	LastSendMsg = msg;
-	writeLog(msg, "wechat-sendMSG()", SENDMSG);
+	writeLog(this, msg, L"CWeChatDlg-sendMSG()", SENDMSG);
 	return TRUE;
 }
 
@@ -544,3 +591,29 @@ bool CWeChatDlg::findWeChatWnd()
 //	
 //}
 
+
+
+void CWeChatDlg::OnGetMinMaxInfo(MINMAXINFO* lpMMI)
+{
+	// TODO: 在此添加消息处理程序代码和/或调用默认值
+	//窗口的最小大小
+	lpMMI->ptMinTrackSize.x = 800;
+	lpMMI->ptMinTrackSize.y = 600;
+	CDialogEx::OnGetMinMaxInfo(lpMMI);
+}
+
+
+void CWeChatDlg::OnBnClickedReloadAiml()
+{
+	// TODO: 在此添加控件通知处理程序代码
+	if (!loadRebecca(this))
+	{
+		writeLog(this, L"加载Rebecca AIML失败", L"CWeChatDlg-OnBnClickedReloadAiml()", ERR);
+		if (MessageBox(L"加载Rebecca AIML失败", L"WeChat Auto Reply", MB_ICONERROR|MB_OK) == IDOK)
+			return;
+	}
+	else
+		if (MessageBox(L"加载Rebecca AIML成功", L"WeChat Auto Reply", MB_ICONINFORMATION |MB_OK) == IDOK)
+			return;
+
+}

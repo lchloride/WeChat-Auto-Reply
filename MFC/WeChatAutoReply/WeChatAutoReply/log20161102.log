@@ -1,0 +1,299 @@
+=====START=====
+消息,2016-11-02,(+0800) 00:00:26,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-02,(+0800) 00:02:43,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 00:02:48,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:02:53,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:02:55,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-02,(+0800) 00:03:07,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 00:03:11,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+=====START=====
+消息,2016-11-02,(+0800) 00:03:14,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 00:03:18,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:03:23,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:03:26,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:03:28,Receive Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:03:31,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:03:33,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:03:35,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:04:02,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:04:05,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:04:08,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:04:10,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:04:13,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:04:16,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:04:18,Receive Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Debug' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Program:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'File:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Line:' 不是内部或外部命令，也不是可运行的程序或批处理文件。此时不应有 )","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:04:20,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-02,(+0800) 00:06:49,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 00:06:53,Receive Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Debug' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Program:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'File:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Line:' 不是内部或外部命令，也不是可运行的程序或批处理文件。此时不应有 )","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:06:58,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:01,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:10,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:13,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:15,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:18,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:20,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:23,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:25,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:28,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:30,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:33,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:35,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:38,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:07:40,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:07:42,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-02,(+0800) 00:09:09,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 00:09:23,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:09:59,Receive Message,"天","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:10:01,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:10:04,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:10:17,Receive Message,"}
+","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:10:20,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-02,(+0800) 00:12:09,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 00:12:26,Receive Message,"123","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:12:44,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:13:20,Receive Message,"4","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:13:38,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:13:45,Receive Message,"4","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:13:47,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:13:57,Receive Message,"5","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:14:00,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:14:05,Receive Message,"6","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:15:08,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 00:15:18,Receive Message,"hello","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 00:40:19,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+错误,2016-11-02,(+0800) 00:40:26,Error Message,"加载Rebecca AIML失败","CWeChatDlg-OnBnClickedReloadAiml()"
+消息,2016-11-02,(+0800) 00:40:39,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+错误,2016-11-02,(+0800) 00:43:24,Error Message,"加载Rebecca AIML失败","CWeChatDlg-OnBnClickedReloadAiml()"
+消息,2016-11-02,(+0800) 18:57:37,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 18:57:43,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-02,(+0800) 18:58:37,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 18:58:41,Receive Message,"hello","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 18:58:52,Receive Message,"qu","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 18:58:55,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 18:59:04,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 18:59:06,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 18:59:09,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 18:59:22,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 18:59:24,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 18:59:27,Send Message,"我最喜欢小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 18:59:52,Receive Message,"你叫什么名字","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 18:59:54,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-02,(+0800) 18:59:57,Send Message,"Unreadable Character Cannot be Printed.UNICODE:aaed ", "CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:00:16,Receive Message,"what is your name","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:00:19,Send Message,"It sounds like a lot of fun.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:01:19,Receive Message,"what is your name","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:01:22,Send Message,"My name is Rebecca.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:01:46,Receive Message,"who is your master","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:01:49,Send Message,"I obey Frank.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:25:53,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:25:56,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:26:00,Receive Message,"I obey Frank.","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:26:05,Receive Message,"3","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:26:08,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:26:20,Receive Message,"h","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:26:23,Send Message,"That is deep.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:26:25,Receive Message,"galgame","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:26:28,Send Message,"I can follow a lot of things, like our discussion about h. Try being more specific.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:26:38,Receive Message,"anime","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:26:41,Send Message,"Do not ask me any more questions please.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:26:50,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:26:52,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:26:55,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:27:02,Receive Message,"你最喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:27:04,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-02,(+0800) 19:27:07,Send Message,"Unreadable Character Cannot be Printed.UNICODE:adee ", "CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:27:14,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:27:16,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:27:19,Send Message,"我最喜欢小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:28:43,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:28:45,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:28:50,Receive Message,"我最喜欢小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:29:01,Receive Message,"x","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:29:04,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:29:10,Receive Message,"porn","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:29:13,Send Message,"That kind of subject does not interest me.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:29:17,Receive Message,"poi","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:29:20,Send Message,"When do you think artificial intelligence will replace lawyers?","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:29:34,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:29:36,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:29:38,Send Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:30:24,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:30:28,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:30:32,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:30:51,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:31:09,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:31:13,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+=====START=====
+消息,2016-11-02,(+0800) 19:31:15,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:31:41,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:31:42,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:31:46,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:32:52,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:32:54,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:33:36,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:33:37,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:33:41,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:39:19,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:39:22,Start,"Program Start.","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:39:26,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:39:26,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:43:06,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-02,(+0800) 19:43:08,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+错误,2016-11-02,(+0800) 19:43:12,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-02,(+0800) 19:43:29,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:43:33,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:43:33,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-02,(+0800) 19:43:53,Receive Message,"hello","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:43:53,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 19:43:56,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:44:11,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:44:11,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 19:44:13,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:44:16,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:44:38,Receive Message,"おはようございます!","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:44:38,Operation Result,"入力言語:日本語","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 19:44:40,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:44:43,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 19:44:59,Receive Message,"こんばんは～","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 19:44:59,Operation Result,"入力言語:日本語","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 19:45:01,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-02,(+0800) 19:45:04,Send Message,"Unreadable Character Cannot be Printed.UNICODE:faec ecf6 c69d ", "CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 21:16:44,Receive Message,"私は何色ですが?","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 21:16:44,Operation Result,"入力言語:日本語","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 21:16:46,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-02,(+0800) 21:16:49,Send Message,"Unreadable Character Cannot be Printed.UNICODE:aeea dab7 9c13  6f4 f558 2723  673  593  4c3 fadd ea9d ", "CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 21:20:29,Receive Message,"masked　bitch","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 21:20:29,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 21:20:32,Send Message,"I have never read it.","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 21:20:59,Receive Message,"ビシ","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 21:20:59,Operation Result,"入力言語:日本語","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 21:21:01,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-02,(+0800) 21:21:04,Send Message,"Unreadable Character Cannot be Printed.UNICODE:aada ccae dfb0 ", "CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 21:21:11,Receive Message,"ビチ","CWeChatDlg-getMSG()"
+消息,2016-11-02,(+0800) 21:21:11,Operation Result,"入力言語:日本語","CWeChatDlg-getResponse()"
+消息,2016-11-02,(+0800) 21:21:13,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 21:21:16,Send Message,"仾祭","CWeChatDlg-sendMSG()"
+消息,2016-11-02,(+0800) 22:41:40,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 22:47:53,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 22:56:54,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:16:31,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:34:47,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:36:42,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:39:06,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:40:36,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:50:31,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:51:14,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:51:36,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:57:29,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-02,(+0800) 23:59:18,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"

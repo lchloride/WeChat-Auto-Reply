@@ -3,16 +3,64 @@
 #include "tools.h"
 #include <locale.h>
 
+
 //using namespace std;
 
 extern CString log_path;
 extern bool date_diff;
 
-bool writeLog(CString content, char* source, int label)
+bool writeLogFileCtrl(
+	wchar_t* filename, //文件名
+	CWeChatDlg* dlg, //对话框的句柄
+	int type, //消息的分级
+	CString date, //日期
+	CString time, //时间
+	CString label, //标签
+	CString content, //消息内容
+	CString source) //来源
+{
+	FILE *log_file = NULL;
+	_wfopen_s(&log_file, filename, L"a");
+	if (!log_file)
+	{
+		wprintf(L"Cannot open log file.\n");
+		return false;
+	}
+	if (printf("%ls", content) < 0 && type == MESSAGE)
+		type = WARNING;
+	CString typeStr = L"";
+	switch (type)
+	{
+	case MESSAGE:  typeStr = L"消息"; break;
+	case WARNING: typeStr = L"警告"; break;
+	case ERR: typeStr = L"错误"; break;
+	}
+
+	if (label == L"Start")
+		fprintf(log_file, "=====START=====\n");
+	if (fprintf(log_file, "%ls,%ls,%ls,%ls,\"%ls\",\"%ls\"\n", typeStr, date, time, label, content, source) < 0)
+	{
+		fprintf(log_file, "Unreadable Character Cannot be Printed.");
+		CString tmp = L"";
+		UnicodeStr2wchar(content, tmp, MSG_SIZE);
+		fprintf(log_file, "UNICODE:%ls\", \"%ls\"\n", tmp, source);
+	}
+	dlg->m_logDisplay.InsertItem(0, typeStr);
+	dlg->m_logDisplay.SetItemText(0, 1, date);
+	dlg->m_logDisplay.SetItemText(0, 2, time);
+	dlg->m_logDisplay.SetItemText(0, 3, label);
+	dlg->m_logDisplay.SetItemText(0, 4, content);
+	dlg->m_logDisplay.SetItemText(0, 5, source);
+
+	fclose(log_file);
+	return true;
+}
+
+
+bool writeLog(CWeChatDlg* dlg, CString content, CString source, int label)
 {
 	time_t tt;
 	tm timeinfo;
-	FILE *log_file=NULL;
 	setlocale(LC_ALL, "chs");
 	time(&tt);
 	localtime_s(&timeinfo, &tt);
@@ -23,53 +71,40 @@ bool writeLog(CString content, char* source, int label)
 	wchar_t file_tmp[MAX_PATH] = L"";
 	wsprintf(file_tmp, L"%ls\\%ls", log_path, filename_wstr);
 	wprintf(L"log filename:%ls\n", file_tmp);
-	_wfopen_s(&log_file, file_tmp, L"a");
-	if (!log_file)
-	{
-		wprintf(L"Cannot open log file.\n");
-		return false;
-	}
-	char date_time[MSG_SIZE] = "";
+
+	//char date_time[MSG_SIZE] = "";
+	char time[MSG_SIZE] = "";
+	char date[MSG_SIZE] = "";
+	CString timeStr, dateStr;
+	strftime(date, MSG_SIZE, "%F", &timeinfo);
+	strftime(time, MSG_SIZE, "(%z) %T", &timeinfo);
+	ANSIToUnicode(date, dateStr, MSG_SIZE);
+	ANSIToUnicode(time, timeStr, MSG_SIZE);
+	int flag = true;
 	switch (label)
 	{
 	case START:
-		strftime(date_time, MSG_SIZE, "%F,%Z:%T", &timeinfo);
-		fprintf(log_file, "=====START=====\n%s,Start Auto Reply,\"%ls\",\"%s\"\n", date_time, content, source);
+		flag = writeLogFileCtrl(file_tmp, dlg, MESSAGE, dateStr, timeStr, L"Start", content, source);
 		break;
 	case RECVMSG:
-		strftime(date_time, MSG_SIZE, "%F,%Z:%T", &timeinfo);
-		if (fprintf(log_file, "%s,Receive Message,\"%ls\",\"%s\"\n", date_time, content, source) < 0)
-		{
-			fprintf(log_file, "Unreadable Character Cannot be Printed.");
-			CString tmp = L"";
-			UnicodeStr2wchar(content, tmp, MSG_SIZE);
-			fprintf(log_file, "UNICODE:%ls\", \"%s\"\n", tmp, source);
-		}
+		flag = writeLogFileCtrl(file_tmp, dlg, MESSAGE, dateStr, timeStr, L"Receive Message", content, source);
 		break;
 	case SENDMSG:
-		strftime(date_time, MSG_SIZE, "%F,%Z:%T", &timeinfo);
-		if (fprintf(log_file, "%s,Send Message,\"%ls\",\"%s\"\n", date_time, content, source) < 0)
-		{
-			fprintf(log_file, "Unreadable Character Cannot be Printed.");
-			CString tmp = L"";
-			UnicodeStr2wchar(content, tmp, MSG_SIZE);
-			fprintf(log_file, "UNICODE:%ls\", \"%s\"\n",tmp, source);
-		}
+		flag = writeLogFileCtrl(file_tmp, dlg, MESSAGE, dateStr, timeStr, L"Send Message", content, source);
 		break;
 
 	case OPERATION: 		
-		strftime(date_time, MSG_SIZE, "%F,%Z:%T", &timeinfo);
-		fprintf(log_file, "%s,Operation Result,%ls,%s\n", date_time, content, source);
+		flag = writeLogFileCtrl(file_tmp, dlg, MESSAGE, dateStr, timeStr, L"Operation Result", content, source);
 		break;
 	case ERR: 
-		strftime(date_time, MSG_SIZE, "%F,%Z:%T", &timeinfo);
-		fprintf(log_file, "%s,Error Message,%ls,%s\n", date_time, content, source);
+		flag = writeLogFileCtrl(file_tmp, dlg, ERR, dateStr, timeStr, L"Error Message", content, source);
+		break;
+	case WARNING:
+		flag = writeLogFileCtrl(file_tmp, dlg, WARNING, dateStr, timeStr, L"Warning Message", content, source);
 		break;
 	default:
-		strftime(date_time, MSG_SIZE, "%F,%Z:%T", &timeinfo);
-		fprintf(log_file, "%s,No Matched Label,%ls,%s\n", date_time, content, source);
+		flag = writeLogFileCtrl(file_tmp, dlg, WARNING, dateStr, timeStr, L"No Matched Label", content, source);
 		break;
 	}
-	fclose(log_file);
-	return true;
+	return flag;
 }

@@ -189,6 +189,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="LoadAIMLDlg.h" />
     <ClInclude Include="log.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="shell.h" />
@@ -199,6 +200,7 @@
     <ClInclude Include="WeChatAutoReplyDlg.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LoadAIMLDlg.cpp" />
     <ClCompile Include="log.cpp" />
     <ClCompile Include="shell.cpp" />
     <ClCompile Include="stdafx.cpp">

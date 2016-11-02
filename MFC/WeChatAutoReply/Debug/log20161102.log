@@ -1,0 +1,3 @@
+消息,2016-11-02,(+0800) 01:06:24,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+错误,2016-11-02,(+0800) 01:06:27,Error Message,"加载Rebecca AIML失败","CWeChatDlg-OnBnClickedReloadAiml()"
+错误,2016-11-02,(+0800) 01:06:41,Error Message,"加载Rebecca AIML失败","CWeChatDlg-OnBnClickedReloadAiml()"

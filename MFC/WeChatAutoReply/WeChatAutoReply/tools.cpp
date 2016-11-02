@@ -1,7 +1,9 @@
 #include "stdafx.h"
 #include "tools.h"
 #include "shell.h"
-#include "WeChatAutoReplyDlg.h"
+#include "LoadAIMLDlg.h"
+
+#include "resource.h"
 
 
 //using namespace std;
@@ -10,6 +12,8 @@ int zh_jp_ratio =6;
 CString log_path = L"";
 bool date_diff = true;
 CString ini_name = L"\\property.ini";
+
+bool load_result = false;
 
 void ANSIToUnicode(const char* str, CString& result, int MaxSize)
 {
@@ -36,26 +40,6 @@ void ANSIToUnicode(const char* str, CString& result, int MaxSize)
 		result = L"";
 	delete  pUnicode;
 }
-
-// 描述:execmd函数执行命令，并将结果存储到result字符串数组中 
-// 参数:cmd表示要执行的命令
-// result是执行的结果存储的字符串数组
-// 函数执行成功返回1，失败返回0  
-//int execmd(char* cmd, char* result, int MaxSize) {
-//	char buffer[128];                         //定义缓冲区   
-//	int count = 0;
-//	FILE* pipe = _popen(cmd, "r");            //打开管道，并执行命令 
-//	if (!pipe)
-//		return 0;                      //返回0表示运行失败 
-//
-//	while (!feof(pipe)&&count*128<MaxSize) {
-//		if (fgets(buffer, 128, pipe)) {             //将管道输出到result中 
-//			strcat_s(result, strlen(result) + strlen(buffer) + 1, buffer);
-//		}
-//	}
-//	_pclose(pipe);                            //关闭管道 
-//	return 1;                                 //返回1表示运行成功 
-//}
 
 //调用命令行命令而不显示命令行窗口  
 BOOL execmd(wchar_t* CommandLine, char* result, int MaxSize)
@@ -261,27 +245,65 @@ void readProperty()
 	//wprintf(L"%ls %d\n", Rebecca_exec_path, zh_jp_ratio);
 }
 
-bool loadRebecca()
+UINT ProcessDlgFunc(LPVOID in)
 {
+	load_result = true;
 	wchar_t cmd[MSG_SIZE] = L"";
 	char response[MSG_SIZE] = "";
+	bool flag = true;
+	CLoadAIMLDlg *dlg = (CLoadAIMLDlg*)in;
 	wsprintf(cmd, L"-rd \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
-	shell(cmd, response, MSG_SIZE);
+	dlg->setProgress(dlg->rd);
+	dlg->setCmd(cmd);
+	flag &= shell(cmd, response, MSG_SIZE);
 
 	wsprintf(cmd, L"-rg");
-	shell(cmd, response, MSG_SIZE);
+	dlg->setProgress(dlg->rg);
+	dlg->setCmd(cmd);
+	flag &= shell(cmd, response, MSG_SIZE);
 
 	wsprintf(cmd, L"-aduaa \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
-	shell(cmd, response, MSG_SIZE);
+	dlg->setProgress(dlg->aduaa);
+	dlg->setCmd(cmd);
+	flag &= shell(cmd, response, MSG_SIZE);
 	wsprintf(cmd, L"-cg");
-	shell(cmd, response, MSG_SIZE);
+	dlg->setProgress(dlg->cg);
+	dlg->setCmd(cmd);
+	flag &= shell(cmd, response, MSG_SIZE);
 
 	wsprintf(cmd, L"-gafls");
-	shell(cmd, response, MSG_SIZE);
-	if (strcmp(response, "0") == 0)
+	dlg->setProgress(dlg->gafls);
+	dlg->setCmd(cmd);
+	flag &= shell(cmd, response, MSG_SIZE);
+	if (!flag || strcmp(response, "0") == 0)
 	{
 		printf("Cannot load Rebecca AIML files\n");
-		return false;
+		load_result = false;
+		return 1;
 	}
-	return true;
+	return 0;
+
 }
+bool loadRebecca(CWeChatDlg *parent)
+{
+	CLoadAIMLDlg *dlg;
+	dlg = new CLoadAIMLDlg(parent);
+	//dlg->Create(IDD_LOAD_AIML_DIALOG);
+
+	HANDLE hThread = AfxBeginThread(ProcessDlgFunc, dlg);
+	//DWORD returnValue = 0;
+	dlg->DoModal();
+	//dlg->ShowWindow(SW_SHOW);
+	//dlg->UpdateWindow();
+	//do
+	//{
+	//	Sleep(1000);
+	//GetExitCodeThread(hThread, &returnValue);
+	//	dlg->UpdateWindow();
+	//}
+	//while (run_flag || returnValue == STILL_ACTIVE);
+	//delete dlg;
+	return load_result;
+
+}
+
