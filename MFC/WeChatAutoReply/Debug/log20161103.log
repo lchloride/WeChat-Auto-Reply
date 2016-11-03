@@ -1,0 +1,2 @@
+消息,2016-11-03,(+0800) 09:48:56,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+错误,2016-11-03,(+0800) 09:51:23,Error Message,"终止加载AIML文件，已执行到：执行:-rg","LoadAIML-OnBnClickedCancel()"

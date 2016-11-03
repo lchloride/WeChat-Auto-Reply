@@ -29,10 +29,10 @@ public:
 	afx_msg void OnDestroy();
 	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	const int rd = 1;
-	const int rg = 3;
-	const int aduaa = 4;
-	const int cg = 6;
-	const int gafls = 7;
+	const int rg = 10;
+	const int aduaa = 11;
+	const int cg = 20;
+	const int gafls = 21;
 private:
 	int progress;
 	CString cmdList;
@@ -40,4 +40,6 @@ public:
 	void setProgress(int progress);
 	void setCmd(CString cmd);
 	virtual BOOL OnInitDialog();
+	afx_msg void OnBnClickedCancel();
+	afx_msg void OnClose();
 };

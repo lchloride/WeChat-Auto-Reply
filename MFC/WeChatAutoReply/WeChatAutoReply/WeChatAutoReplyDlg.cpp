@@ -135,27 +135,11 @@ BOOL CWeChatDlg::OnInitDialog()
 	m_logDisplay.SetExtendedStyle(dwStyle);
 
 	m_logDisplay.InsertColumn(0, _T("分级"), LVCFMT_LEFT, 50);
-	//m_logDisplay.InsertColumn(0, _T(" "), LVCFMT_LEFT, 25);
 	m_logDisplay.InsertColumn(1, _T("日期"), LVCFMT_LEFT, 80);
 	m_logDisplay.InsertColumn(2, _T("时间"), LVCFMT_LEFT, 150);
 	m_logDisplay.InsertColumn(3, _T("类型"), LVCFMT_LEFT, 150);
 	m_logDisplay.InsertColumn(4, _T("内容"), LVCFMT_LEFT, 200);
 	m_logDisplay.InsertColumn(5, _T("来源"), LVCFMT_LEFT, 100);
-
-	//m_logDisplay.InsertItem(0, L"消息");
-	//m_logDisplay.SetItemText(0, 1, L"2026-22-22");
-	//m_logDisplay.SetItemText(0, 2, L"BJT:+08 17:00:00");
-	//m_logDisplay.SetItemText(0, 3, L"Reecive Message");
-	//m_logDisplay.SetItemText(0, 4, L"你好");
-	//m_logDisplay.SetItemText(0, 5, L"getMsg()");
-
-	//m_logDisplay.InsertItem(0, L"W");
-	//m_logDisplay.SetItemText(0, 1, L"2016-11-01");
-	//m_logDisplay.SetItemText(0, 2, L"BJT:+08 17:00:00");
-	//m_logDisplay.SetItemText(0, 3, L"Reecive Message");
-	//m_logDisplay.SetItemText(0, 4, L"你好");
-	//m_logDisplay.SetItemText(0, 5, L"getMsg()");
-
 	readProperty();
 	writeLog(this, L"加载property.ini完成", L"CWeChatDlg-OnInitDialog()", OPERATION);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -333,12 +317,9 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 		}
 		break;
 	case 1: 
-		//printf("入力言語:日本語\n");
 		writeLog(this, L"入力言語:日本語", L"CWeChatDlg-getResponse()", OPERATION);
-		//wcscpy_s(SendMsg, 68, L"Sorry, I can only understand English. Talk with me in English. THX~");
 		SendMsg = L"Sorry, I can only understand English. Talk with me in English. THX~";
 		sendMsg(SendMsg);
-		//memset(SendMsg, 0, MSG_SIZE + 1);
 		SendMsg.Empty();
 		UnicodeStr2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
 		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties_jp.xml\"";
@@ -613,7 +594,9 @@ void CWeChatDlg::OnBnClickedReloadAiml()
 			return;
 	}
 	else
-		if (MessageBox(L"加载Rebecca AIML成功", L"WeChat Auto Reply", MB_ICONINFORMATION |MB_OK) == IDOK)
+	{
+		writeLog(this, L"加载Rebecca AIML成功", L"CWeChatDlg-OnBnClickedReloadAiml()", MESSAGE);
+		if (MessageBox(L"加载Rebecca AIML成功", L"WeChat Auto Reply", MB_ICONINFORMATION | MB_OK) == IDOK)
 			return;
-
+	}
 }

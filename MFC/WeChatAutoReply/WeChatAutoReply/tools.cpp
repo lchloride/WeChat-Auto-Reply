@@ -13,7 +13,8 @@ CString log_path = L"";
 bool date_diff = true;
 CString ini_name = L"\\property.ini";
 
-bool load_result = false;
+int load_result = -1;//加载的结果，0代表没有完成加载，1表示加载成功，-1表示加载失败
+bool load_flag = true;//作为信号量，在tool.cpp和LoadAIMLDlg.cpp中共同控制加载线程的执行
 
 void ANSIToUnicode(const char* str, CString& result, int MaxSize)
 {
@@ -247,40 +248,54 @@ void readProperty()
 
 UINT ProcessDlgFunc(LPVOID in)
 {
-	load_result = true;
+	load_result = 0;
+	load_flag = true;
 	wchar_t cmd[MSG_SIZE] = L"";
 	char response[MSG_SIZE] = "";
 	bool flag = true;
 	CLoadAIMLDlg *dlg = (CLoadAIMLDlg*)in;
-	wsprintf(cmd, L"-rd \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
-	dlg->setProgress(dlg->rd);
-	dlg->setCmd(cmd);
-	flag &= shell(cmd, response, MSG_SIZE);
-
-	wsprintf(cmd, L"-rg");
-	dlg->setProgress(dlg->rg);
-	dlg->setCmd(cmd);
-	flag &= shell(cmd, response, MSG_SIZE);
-
-	wsprintf(cmd, L"-aduaa \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
-	dlg->setProgress(dlg->aduaa);
-	dlg->setCmd(cmd);
-	flag &= shell(cmd, response, MSG_SIZE);
-	wsprintf(cmd, L"-cg");
-	dlg->setProgress(dlg->cg);
-	dlg->setCmd(cmd);
-	flag &= shell(cmd, response, MSG_SIZE);
-
-	wsprintf(cmd, L"-gafls");
-	dlg->setProgress(dlg->gafls);
-	dlg->setCmd(cmd);
-	flag &= shell(cmd, response, MSG_SIZE);
-	if (!flag || strcmp(response, "0") == 0)
+	if (load_flag)
+	{
+		wsprintf(cmd, L"-rd \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
+		dlg->setProgress(dlg->rd);
+		dlg->setCmd(cmd);
+		flag &= shell(cmd, response, MSG_SIZE);
+	}
+	if (load_flag)
+	{
+		wsprintf(cmd, L"-rg");
+		dlg->setProgress(dlg->rg);
+		dlg->setCmd(cmd);
+		flag &= shell(cmd, response, MSG_SIZE);
+	}
+	if (load_flag)
+	{
+		wsprintf(cmd, L"-aduaa \"%ls\\..\\..\\aiml\\annotated_alice\"", Rebecca_exec_path);
+		dlg->setProgress(dlg->aduaa);
+		dlg->setCmd(cmd);
+		flag &= shell(cmd, response, MSG_SIZE);
+	}
+	if (load_flag)
+	{
+		wsprintf(cmd, L"-cg");
+		dlg->setProgress(dlg->cg);
+		dlg->setCmd(cmd);
+		flag &= shell(cmd, response, MSG_SIZE);
+	}
+	if (load_flag)
+	{
+		wsprintf(cmd, L"-gafls");
+		dlg->setProgress(dlg->gafls);
+		dlg->setCmd(cmd);
+		flag &= shell(cmd, response, MSG_SIZE);
+	}
+	if (!load_flag || !flag || strcmp(response, "0") == 0)
 	{
 		printf("Cannot load Rebecca AIML files\n");
-		load_result = false;
+		load_result = -1;
 		return 1;
 	}
+	load_result = 1;
 	return 0;
 
 }
@@ -289,21 +304,10 @@ bool loadRebecca(CWeChatDlg *parent)
 	CLoadAIMLDlg *dlg;
 	dlg = new CLoadAIMLDlg(parent);
 	//dlg->Create(IDD_LOAD_AIML_DIALOG);
-
+	while (load_result == 0)
+		Sleep(1000);
 	HANDLE hThread = AfxBeginThread(ProcessDlgFunc, dlg);
-	//DWORD returnValue = 0;
 	dlg->DoModal();
-	//dlg->ShowWindow(SW_SHOW);
-	//dlg->UpdateWindow();
-	//do
-	//{
-	//	Sleep(1000);
-	//GetExitCodeThread(hThread, &returnValue);
-	//	dlg->UpdateWindow();
-	//}
-	//while (run_flag || returnValue == STILL_ACTIVE);
-	//delete dlg;
-	return load_result;
-
+	delete dlg;
+	return load_result&&load_flag;
 }
-
