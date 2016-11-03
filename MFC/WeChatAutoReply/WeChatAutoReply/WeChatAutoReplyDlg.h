@@ -49,7 +49,7 @@ public:
 	int m_replyStateRadioGroup;
 	afx_msg void OnClickedReplyStateRadioGroup();
 protected:
-	BOOL getMsg(wchar_t msg[], int& len);
+	//BOOL getMsg(wchar_t msg[], int& len);
 	// 模拟一个键的动作。vKey 是键的虚拟码 Orientation 表示按下还是释放 , 1按下 0释放
 	void KeyAction(int vKey, int Orientation);
 	bool getClipboard(CString & text, int & text_len);
@@ -85,4 +85,8 @@ public:
 	afx_msg void OnActivate(UINT nState, CWnd* pWndOther, BOOL bMinimized);
 	afx_msg void OnGetMinMaxInfo(MINMAXINFO* lpMMI);
 	afx_msg void OnBnClickedReloadAiml();
+protected:
+	afx_msg void OnGetInfoTip(NMHDR* pNMHDR, LRESULT* pResult);
+public:
+	afx_msg void OnDblclkLogDisplay(NMHDR *pNMHDR, LRESULT *pResult);
 };

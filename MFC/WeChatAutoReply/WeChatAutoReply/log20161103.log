@@ -69,3 +69,9 @@
 错误,2016-11-03,(+0800) 22:59:09,Error Message,"加载Rebecca AIML失败","CWeChatDlg-OnBnClickedReloadAiml()"
 =====START=====
 消息,2016-11-03,(+0800) 22:59:42,Start,"加载Rebecca AIML成功","CWeChatDlg-OnBnClickedReloadAiml()"
+消息,2016-11-03,(+0800) 23:36:16,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-03,(+0800) 23:37:56,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-03,(+0800) 23:48:33,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-03,(+0800) 23:59:22,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+错误,2016-11-03,(+0800) 23:59:39,Error Message,"终止加载AIML文件，已执行到：执行:-rg","LoadAIML-OnBnClickedCancel()"
+错误,2016-11-03,(+0800) 23:59:49,Error Message,"加载Rebecca AIML失败","CWeChatDlg-OnBnClickedReloadAiml()"

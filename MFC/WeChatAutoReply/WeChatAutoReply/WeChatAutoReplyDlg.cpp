@@ -94,6 +94,8 @@ BEGIN_MESSAGE_MAP(CWeChatDlg, CDialogEx)
 	ON_WM_ACTIVATE()
 	ON_WM_GETMINMAXINFO()
 	ON_BN_CLICKED(IDC_RELOAD_AIML, &CWeChatDlg::OnBnClickedReloadAiml)
+	ON_NOTIFY(LVN_GETINFOTIP, IDC_LOG_DISPLAY, OnGetInfoTip)
+	ON_NOTIFY(NM_DBLCLK, IDC_LOG_DISPLAY, &CWeChatDlg::OnDblclkLogDisplay)
 END_MESSAGE_MAP()
 
 
@@ -132,6 +134,7 @@ BOOL CWeChatDlg::OnInitDialog()
 	DWORD dwStyle = m_logDisplay.GetExtendedStyle();
 	dwStyle |= LVS_EX_FULLROWSELECT;
 	dwStyle |= LVS_EX_GRIDLINES;
+	dwStyle |= LVS_EX_INFOTIP;
 	m_logDisplay.SetExtendedStyle(dwStyle);
 
 	m_logDisplay.InsertColumn(0, _T("分级"), LVCFMT_LEFT, 50);
@@ -543,18 +546,23 @@ bool CWeChatDlg::findWeChatWnd()
 		if (lmshwnd != NULL)
 			break;// printf("Get WeChat window\n");
 		else
+		{
+			writeLog(this, L"没有获得微信程序的窗口", L"findWeChatWnd", ERR);
 			if (MessageBox(L"没有获得微信程序的窗口", L"WeChat Auto Reply", MB_ICONSTOP | MB_RETRYCANCEL) == IDRETRY)
 				continue;
 			else
 			{
 				process_flag = false;
+
 				return false;
 			}
+		}
 	}
 	if (lmshwnd == NULL)
 	{
-		MessageBox(L"没有获得微信程序的窗口", L"Wechat Auto Reply", MB_ICONSTOP | MB_OK);
 		process_flag = false;
+		writeLog(this, L"没有获得微信程序的窗口", L"findWeChatWnd", ERR);
+		MessageBox(L"没有获得微信程序的窗口", L"Wechat Auto Reply", MB_ICONSTOP | MB_OK);
 		return false;
 	}
 	else
@@ -599,4 +607,33 @@ void CWeChatDlg::OnBnClickedReloadAiml()
 		if (MessageBox(L"加载Rebecca AIML成功", L"WeChat Auto Reply", MB_ICONINFORMATION | MB_OK) == IDOK)
 			return;
 	}
+}
+
+void CWeChatDlg::OnGetInfoTip(NMHDR* pNMHDR, LRESULT* pResult)
+{
+	LPNMLVGETINFOTIP pGetInfoTip = reinterpret_cast<LPNMLVGETINFOTIP>(pNMHDR);
+
+	//得到当前选中的项
+	int iPos = m_logDisplay.GetNextItem(-1, LVNI_ALL | LVNI_SELECTED);
+	CString strCur = m_logDisplay.GetItemText(iPos, 0);
+
+	wcscpy_s(pGetInfoTip->pszText, strCur.GetLength()+1, strCur); //设置工具提示
+	*pResult = 0;
+}
+
+
+void CWeChatDlg::OnDblclkLogDisplay(NMHDR *pNMHDR, LRESULT *pResult)
+{
+	LPNMITEMACTIVATE pNMItemActivate = reinterpret_cast<LPNMITEMACTIVATE>(pNMHDR);
+	// TODO: 在此添加控件通知处理程序代码
+	int iPos = m_logDisplay.GetNextItem(-1, LVNI_ALL | LVNI_SELECTED);
+	CString str = L"日志项详情\n------------------\n";
+	str += L"日期：" + m_logDisplay.GetItemText(iPos, 1)+L"\n";
+	str += L"时间：" + m_logDisplay.GetItemText(iPos, 2) + L"\n";
+	str += L"分级：" + m_logDisplay.GetItemText(iPos, 0) + L"\n";
+	str += L"类型：" + m_logDisplay.GetItemText(iPos, 3) + L"\n";
+	str += L"内容：" + m_logDisplay.GetItemText(iPos, 4) + L"\n";
+	str += L"来源：" + m_logDisplay.GetItemText(iPos, 5);
+	MessageBox(str, L"WeChat Auto Reply", MB_OK);
+	*pResult = 0;
 }
