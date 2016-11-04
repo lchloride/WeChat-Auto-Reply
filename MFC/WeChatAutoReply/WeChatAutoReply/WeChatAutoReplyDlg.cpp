@@ -12,7 +12,6 @@
 #include <assert.h>
 #include "shell.h"
 #include "tools.h"
-#include "divide.h"
 #include "log.h"
 #pragma comment ( lib, "Psapi.lib" )
 
@@ -139,10 +138,10 @@ BOOL CWeChatDlg::OnInitDialog()
 
 	m_logDisplay.InsertColumn(0, _T("分级"), LVCFMT_LEFT, 50);
 	m_logDisplay.InsertColumn(1, _T("日期"), LVCFMT_LEFT, 80);
-	m_logDisplay.InsertColumn(2, _T("时间"), LVCFMT_LEFT, 150);
+	m_logDisplay.InsertColumn(2, _T("时间"), LVCFMT_LEFT, 110);
 	m_logDisplay.InsertColumn(3, _T("类型"), LVCFMT_LEFT, 150);
-	m_logDisplay.InsertColumn(4, _T("内容"), LVCFMT_LEFT, 200);
-	m_logDisplay.InsertColumn(5, _T("来源"), LVCFMT_LEFT, 100);
+	m_logDisplay.InsertColumn(4, _T("内容"), LVCFMT_LEFT, 230);
+	m_logDisplay.InsertColumn(5, _T("来源"), LVCFMT_LEFT, 110);
 	readProperty();
 	writeLog(this, L"加载property.ini完成", L"CWeChatDlg-OnInitDialog()", OPERATION);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -305,7 +304,7 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 
 	int lang = checkLang(GetMsg);
 
-	char temp[MAXCHARSIZE] = { 0 };
+	char temp[MSG_SIZE] = { 0 };
 	switch (lang)
 	{
 	case 0: 
@@ -313,7 +312,7 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 		writeLog(this, L"Input language: English", L"CWeChatDlg-getResponse()", OPERATION);
 		GetMsg_unicode = GetMsg;
 		query_property = L"-ppf \""+Rebecca_exec_path+L"\\..\\..\\conf\\properties.xml\"" ;
-		if (!shell(query_property, temp, MAXCHARSIZE))
+		if (!shell(query_property, temp, MSG_SIZE))
 		{
 			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
 			MessageBeep(MB_ICONASTERISK);
@@ -326,7 +325,7 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 		SendMsg.Empty();
 		UnicodeStr2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
 		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties_jp.xml\"";
-		if (!shell(query_property, temp, MAXCHARSIZE))
+		if (!shell(query_property, temp, MSG_SIZE))
 		{
 			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
 			MessageBeep(MB_ICONASTERISK);
@@ -341,7 +340,7 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 		UnicodeStr2wchar(GetMsg, GetMsg_unicode, MSG_SIZE);//这里的转换函数包含分字，每个字一次分离
 		GetMsg_unicode += L"#";//末尾加上结束符‘#’便于匹配AIML中的‘*’
 		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties_zh.xml\"";
-		if (!shell(query_property, temp, MAXCHARSIZE))
+		if (!shell(query_property, temp, MSG_SIZE))
 		{
 			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
 			MessageBeep(MB_ICONASTERISK);

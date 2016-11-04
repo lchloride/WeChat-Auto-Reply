@@ -44,6 +44,7 @@ bool writeLogFileCtrl(
 		CString tmp = L"";
 		UnicodeStr2wchar(content, tmp, MSG_SIZE);
 		fprintf(log_file, "UNICODE:%ls\", \"%ls\"\n", tmp, source);
+		content += L"(具有不可读字符, Unicode: " + tmp + L")";
 	}
 	dlg->m_logDisplay.InsertItem(0, typeStr);
 	dlg->m_logDisplay.SetItemText(0, 1, date);

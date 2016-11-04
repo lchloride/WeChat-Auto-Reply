@@ -1,10 +1,10 @@
-﻿生成启动时间为 2016/11/4 0:10:11。
+﻿生成启动时间为 2016/11/4 23:28:49。
      1>项目“E:\computer science\wechat\MFC\WeChatAutoReply\WeChatAutoReply\WeChatAutoReply.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\WeChatAutoReply.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt WeChatAutoReplyDlg.cpp
          WeChatAutoReplyDlg.cpp
-     1>e:\computer science\wechat\mfc\wechatautoreply\wechatautoreply\wechatautoreplydlg.cpp(281): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\computer science\wechat\mfc\wechatautoreply\wechatautoreply\wechatautoreplydlg.cpp(499): warning C4477: 'wprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'CString'
+     1>e:\computer science\wechat\mfc\wechatautoreply\wechatautoreply\wechatautoreplydlg.cpp(280): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\computer science\wechat\mfc\wechatautoreply\wechatautoreply\wechatautoreplydlg.cpp(498): warning C4477: 'wprintf' : format string '%ls' requires an argument of type 'wchar_t *', but variadic argument 1 has type 'CString'
        Link:
          E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"E:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\computer science\wechat\MFC\WeChatAutoReply\Debug\WeChatAutoReply.lib" /MACHINE:X86 Debug\WeChatAutoReply.res
          Debug\LoadAIMLDlg.obj
@@ -19,4 +19,4 @@
 
 已成功生成。
 
-已用时间 00:00:03.39
+已用时间 00:00:02.41
