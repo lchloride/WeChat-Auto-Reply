@@ -4,14 +4,13 @@
 #include "LoadAIMLDlg.h"
 
 #include "resource.h"
-
+#include<stdexcept>  
 
 //using namespace std;
-CString Rebecca_exec_path=L"";
-int zh_jp_ratio =6;
-CString log_path = L"";
-bool date_diff = true;
-CString ini_name = L"\\property.ini";
+extern int zh_jp_ratio;
+extern CString Rebecca_exec_path;
+
+
 
 int load_result = -1;//加载的结果，0代表没有完成加载，1表示加载成功，-1表示加载失败
 bool load_flag = true;//作为信号量，在tool.cpp和LoadAIMLDlg.cpp中共同控制加载线程的执行
@@ -188,63 +187,6 @@ void refinePathEnd(CString& src)
 	src = src.Left(i + 1);
 }
 
-void readProperty()
-{
-	CString exe_full_path = L"";
-	int ini_len = wcslen(ini_name);
-	wchar_t tmp[MAX_PATH] = L"";
-	int len = GetModuleFileNameW(NULL,
-		tmp, //应用程序的全路径存放地址
-		MAX_PATH);
-	for (int i = len - 1; i >= 0; i--)
-		if (tmp[i] != '\\')
-			tmp[i] = L'\0';
-		else
-			break;
-	exe_full_path.Format(L"%ls", tmp);
-	refinePathEnd(exe_full_path);
-	exe_full_path = exe_full_path+ini_name;
-	//wcscat_s(exe_full_path, wcslen(exe_full_path) + ini_len + 1, ini_name);
-	
-	memset(tmp, 0, sizeof(wchar_t));
-	GetPrivateProfileStringW(
-		L"Rebecca", // 指向包含 Section 名称的字符串地址 
-		L"Rebecca_exec_path", // 指向包含 Key 名称的字符串地址 
-		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
-		tmp,// 返回字符串的缓冲区地址 
-		MAX_PATH, // 缓冲区的长度 
-		exe_full_path // ini 文件的文件名 
-		);
-	Rebecca_exec_path.Format(L"%ls", tmp);
-	refinePathEnd(Rebecca_exec_path);
-
-	zh_jp_ratio = GetPrivateProfileIntW(
-		L"language", // 指向包含 Section 名称的字符串地址 
-		L"zh_jp_ratio", // 指向包含 Key 名称的字符串地址 
-		6, // 如果 Key 值没有找到，则返回缺省的值是多少 
-		exe_full_path // ini 文件的文件名 
-		);
-
-	memset(tmp, 0, sizeof(wchar_t));
-	GetPrivateProfileStringW(
-		L"log", // 指向包含 Section 名称的字符串地址 
-		L"path", // 指向包含 Key 名称的字符串地址 
-		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
-		tmp, // 返回字符串的缓冲区地址 
-		MAX_PATH, // 缓冲区的长度 
-		exe_full_path // ini 文件的文件名 
-		);
-	log_path.Format(L"%ls", tmp);
-	refinePathEnd(log_path);
-
-	date_diff = (bool)GetPrivateProfileIntW(
-		L"log", // 指向包含 Section 名称的字符串地址 
-		L"date_diff", // 指向包含 Key 名称的字符串地址 
-		1, // 如果 Key 值没有找到，则返回缺省的值是多少 
-		exe_full_path // ini 文件的文件名 
-		);
-	//wprintf(L"%ls %d\n", Rebecca_exec_path, zh_jp_ratio);
-}
 
 UINT ProcessDlgFunc(LPVOID in)
 {
@@ -311,3 +253,4 @@ bool loadRebecca(CWeChatDlg *parent)
 	delete dlg;
 	return load_result&&load_flag;
 }
+

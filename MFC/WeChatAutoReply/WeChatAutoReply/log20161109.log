@@ -1,0 +1,374 @@
+消息,2016-11-09,(+0800) 00:54:40,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-09,(+0800) 21:45:49,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 21:46:01,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:46:01,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 21:46:03,Error Message,"没有获得微信程序的窗口","findWeChatWnd"
+错误,2016-11-09,(+0800) 21:46:28,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 21:46:32,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:46:32,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 21:46:36,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 21:46:41,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:46:41,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 21:46:45,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 21:46:51,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:46:51,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 21:46:55,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 21:47:18,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:47:18,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 21:47:22,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:49:39,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 21:49:53,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:49:53,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:50:14,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 21:50:32,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 21:50:33,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:50:33,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:50:38,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 21:50:38,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:50:52,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 21:50:52,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-09,(+0800) 21:50:55,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 21:50:57,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 21:53:23,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 21:53:25,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:53:25,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:53:29,Receive Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 21:53:29,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 21:53:57,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 21:54:11,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-09,(+0800) 21:54:41,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 21:54:50,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:24:49,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:24:56,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:24:56,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:25:00,Receive Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:25:00,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:25:05,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:25:05,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-09,(+0800) 22:25:06,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:25:08,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:25:08,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-09,(+0800) 22:25:09,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:25:28,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:25:29,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:25:29,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:25:34,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:25:34,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:25:41,Receive Message,"3","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:25:48,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-09,(+0800) 22:25:53,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:26:38,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:27:05,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:27:10,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:27:13,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:27:32,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:29:18,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:29:20,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:29:20,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 22:29:24,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 22:29:26,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:29:26,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:29:30,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:29:30,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:29:38,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:29:38,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-09,(+0800) 22:29:39,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:29:41,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:29:50,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:29:50,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:29:52,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:29:53,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:30:08,Receive Message,"为什么没有显示","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:30:08,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:30:10,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:30:11,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:30:17,Receive Message,"退出","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:30:17,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:30:19,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:30:20,Warning Message,"没有获得回复内容","CWeChatDlg-getResponse()"
+=====START=====
+消息,2016-11-09,(+0800) 22:31:58,Start,"加载Rebecca AIML成功","CWeChatDlg-OnBnClickedReloadAiml()"
+=====START=====
+消息,2016-11-09,(+0800) 22:32:01,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:01,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 22:32:05,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:12,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:32:12,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:32:15,Send Message,"Do you have any conditions I should know about?
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-09,(+0800) 22:32:15,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:15,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 22:32:19,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:21,Receive Message,"Do you have any conditions I should know about?'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:32:21,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:32:23,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:32:26,Send Message,"Unreadable Character Cannot be Printed.UNICODE:eeae caed ", "CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:32:29,Receive Message,"Do you have any conditions I should know about?'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:32:29,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:32:31,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:32:34,Send Message,"Unreadable Character Cannot be Printed.UNICODE:eeae abfe 446f 2079 6f75 2068 6176 6520 616e 7920 636f 6e64 6974 696f 6e73 2049 2073 686f 756c 6420 6b6e 6f77 2061 626f 7574 3f27 5765 4368 6174 2720 4e0d 662f 5185 90e8 6216 5916 90e8 547d 4ee4 ff0c 4e5f 4e0d 662f 53ef 8fd0 884c 7684 7a0b 5e8f 6216 6279 5904 7406 6587 4ef6 3002 272d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2720 4e0d 662f 5185 90e8 6216 5916 90e8 547d 4ee4 ff0c 4e5f 4e0d 662f 53ef 8fd0 884c 7684 7a0b 5e8f 6216 6279 5904 7406 6587 4ef6 3002 2765 e06c d583 b753 d667   54  e4e   67 616d 8860 6f27 204e  d66 2f51 8590 e862 1659 1690 e854 7d4e e4ff  c4e 5f4e  d66 2f53 ef8f d088 4c76 847a  b5e 8f62 1662 7959  474  665 874e f630  227 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d 2d2d ", "CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-09,(+0800) 22:32:34,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:34,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 22:32:38,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 22:32:38,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:38,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 22:32:42,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:32:45,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:32:45,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:32:48,Send Message,"Where are you located?
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:32:51,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:32:51,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:32:54,Send Message,"Tell me a little about your life in ---------------------------.
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:32:59,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:32:59,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:33:02,Send Message,"When do you think artificial intelligence will replace lawyers?
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:33:25,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:33:28,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:33:28,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:33:33,Receive Message,"When do you think artificial intelligence will replace lawyers?'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:33:33,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:33:41,Receive Message,"When do you think artificial intelligence will replace lawyers?'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:33:43,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:33:45,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:33:48,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:33:51,Send Message,"Unreadable Character Cannot be Printed.UNICODE:afae a96d ", "CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:34:05,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:34:06,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:34:09,Send Message,"I haven't seen it. What did you like about 2?","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:34:20,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:34:22,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:34:24,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:34:27,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:48:29,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:48:41,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:48:41,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:48:45,Receive Message,"你好呀","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:48:45,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:48:50,Receive Message,"h","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:48:50,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:48:53,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:48:55,Send Message,"Are we still talking about fifty seven 68 65 6e 20 64 6f 20 79 6f 75 20 74 68 69 6e 6b 20 61 72 74 69 66 69 63 69 61 6c 20 69 6e 74 65 6c 6c 69 67 65 6e 63 65 20 77 69 6c 6c 20 72 65 70 6c 61 63 65 20 6c 61 77 79 65 72 73 3f 27 57 65 43 68 61 74 27 20 4e0d 662f 5185 90e8 6216 5916 90e8 547d 4ee4 ff0c 4e5f 4e0d 662f 53ef 8fd0 884c 7684 7a0b 5e8f 6216 6279 5904 7406 6587 4ef6 3002 27 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d 27 20 4e0d 662f 5185 90e8 6216 5916 90e8 547d 4ee4 ff0c 4e5f 4e0d 662f 53ef 8fd0 884c 7684 7a0b 5e8f 6216 6279 5904 7406 6587 4ef6 3002 27 65e0 6cd5 83b7 53d6 6700 540e 4e00 6761 6d88 606f 27 20 4e0d 662f 5185 90e8 6216 5916 90e8 547d 4ee4 ff0c 4e5f 4e0d 662f 53ef 8fd0 884c 7684 7a0b 5e8f 6216 6279 5904 7406 6587 4ef6 3002 27 2d 2d 2d 2d 2d 2d 2d 2d 2d 2d ?","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:49:05,Receive Message,"no","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:49:05,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:49:08,Send Message,"What is the subject?","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:49:17,Receive Message,"/exit","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:49:17,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:49:20,Send Message,"What else is the exit?","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-09,(+0800) 22:49:52,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:49:52,Operation Result,"初始回复已加载，语言：英文","WeChatDlg-OnBnClickedStart()"
+错误,2016-11-09,(+0800) 22:49:56,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:49:59,Receive Message,"3","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:49:59,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:50:01,Send Message,"Really, exactly three?","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:50:17,Receive Message,"yes","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:50:17,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:50:20,Send Message,"Far out.","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:50:41,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:50:41,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:50:44,Send Message,"In the context of h, I don't understand "."
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:50:47,Receive Message,"---------------------------
+WeChat Auto Reply
+---------------------------
+无法获取最后一条消息
+---------------------------
+确定   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:50:47,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:50:49,Send Message,"What do you look like?
+'WeChat' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'确定' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'"' ","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:50:52,Receive Message,"In the context of h, I don't understand "."'WeChat' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'无法获取最后一条消息' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'确定' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'"' ","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:50:52,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:50:54,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-09,(+0800) 22:50:57,Send Message,"Unreadable Character Cannot be Printed.UNICODE:dadc eec0 ", "CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:51:11,Receive Message,"/exit","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:51:11,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:51:14,Send Message,"Bye for now.","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:52:05,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:52:10,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:52:10,Operation Result,"初始回复已加载，语言：英文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:52:14,Receive Message,"Bye for now.","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:52:14,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:52:31,Receive Message,"hello","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:52:31,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:52:34,Send Message,"Hello, I am Alice, the intelligent AI chatting with you. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:52:36,Send Message,"Hi there!","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:52:46,Receive Message,"/exit","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:52:46,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:52:49,Send Message,"Goodbye.","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-09,(+0800) 22:53:02,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:53:02,Operation Result,"初始回复已加载，语言：日文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:53:07,Receive Message,"Goodbye.","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:53:07,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-09,(+0800) 22:53:32,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:53:32,Operation Result,"初始回复已加载，语言：日文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:53:37,Receive Message,"6","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:53:37,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:54:43,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:54:44,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:54:44,Operation Result,"初始回复已加载，语言：中文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:54:48,Receive Message,"6","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:54:48,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:55:08,Receive Message,"hello","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:55:08,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:55:11,Send Message,"你好，我是爱丽丝，一个正在和你聊天的人工智能。现在我的主人正在忙碌，所以我将帮助他回复。另外，你可以给我留言，这样我可以传话给他。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:55:13,Send Message,"Hi there!","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:55:23,Receive Message,"/exit","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:55:23,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:55:26,Send Message,"TTYL, .","CWeChatDlg-sendMSG()"
+=====START=====
+消息,2016-11-09,(+0800) 22:56:59,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:56:59,Operation Result,"初始回复已加载，语言：日文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:57:03,Receive Message,"TTYL, .","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:57:03,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:57:14,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:57:14,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:57:16,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:57:19,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:57:45,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-09,(+0800) 22:57:49,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:57:49,Operation Result,"初始回复已加载，语言：日文","WeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:57:54,Receive Message,"你好呀","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:57:54,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-09,(+0800) 22:57:59,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:57:59,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:58:01,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:58:04,Send Message,"初めまして～私はエリス、あなたとチャットする人工知能。今私のマスターは忙しいので、私は彼の回復を助ける。また、あなたが私にメッセージ、私は彼に知らせる。どうぞよろしくお願いします。","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:58:06,Send Message,"你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-09,(+0800) 22:58:38,Receive Message,"/exit","CWeChatDlg-getMSG()"
+消息,2016-11-09,(+0800) 22:58:38,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-09,(+0800) 22:58:41,Send Message,"TTYL, .","CWeChatDlg-sendMSG()"

@@ -89,4 +89,20 @@ protected:
 	afx_msg void OnGetInfoTip(NMHDR* pNMHDR, LRESULT* pResult);
 public:
 	afx_msg void OnDblclkLogDisplay(NMHDR *pNMHDR, LRESULT *pResult);
+	int m_replyLangRadioGroup;
+	//CString Rebecca_exec_path = L"";
+	//int zh_jp_ratio = 6;
+	//CString log_path = L"";
+	bool date_diff = true;
+	const CString ini_default_name = L"\\property_default.ini";
+	const CString ini_user_name = L"\\property_user.ini";
+	void readProperty();
+	// 回复内容，被程序直接引用的
+	CString replyContent;
+	// 加载的中文回复内容
+	CString replyContentZH;
+	// 加载的日文回复内容
+	CString replyContentJP;
+	// 加载的英文回复内容
+	CString replyContentEN;
 };

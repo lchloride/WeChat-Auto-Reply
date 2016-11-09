@@ -70,5 +70,6 @@ bool query(CString query_word, char* response, int MaxSize)
 {
 	wchar_t cmd[MSG_SIZE] = L"";
 	wsprintf(cmd, L"-gr \"%ls\"", query_word);
-	return shell(cmd, response, MaxSize);
+	bool flag = shell(cmd, response, MaxSize);
+	return flag && (strlen(response) > 0);
 }

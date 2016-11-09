@@ -14,5 +14,5 @@ void UnicodeToANSI(const wchar_t* str, char* result, int MaxSize);
 int checkLang(CString str);
 bool char2Unicode(char* str, CString& result, int MaxSize);
 bool UnicodeStr2wchar(CString str, CString& result, int MaxSize);
-void readProperty();
+void refinePathEnd(CString& src);
 bool loadRebecca(CWeChatDlg *parent);

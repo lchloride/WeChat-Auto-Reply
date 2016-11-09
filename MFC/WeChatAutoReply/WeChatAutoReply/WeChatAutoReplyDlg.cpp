@@ -13,13 +13,17 @@
 #include "shell.h"
 #include "tools.h"
 #include "log.h"
+#include <stdexcept>
 #pragma comment ( lib, "Psapi.lib" )
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
-extern CString Rebecca_exec_path;
-
+CString Rebecca_exec_path;
+int zh_jp_ratio = 6;
+CString log_path = L"";
+extern CString reply_content;
+extern 
 // 用于应用程序“关于”菜单项的 CAboutDlg 对话框
 
 class CAboutDlg : public CDialogEx
@@ -65,6 +69,11 @@ CWeChatDlg::CWeChatDlg(CWnd* pParent /*=NULL*/)
 	, SendMsg(_T(""))
 	, first_flag(true)
 	, process_flag(true)
+	, m_replyLangRadioGroup(0)
+	, replyContent(_T(""))
+	, replyContentZH(_T(""))
+	, replyContentJP(_T(""))
+	, replyContentEN(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 	lmshwnd = NULL;
@@ -77,6 +86,7 @@ void CWeChatDlg::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Radio(pDX, IDC_REPLYTRUE, m_replyStateRadioGroup);
 	DDX_Control(pDX, IDC_LOG_DISPLAY, m_logDisplay);
+	DDX_Radio(pDX, IDC_ZH_SIMP_REPLY, m_replyLangRadioGroup);
 }
 
 BEGIN_MESSAGE_MAP(CWeChatDlg, CDialogEx)
@@ -142,7 +152,18 @@ BOOL CWeChatDlg::OnInitDialog()
 	m_logDisplay.InsertColumn(3, _T("类型"), LVCFMT_LEFT, 150);
 	m_logDisplay.InsertColumn(4, _T("内容"), LVCFMT_LEFT, 230);
 	m_logDisplay.InsertColumn(5, _T("来源"), LVCFMT_LEFT, 110);
-	readProperty();
+	try
+	{
+		readProperty();
+	}
+	catch (const std::exception& e)
+	{
+		CString str;
+		str.Format(L"%s", e.what());
+		MessageBox(str, L"WeChat Auto Reply", MB_OK);
+		writeLog(this, L"加载property.ini失败", L"CWeChatDlg-OnInitDialog()", ERR);
+	}
+
 	writeLog(this, L"加载property.ini完成", L"CWeChatDlg-OnInitDialog()", OPERATION);
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -211,19 +232,10 @@ void CWeChatDlg::OnBnClickedStart()
 {
 	// TODO: 在此添加控件通知处理程序代码
 	//setlocale(LC_ALL, "chs");
-	process_flag = true;
+
 
 	writeLog(this, L"进行初始化", L"CWeChatDlg-OnBnClickedStart()", START);
 	bool first_flag = true;
-	//// 得到进程ID的列表
-	//DWORD aProcesses[1024], cbNeeded, cProcesses;
-	//unsigned int i;
-	////列举所有进程的ID，返回到aProcesses数组中
-	//if (!EnumProcesses(aProcesses, sizeof(aProcesses), &cbNeeded))
-	//	return;
-	////计算一共返回了多少个进程ID
-	//cProcesses = cbNeeded / sizeof(DWORD);
-	//CString str=L"";
 	int len = 0;
 	UpdateData(TRUE);
 	CString tmp = CString("");
@@ -231,6 +243,13 @@ void CWeChatDlg::OnBnClickedStart()
 	OpenClipboard();
 	EmptyClipboard();
 	CloseClipboard();
+	switch (m_replyLangRadioGroup)
+	{
+	case 0: replyContent = replyContentZH; writeLog(this, L"初始回复已加载，语言：中文", L"WeChatDlg-OnBnClickedStart()", OPERATION); break;
+	case 1:replyContent = replyContentEN; writeLog(this, L"初始回复已加载，语言：英文", L"WeChatDlg-OnBnClickedStart()", OPERATION); break;
+	case 2: replyContent = replyContentJP; writeLog(this, L"初始回复已加载，语言：日文", L"WeChatDlg-OnBnClickedStart()", OPERATION); break;
+	default:replyContent = L""; writeLog(this, L"初始回复没有正确加载", L"WeChatDlg-OnBnClickedStart()", WARNING); break;
+	}
 	if (!findWeChatWnd())
 	{
 			process_flag = false;
@@ -251,6 +270,7 @@ void CWeChatDlg::OnBnClickedStart()
 
 	if (first_flag)
 		SetTimer(RECVMSG, 3000, NULL);
+	process_flag = true;
 	writeLog(this, L"定时监控微信会话开始", L"CWeChatDlg-OnBnClickedStart()", OPERATION);
 }
 
@@ -272,17 +292,21 @@ void CWeChatDlg::OnTimer(UINT_PTR nIDEvent)
 	{
 		if (getMsg(GetMsg, GetMsgLen))
 		{
+			if (GetMsg == L"/exit")
+				process_flag = false;
 			send_flag = getResponse(GetMsg, SendMsg, first_flag);
 			if (first_flag)
 			{
-				sendMsg(L"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.");
-				int count = 0;
-				for (int i = 0; i < wcslen(SendMsg); i++)
-					if (SendMsg[i] == L' ')
-						count++;
-				if (count >= 3 && send_flag)
+				sendMsg(replyContent);
+			}
+				//int count = 0;
+				//for (int i = 0; i < wcslen(SendMsg); i++)
+				//	if (SendMsg[i] == L' ')
+				//		count++;
+
+				/*if (count >= 3 && send_flag)
 					sendMsg(SendMsg);
-			}			else if (send_flag)
+			}			else*/ if (send_flag)
 				sendMsg(SendMsg);
 
 			first_flag = false;
@@ -294,11 +318,8 @@ void CWeChatDlg::OnTimer(UINT_PTR nIDEvent)
 
 bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 {
-	//memset(SendMsg, 0, MSG_SIZE + 1);
 	SendMsg.Empty();
-	//wchar_t GetMsg_unicode[MSG_SIZE + 1] = { 0 };
 	char SendMsg_ansi[MSG_SIZE + 1] = { 0 };
-	//wchar_t query_property[MSG_SIZE + 1] = { 0 };
 	CString GetMsg_unicode = L"";
 	CString query_property = L"";
 
@@ -308,7 +329,6 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 	switch (lang)
 	{
 	case 0: 
-		//printf("Input language: English\n");
 		writeLog(this, L"Input language: English", L"CWeChatDlg-getResponse()", OPERATION);
 		GetMsg_unicode = GetMsg;
 		query_property = L"-ppf \""+Rebecca_exec_path+L"\\..\\..\\conf\\properties.xml\"" ;
@@ -347,12 +367,26 @@ bool CWeChatDlg::getResponse(CString GetMsg, CString& SendMsg, bool first)
 		}
 		break;
 	default:
-		printf("The language cannot be analyzed\n"); break;
+		writeLog(this, L"获得内容的语言无法解析，将按照英语解析", L"CWeChatDlg-getResponse()", WARNING);
+		MessageBeep(MB_ICONASTERISK);
+		GetMsg_unicode = GetMsg;
+		query_property = L"-ppf \"" + Rebecca_exec_path + L"\\..\\..\\conf\\properties.xml\"";
+		if (!shell(query_property, temp, MSG_SIZE))
+		{
+			writeLog(this, L"Loading AIML profile data failed", L"CWeChatDlg-getResponse()", WARNING);
+			MessageBeep(MB_ICONASTERISK);
+		}
+		break;
+
 	}
 	//printf("GetMsg_ansi:%s\n", GetMsg_ansi);
 	//if (GetMsg_ansi != NULL)
 	if (!query(GetMsg_unicode, SendMsg_ansi, MSG_SIZE))
+	{
+		writeLog(this, L"没有获得回复内容", L"CWeChatDlg-getResponse()", WARNING);
+		MessageBeep(MB_ICONASTERISK);
 		return FALSE;
+	}
 	if (lang == 0)
 		ANSIToUnicode(SendMsg_ansi, SendMsg, MSG_SIZE);
 	else
@@ -635,4 +669,142 @@ void CWeChatDlg::OnDblclkLogDisplay(NMHDR *pNMHDR, LRESULT *pResult)
 	str += L"来源：" + m_logDisplay.GetItemText(iPos, 5);
 	MessageBox(str, L"WeChat Auto Reply", MB_OK);
 	*pResult = 0;
+}
+
+void CWeChatDlg::readProperty()
+{
+	CString exe_full_path = L"";
+	wchar_t tmp[MAX_PATH] = L"";
+	int len = GetModuleFileNameW(NULL,
+		tmp, //应用程序的全路径存放地址
+		MAX_PATH);
+	for (int i = len - 1; i >= 0; i--)
+		if (tmp[i] != '\\')
+			tmp[i] = L'\0';
+		else
+			break;
+	exe_full_path.Format(L"%ls", tmp);
+	refinePathEnd(exe_full_path);
+	//exe_full_path = exe_full_path+ini_name;
+
+	memset(tmp, 0, sizeof(wchar_t));
+	//先加载user配置文件，如果加载失败则加载default配置文件，仍然失败的就是读取失败了
+	GetPrivateProfileStringW(
+		L"Rebecca", // 指向包含 Section 名称的字符串地址 
+		L"Rebecca_exec_path", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		tmp,// 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path + ini_user_name // ini 文件的文件名 
+		);
+	if (wcslen(tmp) == 0)
+		GetPrivateProfileStringW(
+			L"Rebecca", // 指向包含 Section 名称的字符串地址 
+			L"Rebecca_exec_path", // 指向包含 Key 名称的字符串地址 
+			L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+			tmp,// 返回字符串的缓冲区地址 
+			MAX_PATH, // 缓冲区的长度 
+			exe_full_path + ini_default_name // ini 文件的文件名 
+			);
+	Rebecca_exec_path.Format(L"%ls", tmp);
+	refinePathEnd(Rebecca_exec_path);
+
+	zh_jp_ratio = GetPrivateProfileIntW(
+		L"language", // 指向包含 Section 名称的字符串地址 
+		L"zh_jp_ratio", // 指向包含 Key 名称的字符串地址 
+		6, // 如果 Key 值没有找到，则返回缺省的值是多少 
+		exe_full_path + ini_user_name // ini 文件的文件名 
+		);
+
+	memset(tmp, 0, sizeof(wchar_t));
+	GetPrivateProfileStringW(
+		L"log", // 指向包含 Section 名称的字符串地址 
+		L"path", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		tmp, // 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path + ini_user_name // ini 文件的文件名 
+		);
+	if (wcslen(tmp) == 0)
+		GetPrivateProfileStringW(
+			L"log", // 指向包含 Section 名称的字符串地址 
+			L"path", // 指向包含 Key 名称的字符串地址 
+			L".", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+			tmp, // 返回字符串的缓冲区地址 
+			MAX_PATH, // 缓冲区的长度 
+			exe_full_path + ini_default_name // ini 文件的文件名 
+			);
+	log_path.Format(L"%ls", tmp);
+	refinePathEnd(log_path);
+
+	date_diff = (bool)GetPrivateProfileIntW(
+		L"log", // 指向包含 Section 名称的字符串地址 
+		L"date_diff", // 指向包含 Key 名称的字符串地址 
+		1, // 如果 Key 值没有找到，则返回缺省的值是多少 
+		exe_full_path+ini_user_name // ini 文件的文件名 
+		);
+
+	memset(tmp, 0, sizeof(wchar_t));
+	GetPrivateProfileStringW(
+		L"FirstReply", // 指向包含 Section 名称的字符串地址 
+		L"en", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		tmp, // 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path + ini_user_name // ini 文件的文件名 
+		);
+	if (wcslen(tmp) == 0)
+		GetPrivateProfileStringW(
+			L"FirstReply", // 指向包含 Section 名称的字符串地址 
+			L"en", // 指向包含 Key 名称的字符串地址 
+			L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+			tmp, // 返回字符串的缓冲区地址 
+			MAX_PATH, // 缓冲区的长度 
+			exe_full_path + ini_default_name // ini 文件的文件名 
+			);
+	replyContentEN.Format(L"%ls", tmp);
+
+	memset(tmp, 0, sizeof(wchar_t));
+	GetPrivateProfileStringW(
+		L"FirstReply", // 指向包含 Section 名称的字符串地址 
+		L"jp", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		tmp, // 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path + ini_user_name // ini 文件的文件名 
+		);
+	if (wcslen(tmp) == 0)
+		GetPrivateProfileStringW(
+			L"FirstReply", // 指向包含 Section 名称的字符串地址 
+			L"jp", // 指向包含 Key 名称的字符串地址 
+			L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+			tmp, // 返回字符串的缓冲区地址 
+			MAX_PATH, // 缓冲区的长度 
+			exe_full_path + ini_default_name // ini 文件的文件名 
+			);
+	replyContentJP.Format(L"%ls", tmp);
+
+	memset(tmp, 0, sizeof(wchar_t));
+	GetPrivateProfileStringW(
+		L"FirstReply", // 指向包含 Section 名称的字符串地址 
+		L"zh", // 指向包含 Key 名称的字符串地址 
+		L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+		tmp, // 返回字符串的缓冲区地址 
+		MAX_PATH, // 缓冲区的长度 
+		exe_full_path + ini_user_name // ini 文件的文件名 
+		);
+	if (wcslen(tmp) == 0)
+		GetPrivateProfileStringW(
+			L"FirstReply", // 指向包含 Section 名称的字符串地址 
+			L"zh", // 指向包含 Key 名称的字符串地址 
+			L"", // 如果 Key 值没有找到，则返回缺省的字符串的地址 
+			tmp, // 返回字符串的缓冲区地址 
+			MAX_PATH, // 缓冲区的长度 
+			exe_full_path + ini_default_name // ini 文件的文件名 
+			);
+	replyContentZH.Format(L"%ls", tmp);
+
+	if (wcslen(Rebecca_exec_path) == 0 || wcslen(log_path) == 0||replyContentEN.GetLength()==0||
+		replyContentZH.GetLength() == 0 || replyContentJP.GetLength() == 0)
+		throw std::invalid_argument("Invalid_Argument: Path is invalid.");
 }

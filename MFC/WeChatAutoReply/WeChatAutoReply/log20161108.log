@@ -1,0 +1,246 @@
+消息,2016-11-08,(+0800) 21:41:36,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-08,(+0800) 23:30:24,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-08,(+0800) 23:31:24,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:31:27,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+错误,2016-11-08,(+0800) 23:31:29,Error Message,"没有获得微信程序的窗口","findWeChatWnd"
+错误,2016-11-08,(+0800) 23:31:45,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-08,(+0800) 23:31:52,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:31:57,Receive Message,"6","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:31:57,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:32:05,Receive Message,"f","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:32:05,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+警告,2016-11-08,(+0800) 23:32:05,Warning Message,"Loading AIML profile data failed","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:32:07,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:32:20,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:32:20,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:32:22,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-08,(+0800) 23:32:22,Warning Message,"Loading AIML profile data failed","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:32:32,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:32:32,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:32:34,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+警告,2016-11-08,(+0800) 23:32:34,Warning Message,"Loading AIML profile data failed","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:34:13,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:34:19,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:34:23,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:34:23,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:34:28,Receive Message,"g","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:34:28,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:34:31,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:34:33,Send Message,"I am so glad you find this amusing, .","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:34:43,Receive Message,"你好你好","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:34:43,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:34:45,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:34:48,Send Message,"你好呀你好呀","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:35:07,Receive Message,"你喜欢什么游戏","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:35:07,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:35:09,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:35:12,Send Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:37:14,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:37:15,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:37:22,Receive Message,"我最喜欢はつゆきさくら（初雪樱）小坂井绫赛高！PS：我要给新岛夕寄刀片。","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:37:26,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:37:43,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:37:43,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:37:46,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:38:01,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:38:01,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:38:03,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:38:34,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:38:34,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:38:37,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:38:40,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:38:40,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:38:42,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:38:45,Receive Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Debug' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Program:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'File:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Line:' 不是内部或外部命令，也不是可运行的程序或批处理文件。此时不应有 )","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:38:45,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:38:47,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:40:53,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:40:56,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+错误,2016-11-08,(+0800) 23:41:00,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+=====START=====
+消息,2016-11-08,(+0800) 23:41:07,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+错误,2016-11-08,(+0800) 23:41:11,Error Message,"无法获取最后一条消息","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:41:31,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:41:32,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:41:36,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:41:36,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:41:56,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:41:56,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:41:59,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:42:17,Receive Message,"g","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:42:17,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:42:20,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:42:22,Receive Message,"g","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:42:22,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:42:25,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:42:27,Receive Message,"g","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:42:27,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:42:30,Send Message,"","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:42:32,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:42:32,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:42:34,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:42:53,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:42:53,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:42:56,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:42:58,Receive Message,"---------------------------
+Microsoft Visual C++ Runtime Library
+---------------------------
+Debug Assertion Failed!
+
+Program: C:\WINDOWS\SYSTEM32\mfc140ud.dll
+File: f:\dd\vctools\vc7libs\ship\atlmfc\include\atlsimpstr.h
+Line: 367
+
+Expression: (iChar >= 0) && (iChar <= GetLength())
+
+For information on how your program can cause an assertion
+failure, see the Visual C++ documentation on asserts.
+
+(Press Retry to debug the application)
+
+---------------------------
+中止(A)   重试(R)   忽略(I)   
+---------------------------
+","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:42:58,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:43:01,Send Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'---------------------------' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Debug' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Program:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'File:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+'Line:' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+此时不应有 )","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:43:04,Receive Message,"'Microsoft' 不是内部或外部命令，也不是可运行的程序或批处理文件。'---------------------------' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Debug' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Program:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'File:' 不是内部或外部命令，也不是可运行的程序或批处理文件。'Line:' 不是内部或外部命令，也不是可运行的程序或批处理文件。此时不应有 )","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:43:04,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:43:06,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:48:15,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:48:18,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:48:22,Receive Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:48:22,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:48:42,Receive Message,"3","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:49:27,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:56:06,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:56:08,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:56:12,Receive Message,"3","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:56:12,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:56:17,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:56:29,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:57:41,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+消息,2016-11-08,(+0800) 23:57:48,Operation Result,"加载property.ini完成","CWeChatDlg-OnInitDialog()"
+=====START=====
+消息,2016-11-08,(+0800) 23:57:49,Start,"进行初始化","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:57:54,Receive Message,"2","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:57:54,Operation Result,"定时监控微信会话开始","CWeChatDlg-OnBnClickedStart()"
+消息,2016-11-08,(+0800) 23:57:59,Receive Message,"g","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:58:04,Operation Result,"Input language: English","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:58:25,Send Message,"Hello, I am Alice, the intelligent AI chatting with English. At the moment, my master is busy so I will help him reply the requests. Besides, you can leave messages and I will inform him.","CWeChatDlg-sendMSG()"
+消息,2016-11-08,(+0800) 23:58:41,Receive Message,"你好","CWeChatDlg-getMSG()"
+消息,2016-11-08,(+0800) 23:58:42,Operation Result,"输入语言：中文","CWeChatDlg-getResponse()"
+消息,2016-11-08,(+0800) 23:58:44,Send Message,"Sorry, I can only understand English. Talk with me in English. THX~","CWeChatDlg-sendMSG()"
